@@ -43,6 +43,15 @@ function ProjectsTab() {
         onWheel={scrollFunction}
         onMouseLeave={enableScroll}
       >
+        <Link className="project" to="/robotics">
+          <img
+            id="image"
+            className="gif"
+            src="highresshortvid.gif"
+            alt=""
+            onMouseDown={enableScroll}
+          ></img>
+        </Link>
         <Link className="project" to="/climbing">
           <img
             id="image"
