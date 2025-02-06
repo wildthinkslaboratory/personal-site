@@ -1,4 +1,5 @@
 import "./ProjectsTab.css";
+import roboticsPic from "../assets/legoRobotics.jpg";
 import { Link } from "react-router-dom";
 
 function scrollFunction(event: any) {
@@ -33,6 +34,13 @@ function ProjectsTab() {
         <div className="titleDiv">
           <div className="wordHolder">
             <div className="projectsTitle">Projects</div>
+            <p>
+              This is a paragraph. This is a paragraph. This is a paragraph.{" "}
+              This is a paragraph. This is a paragraph. This is a paragraph.{" "}
+              This is a paragraph. This is a paragraph. This is a paragraph.{" "}
+              This is a paragraph. This is a paragraph. This is a paragraph.{" "}
+              This is a paragraph.{" "}
+            </p>
           </div>
         </div>
       </div>
@@ -44,6 +52,18 @@ function ProjectsTab() {
         onMouseLeave={enableScroll}
       >
         <Link className="project" to="/robotics">
+          <div className="imageHolder">
+            <img
+              id="image"
+              className="gif"
+              src={roboticsPic}
+              alt=""
+              onMouseDown={enableScroll}
+            ></img>
+            <div className="centered">Robotics</div>
+          </div>
+        </Link>
+        <Link className="project" to="/goldfishandrobin">
           <img
             id="image"
             className="gif"

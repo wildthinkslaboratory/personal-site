@@ -12,6 +12,15 @@ function LegoRoboticsPage() {
           <div className="projectTitle">Coaching Robotics</div>
           <div className="projectParagraph">
             <p>
+              I love seeing the sense of wonder and amazement that children
+              experience when they learn new ideas. Their ideas of what to build
+              and what is possible are so creative, fanciful and sometimes
+              crazy. Also, kids are just better at having fun than adults. My
+              job as a coach is to give them the tools to make their ideas
+              practical and realizable. Coaching robotics was a lot of work, but
+              it was rewarding and just so joyful.
+            </p>
+            <p>
               {" "}
               I coached Lego Robotics for five years. I coached teams at{" "}
               <a href="https://riverroad.4j.lane.edu/">
@@ -29,29 +38,28 @@ function LegoRoboticsPage() {
             </p>
             <p>
               My fourth and fifth grade teams focused on learning basic coding
-              skills such control structures and hardware control. They used
+              skills such as control structures and hardware control. They used
               these skills to build simple missions that they tested, refined,
               and prepared for competition.
             </p>
             <p>
-              My more experienced teams designed and built their own robots to
-              take on multi part missions. To do this in the alotted time,
-              students need to use a design cycle that allows for multiple
-              iterations through a prototype, test and refine cycle. The first
-              prototype design is often too complex. Designs need to be
-              simplified and streamlined. Students who are ready to implement
-              multi part missions also need to learn to manage complexity. The
-              more complex a mission is, the more things can go wrong. To be
-              successful, students need to build precise strategies that reduce
-              error or build stategies that are flexible enough to tolerate
-              error.
+              My middle school teams designed and built their own robots to take
+              on multi-part missions. To do this in the allotted time, students
+              need to use a design cycle that allows for multiple iterations
+              through a prototype, test and refine cycle. The first prototype
+              design is often too complex. Designs need to be simplified and
+              streamlined. Students who are ready to implement multi-part
+              missions also need to learn to manage complexity. The more complex
+              a mission is, the more things can go wrong. To be successful,
+              students need to build precise strategies that reduce error or
+              build strategies that are flexible enough to tolerate error.
             </p>
             <p>
               I've taught so many talented, creative and curious kids. I've had
-              three teams qualify to go to state competitions and one team who
-              won the IBM Award for Innovation at the state competition. My
-              students are grown now and many are studying STEM fields in
-              college. It's exciting to see them begin STEM careers.
+              three teams qualify to go to state competitions and one team won
+              the IBM Award for Innovation at the state competition. My students
+              are grown now and many are studying STEM fields in college. It's
+              exciting to see them begin STEM careers.
             </p>
           </div>
         </div>
@@ -70,7 +78,7 @@ function LegoRoboticsPage() {
           <div className="videoHolder">
             <iframe
               className="iframe-video"
-              src="https://www.youtube.com/embed/z5l7fa2riSU?si=zYK2FgTyhdXj7URZ"
+              src="https://www.youtube.com/embed/rsEAEUUMDEw?si=pQcVerHpI2WB_ka-"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
