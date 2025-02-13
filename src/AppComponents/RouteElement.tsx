@@ -2,6 +2,8 @@ import Page from "./page";
 import ClimbingPage from "../Projects/ClimbingPage";
 import LegoRoboticsPage from "../Projects/LegoRoboticsPage";
 import GoldfishRobinPage from "../Projects/GoldfishRobinPage";
+import WildthinksPage from "../Projects/WildthinksPage";
+import LocalsearchPage from "../Projects/LocalsearchPage";
 import { Route, Routes } from "react-router-dom";
 
 export function RouteElement() {
@@ -12,6 +14,8 @@ export function RouteElement() {
         <Route path="robotics" element={<LegoRoboticsPage />} />
         <Route path="goldfishandrobin" element={<GoldfishRobinPage />} />
         <Route path="climbing" element={<ClimbingPage />} />
+        <Route path="wildthinks" element={<WildthinksPage />} />
+        <Route path="localsearch" element={<LocalsearchPage />} />
       </Route>
     </Routes>
   );

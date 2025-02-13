@@ -1,5 +1,6 @@
 import "./ProjectsTab.css";
 import roboticsPic from "../assets/legoRobotics.jpg";
+import wildthinksPic from "../assets/penroseLogoVert.jpg";
 import { Link } from "react-router-dom";
 
 function scrollFunction(event: any) {
@@ -67,7 +68,7 @@ function ProjectsTab() {
           <img
             id="image"
             className="gif"
-            src="highresshortvid.gif"
+            src=""
             alt=""
             onMouseDown={enableScroll}
           ></img>
@@ -77,6 +78,24 @@ function ProjectsTab() {
             id="image"
             className="gif"
             src="highresshortvid.gif"
+            alt=""
+            onMouseDown={enableScroll}
+          ></img>
+        </Link>
+        <Link className="project" to="/localsearch">
+          <img
+            id="image"
+            className="gif"
+            src=""
+            alt=""
+            onMouseDown={enableScroll}
+          ></img>
+        </Link>
+        <Link className="project" to="/wildthinks">
+          <img
+            id="image"
+            className="gif"
+            src={wildthinksPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
