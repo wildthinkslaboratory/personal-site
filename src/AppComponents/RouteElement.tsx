@@ -4,6 +4,8 @@ import LegoRoboticsPage from "../Projects/LegoRoboticsPage";
 import GoldfishRobinPage from "../Projects/GoldfishRobinPage";
 import WildthinksPage from "../Projects/WildthinksPage";
 import LocalsearchPage from "../Projects/LocalsearchPage";
+import ArtPage from "../Projects/ArtPage";
+
 import { Route, Routes } from "react-router-dom";
 
 export function RouteElement() {
@@ -16,6 +18,7 @@ export function RouteElement() {
         <Route path="climbing" element={<ClimbingPage />} />
         <Route path="wildthinks" element={<WildthinksPage />} />
         <Route path="localsearch" element={<LocalsearchPage />} />
+        <Route path="art" element={<ArtPage />} />
       </Route>
     </Routes>
   );

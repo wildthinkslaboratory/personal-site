@@ -1,3 +1,4 @@
+import robotartPic from "../assets/robotart.jpeg";
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
 
@@ -12,10 +13,8 @@ function LegoRoboticsPage() {
           <div className="projectTitle">Coaching Robotics</div>
           <div className="projectParagraph">
             <p>
-              I love seeing the sense of wonder and amazement that children
-              experience when they learn new ideas. Their ideas of what to build
-              and what is possible are so creative, fanciful and sometimes
-              crazy. Also, kids are just better at having fun than adults. My
+              Kids are more fun than adults and I loved all the creative,
+              fanciful and sometimes crazy ideas my students came up with. My
               job as a coach is to give them the tools to make their ideas
               practical and realizable. Coaching robotics was a lot of work, but
               it was rewarding and just so joyful.
@@ -34,7 +33,8 @@ function LegoRoboticsPage() {
               <a href="https://www.firstlegoleague.org/">
                 First Lego League (FLL)
               </a>{" "}
-              competitions.
+              competitions. Check out the videos on the right to see some of my
+              teams in action.
             </p>
             <p>
               My fourth and fifth grade teams focused on learning basic coding
@@ -85,6 +85,14 @@ function LegoRoboticsPage() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
+          </div>
+          <div className="projectImageHolder">
+            <img
+              id="image"
+              className="projectImage"
+              src={robotartPic}
+              alt=""
+            ></img>
           </div>
         </div>
       </div>
