@@ -1,10 +1,7 @@
 import "./ProjectsTab.css";
-import roboticsPic from "../assets/legoRobotics.jpg";
-import wildthinksPic from "../assets/penroseLogoVert.jpg";
-import GRPic from "../assets/GR.png";
+import ucPic from "../assets/uc.png";
 import localsearchPic from "../assets/localsearch2.png";
-import artPic from "../assets/chalkoctopus.jpeg";
-
+import wildthinksPic from "../assets/penroseLogoVert.jpg";
 import { Link } from "react-router-dom";
 
 // function scrollFunction(event: any) {
@@ -42,31 +39,12 @@ function ProjectsTab() {
           </div>
         </div>
       </div>
-      {/* <div
-        id={"projectScroller"}
-        className="projectScroller"
-        onMouseEnter={disableScroll}
-        onWheel={scrollFunction}
-        onMouseLeave={enableScroll}
-      > */}
       <div id="projectDisplay" className="projectDisplay">
-        <Link className="project" to="/robotics">
-          <div className="imageHolder">
-            <img
-              id="image"
-              className="gif"
-              width="100%"
-              src={roboticsPic}
-              alt=""
-              onMouseDown={enableScroll}
-            ></img>
-          </div>
-        </Link>
-        <Link className="project" to="/goldfishandrobin">
+        <Link className="project" to="/wildthinks">
           <img
             id="image"
             className="gif"
-            src={GRPic}
+            src={wildthinksPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
@@ -80,29 +58,38 @@ function ProjectsTab() {
             onMouseDown={enableScroll}
           ></img>
         </Link>
-        <Link className="project" to="/wildthinks">
+        <Link className="project" to="/pbchaff">
           <img
             id="image"
             className="gif"
-            src={wildthinksPic}
+            src={ucPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
         </Link>
-        <Link className="project" to="/climbing">
+        <Link className="project" to="/zap">
           <img
             id="image"
             className="gif"
-            src="highresshortvid.gif"
+            src={ucPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
         </Link>
-        <Link className="project" to="/art">
+        <Link className="project" to="/proofcomplexity">
           <img
             id="image"
             className="gif"
-            src={artPic}
+            src={ucPic}
+            alt=""
+            onMouseDown={enableScroll}
+          ></img>
+        </Link>
+        <Link className="project" to="/greendriver">
+          <img
+            id="image"
+            className="gif"
+            src={ucPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>

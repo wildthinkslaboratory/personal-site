@@ -5,6 +5,10 @@ import GoldfishRobinPage from "../Projects/GoldfishRobinPage";
 import WildthinksPage from "../Projects/WildthinksPage";
 import LocalsearchPage from "../Projects/LocalsearchPage";
 import ArtPage from "../Projects/ArtPage";
+import ChalkbotPage from "../Projects/ChalkbotPage";
+import HomeschoolPage from "../Projects/HomeschoolPage";
+import TeachingUOPage from "../Projects/TeachingUOPage";
+import PianoPage from "../Projects/PianoPage";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -19,6 +23,10 @@ export function RouteElement() {
         <Route path="wildthinks" element={<WildthinksPage />} />
         <Route path="localsearch" element={<LocalsearchPage />} />
         <Route path="art" element={<ArtPage />} />
+        <Route path="chalkbot" element={<ChalkbotPage />} />
+        <Route path="homeschool" element={<HomeschoolPage />} />
+        <Route path="teachingUO" element={<TeachingUOPage />} />
+        <Route path="piano" element={<PianoPage />} />
       </Route>
     </Routes>
   );

@@ -31,6 +31,13 @@ function PublicationsTab() {
             Journal of Artificial Intelligence Research, 23:441-531.
           </li>
           <li>
+            Heidi E. Dixon, PhD Thesis.{" "}
+            <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884">
+              Automating Pseudo-Boolean Inference withing a DPLL Framework
+            </a>{" "}
+            University of Oregon. 2004.
+          </li>
+          <li>
             Heidi E. Dixon, Matthew L. Ginsberg, Eugene M. Luks, and Andrew J.
             Parkes, 2004.{" "}
             <a href="https://arxiv.org/abs/1109.2134">

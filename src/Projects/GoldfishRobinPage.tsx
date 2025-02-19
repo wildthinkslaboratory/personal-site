@@ -13,14 +13,10 @@ function GoldfishRobinPage() {
           <div className="projectParagraph">
             <p>
               This all started with my kids. They desperately wanted to have a
-              YouTube Channel but they were so young. I feel strongly that kids
-              shouldn’t post anything online except in very controlled
-              circumstances. There are many reasons for this that I won’t go
-              into here. But they were so serious and so committed that I agreed
-              to a channel if it was educational and that I would review all
-              posts before they were uploaded. They decided to make a series of
-              videos about programming in Minecraft, their current obsession. I
-              helped them organize their ideas a bit and we learned editing
+              YouTube Channel. I agreed to a channel if it was educational and
+              that I would review all posts before they were uploaded. They
+              decided to make a series of videos about programming in Minecraft.
+              I helped them organize their ideas a bit and we learned editing
               together. That’s how{" "}
               <a href="https://www.youtube.com/@goldfishandrobin7020">
                 GoldfisAndRobin

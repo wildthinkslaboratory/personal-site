@@ -18,17 +18,9 @@ function WildthinksPage() {
           <div className="projectParagraph">
             <p>Wildthinks page content.</p>
             <p>
-              I love seeing the sense of wonder and amazement that children
-              experience when they learn new ideas. Their ideas of what to build
-              and what is possible are so creative, fanciful and sometimes
-              crazy. Also, kids are just better at having fun than adults. My
-              job as a coach is to give them the tools to make their ideas
-              practical and realizable. Coaching robotics was a lot of work, but
-              it was rewarding and just so joyful.{" "}
-              <a href="https://www.youtube.com/@goldfishandrobin7020">
-                GoldfisAndRobin
-              </a>{" "}
+              <a href="wildthinks.org">Wildthinks</a>
             </p>
+            <p>Links to some of my favorite content to the right.</p>
           </div>
         </div>
 
@@ -53,15 +45,16 @@ function WildthinksPage() {
               ></img>
             </a>
           </div>
-          <div className="projectImageHolder">
-            <a href="https://wildthinks.org/pages/circCoord/">
-              <img
-                id="image"
-                className="projectImage"
-                src={circPic}
-                alt=""
-              ></img>
-            </a>
+          <div className="videoHolder">
+            <iframe
+              className="iframe-video"
+              src="https://www.youtube.com/embed/oXyek2Q40AI?si=E3mT4sUw4i__iz1Z"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="projectImageHolder">
             <a href="https://wildthinks.org/pages/rectangle1/">

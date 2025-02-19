@@ -45,8 +45,10 @@ function ClimbingPage() {
           </div>
           <div className="videoHolder">
             <iframe
-              className="iframe-shorts-video"
-              src="https://youtube.com/embed/viKgQPY6ncE?si=t-KqG1hJ_wxUwG9W"
+              className="iframe-video"
+              width="315"
+              height="560"
+              src="https://www.youtube.com/embed/X6yaPpIIUHk?si=ve9GLNRWEq8SIGky"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -56,9 +58,7 @@ function ClimbingPage() {
           <div className="videoHolder">
             <iframe
               className="iframe-shorts-video"
-              width="315"
-              height="560"
-              src="https://youtube.com/embed/Mc2gx_bJU2o?si=GhxfhCQQpv1S6yDW"
+              src="https://youtube.com/embed/viKgQPY6ncE?si=t-KqG1hJ_wxUwG9W"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

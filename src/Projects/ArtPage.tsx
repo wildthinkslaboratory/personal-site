@@ -3,8 +3,9 @@ import teapotPic from "../assets/teapot.jpeg";
 import artdecoPic from "../assets/artdecowall.jpeg";
 import chalkBotPic from "../assets/chalkbot.jpeg";
 import facepaintPic from "../assets/facepaint2.jpeg";
-import reneequiltPic from "../assets/reneequilt2.jpeg";
-import heronPic from "../assets/heron.jpeg";
+import knitFish from "../assets/knitfish.jpg";
+import owlPic from "../assets/owl.jpg";
+import izzyquiltPic from "../assets/treequilt.jpg";
 
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
@@ -17,29 +18,23 @@ function ArtPage() {
       </Link>
       <div className="horizDiv">
         <div className="vertDiv">
-          <div className="projectTitle">Art</div>
+          <div className="projectTitle">Arts and Crafts</div>
           <div className="projectParagraph">
-            <p>Wildthinks page content.</p>
             <p>
-              I love seeing the sense of wonder and amazement that children
-              experience when they learn new ideas. Their ideas of what to build
-              and what is possible are so creative, fanciful and sometimes
-              crazy. Also, kids are just better at having fun than adults. My
-              job as a coach is to give them the tools to make their ideas
-              practical and realizable. Coaching robotics was a lot of work, but
-              it was rewarding and just so joyful.{" "}
-              <a href="https://www.youtube.com/@goldfishandrobin7020">
-                GoldfisAndRobin
-              </a>{" "}
+              I do a lot of arts and crafts. Here is a selection of my work in
+              various mediums.
             </p>
           </div>
         </div>
         <div className="imageScroller">
           <div className="projectImageHolder">
+            <img id="image" className="projectImage" src={owlPic} alt=""></img>
+          </div>
+          <div className="projectImageHolder">
             <img
               id="image"
               className="projectImage"
-              src={artdecoPic}
+              src={izzyquiltPic}
               alt=""
             ></img>
           </div>
@@ -48,6 +43,22 @@ function ArtPage() {
               id="image"
               className="projectImage"
               src={snowbunnyPic}
+              alt=""
+            ></img>
+          </div>
+          <div className="projectImageHolder">
+            <img
+              id="image"
+              className="projectImage"
+              src={chalkBotPic}
+              alt=""
+            ></img>
+          </div>
+          <div className="projectImageHolder">
+            <img
+              id="image"
+              className="projectImage"
+              src={knitFish}
               alt=""
             ></img>
           </div>
@@ -71,23 +82,7 @@ function ArtPage() {
             <img
               id="image"
               className="projectImage"
-              src={chalkBotPic}
-              alt=""
-            ></img>
-          </div>
-          <div className="projectImageHolder">
-            <img
-              id="image"
-              className="projectImage"
-              src={reneequiltPic}
-              alt=""
-            ></img>
-          </div>
-          <div className="projectImageHolder">
-            <img
-              id="image"
-              className="projectImage"
-              src={heronPic}
+              src={artdecoPic}
               alt=""
             ></img>
           </div>

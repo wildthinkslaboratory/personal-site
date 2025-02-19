@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
 
-function ArtPage() {
+function PianoPage() {
   return (
     <div className="projectDiv">
       <Link className="homeButton" to="/">
@@ -28,12 +28,7 @@ function ArtPage() {
         </div>
         <div className="imageScroller">
           <div className="projectImageHolder">
-            <img
-              id="image"
-              className="projectImage"
-              src={artdecoPic}
-              alt=""
-            ></img>
+            <img id="image" className="projectImage" src="" alt=""></img>
           </div>
         </div>
       </div>
@@ -41,4 +36,4 @@ function ArtPage() {
   );
 }
 
-export default ArtPage;
+export default PianoPage;

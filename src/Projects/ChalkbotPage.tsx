@@ -1,7 +1,9 @@
+import chalkBotPic from "../assets/chalkbot.jpeg";
+
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
 
-function ArtPage() {
+function ChalkbotPage() {
   return (
     <div className="projectDiv">
       <Link className="homeButton" to="/">
@@ -9,20 +11,35 @@ function ArtPage() {
       </Link>
       <div className="horizDiv">
         <div className="vertDiv">
-          <div className="projectTitle">Homeschool Page</div>
+          <div className="projectTitle">ChalkBot</div>
           <div className="projectParagraph">
-            <p>Wildthinks page content.</p>
             <p>
-              I love seeing the sense of wonder and amazement that children
-              experience when they learn new ideas. Their ideas of what to build
-              and what is possible are so creative, fanciful and sometimes
-              crazy. Also, kids are just better at having fun than adults. My
-              job as a coach is to give them the tools to make their ideas
-              practical and realizable. Coaching robotics was a lot of work, but
-              it was rewarding and just so joyful.{" "}
-              <a href="https://www.youtube.com/@goldfishandrobin7020">
-                GoldfisAndRobin
-              </a>{" "}
+              I made ChalkBot when I took Mark Rober's online{" "}
+              <a href="https://studio.com/mark-rober-engineering/landing">
+                Creative Engineering class
+              </a>
+              . I made a two dimensional CNC (computer numerical control) style
+              printer that could be used to make chalk drawings on the pavement.
+              I don't have much hardware and engineering experience so I was
+              definitely out of my element.
+            </p>
+            <p>
+              When drawing, the error in the y direction can be minimized by
+              providing a frame for the robot to move in. The main technical
+              challenge is to reduce the error in the x direction which slowly
+              accumulates over the process of a print. For a very big and
+              complex drawing, you can reduce this error by periodically zeroing
+              the machine. This means stopping the drawing and returning the pen
+              to the zero position and backing the machine up against the frame.
+              This resets the y position to the proper zero position. I used the
+              open source <a href="https://github.com/grbl/grbl">grbl</a> CNC
+              software to print my drawings.
+            </p>
+            <p>
+              ChalkBot has been decommisioned and most of it's parts have been
+              scavenged by my kids for other projects. I still dream of building
+              a better version of her and painting the worlds sidewalks with
+              math.
             </p>
           </div>
         </div>
@@ -31,9 +48,31 @@ function ArtPage() {
             <img
               id="image"
               className="projectImage"
-              src={artdecoPic}
+              src={chalkBotPic}
               alt=""
             ></img>
+          </div>
+          <div className="videoHolder">
+            <iframe
+              className="iframe-video"
+              src="https://www.youtube.com/embed/vNnUfUm6iQ8?si=8hpKzw5JwqkbqEm6"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="videoHolder">
+            <iframe
+              className="iframe-video"
+              src="https://www.youtube.com/embed/Tdn9ZR6qVBE?si=KhFjbuUBvQDiDec_"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -41,4 +80,4 @@ function ArtPage() {
   );
 }
 
-export default ArtPage;
+export default ChalkbotPage;
