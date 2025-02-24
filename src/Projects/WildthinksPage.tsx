@@ -1,5 +1,4 @@
 import julia13Pic from "../assets/julia13.png";
-import circPic from "../assets/circ.png";
 import ftcPic from "../assets/ftc.png";
 import calcRectPic from "../assets/calcRect.png";
 
@@ -18,7 +17,7 @@ function WildthinksPage() {
           <div className="projectParagraph">
             <p>Wildthinks page content.</p>
             <p>
-              <a href="wildthinks.org">Wildthinks</a>
+              <a href="https://wildthinks.org/">Wildthinks</a>
             </p>
             <p>Links to some of my favorite content to the right.</p>
           </div>

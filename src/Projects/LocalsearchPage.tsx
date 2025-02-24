@@ -42,7 +42,8 @@ function LocalsearchPage() {
               in the{" "}
               <a href="https://github.com/wildthinkslaboratory/boggle/blob/main/README.md">
                 README
-              </a>
+              </a>{" "}
+              file.
             </p>
           </div>
         </div>

@@ -1,4 +1,7 @@
 import chalkBotPic from "../assets/chalkbot.jpeg";
+import electronicsPic from "../assets/electronics.jpeg";
+import chalkBot2Pic from "../assets/chalkbot2.jpeg";
+import chalkBot3Pic from "../assets/chalkbot3.jpeg";
 
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
@@ -44,6 +47,17 @@ function ChalkbotPage() {
           </div>
         </div>
         <div className="imageScroller">
+          <div className="videoHolder">
+            <iframe
+              className="iframe-video"
+              src="https://www.youtube.com/embed/Tdn9ZR6qVBE?si=KhFjbuUBvQDiDec_"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
           <div className="projectImageHolder">
             <img
               id="image"
@@ -55,7 +69,7 @@ function ChalkbotPage() {
           <div className="videoHolder">
             <iframe
               className="iframe-video"
-              src="https://www.youtube.com/embed/vNnUfUm6iQ8?si=8hpKzw5JwqkbqEm6"
+              src="https://www.youtube.com/embed/X55FPYN8blc?si=63p6wqMWMn7Oc6x8"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,16 +77,29 @@ function ChalkbotPage() {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="videoHolder">
-            <iframe
-              className="iframe-video"
-              src="https://www.youtube.com/embed/Tdn9ZR6qVBE?si=KhFjbuUBvQDiDec_"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <div className="projectImageHolder">
+            <img
+              id="image"
+              className="projectImage"
+              src={chalkBot2Pic}
+              alt=""
+            ></img>
+          </div>
+          <div className="projectImageHolder">
+            <img
+              id="image"
+              className="projectImage"
+              src={electronicsPic}
+              alt=""
+            ></img>
+          </div>
+          <div className="projectImageHolder">
+            <img
+              id="image"
+              className="projectImage"
+              src={chalkBot3Pic}
+              alt=""
+            ></img>
           </div>
         </div>
       </div>

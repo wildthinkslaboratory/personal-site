@@ -1,4 +1,5 @@
 import "./App.css";
+import IntroTab from "../Tabs/IntroTab";
 import ProjectsTab from "../Tabs/ProjectsTab";
 import TeachingTab from "../Tabs/TeachingTab";
 import PublicationsTab from "../Tabs/PublicationsTab";
@@ -8,6 +9,7 @@ function Page() {
   return (
     <div className="App">
       <header className="App-header">
+        <IntroTab></IntroTab>
         <ProjectsTab></ProjectsTab>
         <TeachingTab></TeachingTab>
         <HobbiesTab></HobbiesTab>
