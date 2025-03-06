@@ -35,7 +35,7 @@ function ClimbingPage() {
           <div className="videoHolder">
             <iframe
               className="iframe-video"
-              src="https://www.youtube.com/embed/s7JqHHQ9L_E?si=D88N7B6qNyOPxm2J"
+              src="https://www.youtube.com/embed/A_r-XQ5sLCA?si=B7HV-ogMNFmhvWHg"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,6 +50,17 @@ function ClimbingPage() {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="videoHolder">
+            <iframe
+              className="iframe-video"
+              src="https://www.youtube.com/embed/s7JqHHQ9L_E?si=D88N7B6qNyOPxm2J"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </div>
