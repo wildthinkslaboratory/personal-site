@@ -9,6 +9,7 @@ import ChalkbotPage from "../Projects/ChalkbotPage";
 import HomeschoolPage from "../Projects/HomeschoolPage";
 import TeachingUOPage from "../Projects/TeachingUOPage";
 import PianoPage from "../Projects/PianoPage";
+import ChewonkiPage from "../Projects/ChewonkiPage";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -26,6 +27,7 @@ export function RouteElement() {
         <Route path="chalkbot" element={<ChalkbotPage />} />
         <Route path="homeschool" element={<HomeschoolPage />} />
         <Route path="teachingUO" element={<TeachingUOPage />} />
+        <Route path="chewonki" element={<ChewonkiPage />} />
         <Route path="piano" element={<PianoPage />} />
       </Route>
     </Routes>

@@ -2,6 +2,7 @@ import "./ProjectsTab.css";
 import roboticsPic from "../assets/legoRobotics.jpg";
 import GRPic from "../assets/GR.png";
 import ucPic from "../assets/uc.png";
+import chewonkiPic from "../assets/chewonki.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -91,7 +92,7 @@ function TeachingTab() {
           <img
             id="image"
             className="gif"
-            src={ucPic}
+            src={chewonkiPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
