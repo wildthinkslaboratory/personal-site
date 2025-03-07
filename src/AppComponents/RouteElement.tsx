@@ -10,6 +10,7 @@ import HomeschoolPage from "../Projects/HomeschoolPage";
 import TeachingUOPage from "../Projects/TeachingUOPage";
 import PianoPage from "../Projects/PianoPage";
 import ChewonkiPage from "../Projects/ChewonkiPage";
+import PBChaffPage from "../Projects/PBchaffPage";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -22,6 +23,7 @@ export function RouteElement() {
         <Route path="goldfishandrobin" element={<GoldfishRobinPage />} />
         <Route path="climbing" element={<ClimbingPage />} />
         <Route path="wildthinks" element={<WildthinksPage />} />
+        <Route path="pbchaff" element={<PBChaffPage />} />
         <Route path="localsearch" element={<LocalsearchPage />} />
         <Route path="art" element={<ArtPage />} />
         <Route path="chalkbot" element={<ChalkbotPage />} />

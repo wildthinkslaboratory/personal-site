@@ -2,6 +2,8 @@ import "./ProjectsTab.css";
 import ucPic from "../assets/uc.png";
 import localsearchPic from "../assets/localsearch2.png";
 import wildthinksPic from "../assets/penroseLogoVert.jpg";
+import searchPic from "../assets/search.jpeg";
+
 import { Link } from "react-router-dom";
 
 // function scrollFunction(event: any) {
@@ -62,7 +64,7 @@ function ProjectsTab() {
           <img
             id="image"
             className="gif"
-            src={ucPic}
+            src={searchPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
