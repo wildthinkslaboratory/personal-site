@@ -46,7 +46,7 @@ function ClimbingPage() {
           <div className="videoHolder">
             <iframe
               className="iframe-shorts-video"
-              src="https://youtube.com/embed/XDC2k6AhAaM?si=x8BKrup8cdg6U1YD"
+              src="https://youtube.com/embed/YnA8bkeFmDI?si=E2nuq3ccuAL9DCtZ"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
