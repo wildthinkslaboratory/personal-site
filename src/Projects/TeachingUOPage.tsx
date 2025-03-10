@@ -9,20 +9,16 @@ function TeachingUOPage() {
       </Link>
       <div className="horizDiv">
         <div className="vertDiv">
-          <div className="projectTitle">Homeschool Page</div>
+          <div className="projectTitle">UO teaching</div>
           <div className="projectParagraph">
-            <p>Wildthinks page content.</p>
             <p>
-              I love seeing the sense of wonder and amazement that children
-              experience when they learn new ideas. Their ideas of what to build
-              and what is possible are so creative, fanciful and sometimes
-              crazy. Also, kids are just better at having fun than adults. My
-              job as a coach is to give them the tools to make their ideas
-              practical and realizable. Coaching robotics was a lot of work, but
-              it was rewarding and just so joyful.{" "}
-              <a href="https://www.youtube.com/@goldfishandrobin7020">
-                GoldfisAndRobin
-              </a>{" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
