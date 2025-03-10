@@ -3,6 +3,7 @@ import ucPic from "../assets/uc.png";
 import localsearchPic from "../assets/localsearch2.png";
 import wildthinksPic from "../assets/penroseLogoVert.jpg";
 import searchPic from "../assets/search.jpeg";
+import phPic from "../assets/ph.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -78,11 +79,11 @@ function ProjectsTab() {
             onMouseDown={enableScroll}
           ></img>
         </Link>
-        <Link className="project" to="/proofcomplexity">
+        <Link className="project" to="/proof">
           <img
             id="image"
             className="gif"
-            src={ucPic}
+            src={phPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>

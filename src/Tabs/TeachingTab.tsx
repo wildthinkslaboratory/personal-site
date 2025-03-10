@@ -3,6 +3,7 @@ import roboticsPic from "../assets/legoRobotics.jpg";
 import GRPic from "../assets/GR.png";
 import ucPic from "../assets/uc.png";
 import chewonkiPic from "../assets/chewonki.jpg";
+import uoPic from "../assets/oregonO.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -83,7 +84,7 @@ function TeachingTab() {
           <img
             id="image"
             className="gif"
-            src={ucPic}
+            src={uoPic}
             alt=""
             onMouseDown={enableScroll}
           ></img>
