@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
+import dfaPic from "../assets/dfa.001.jpeg";
 
 function TeachingUOPage() {
   return (
@@ -9,22 +10,46 @@ function TeachingUOPage() {
       </Link>
       <div className="horizDiv">
         <div className="vertDiv">
-          <div className="projectTitle">UO teaching</div>
+          <div className="projectTitle">
+            Adjunct Instructor in Computer Science
+          </div>
           <div className="projectParagraph">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I taught classes in the Computer Science department at the
+              University of Oregon. I taught their undergraduate/graduate level
+              Automata Theory class and the graduate level Algorithms and
+              Complexity class.
+            </p>
+            <p>
+              My automata theory class used Sipser's{" "}
+              <u>Introduction to the Theory of Computation</u> book. Some topics
+              included were regular languages, finite automata (DFA), regular
+              expressions, regular grammars, pushdown automata (PDA), context
+              free grammars, Turing machines, nondeterminism, the Cook-Levin
+              theorem, complexity classes P, NP and NP-complete, undecidable
+              languages and Gödel's incompleteness theorem.
+            </p>
+            <p>
+              My Algorithms and Complexity class covered topics like proofs of
+              correctness, algorithm analysis, amortized time complexity, divide
+              and conquer, dynamic programming, graph algorithms, greedy
+              algorithms, Dijkstra's algorithm, the Cook-Levin theorem,
+              complexity classes P, NP and NP-complete, local search methods.
+            </p>
+            <p>
+              Students taking these classes are expected to know how to write
+              clean well structured proofs. However, in practice, students come
+              to these classes from a wide variety of backgrounds with vastly
+              different levels of preparation. In addition to introducing
+              students to topics in theoretical computer science, a major focus
+              of these classes is helping students refine their proof writing
+              skills.
             </p>
           </div>
         </div>
         <div className="imageScroller">
           <div className="projectImageHolder">
-            <img id="image" className="projectImage" src="" alt=""></img>
+            <img id="image" className="projectImage" src={dfaPic} alt=""></img>
           </div>
         </div>
       </div>
