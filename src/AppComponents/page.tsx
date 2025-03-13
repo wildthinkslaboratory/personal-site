@@ -9,6 +9,13 @@ function Page() {
   return (
     <div className="App">
       <header className="App-header">
+        <nav className="main_nav">
+          <ul>
+            <li className="main_nav_item">Education</li>
+            <li className="main_nav_item">Projects</li>
+            <li className="main_nav_item">Teaching</li>
+          </ul>
+        </nav>
         <IntroTab></IntroTab>
         <ProjectsTab></ProjectsTab>
         <TeachingTab></TeachingTab>

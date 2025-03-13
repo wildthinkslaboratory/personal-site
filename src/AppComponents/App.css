@@ -46,3 +46,11 @@
   font-family: inherit;
   text-align: left;
 }
+
+.main_nav {
+}
+
+.main_nav_item {
+  display: inline-block;
+  padding: 20px;
+}

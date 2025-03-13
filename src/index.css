@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: "Roboto";
   font-optical-sizing: auto;
@@ -10,10 +16,6 @@
   color: rgba(72, 85, 109, 0.87);
   background-color: #ffffff;
 
-  margin: 0;
-  padding: 0;
-
-  box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,14 +23,14 @@
 }
 
 a {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #1f858a;
   text-decoration: inherit;
 }
 
 a:hover,
 a:visited {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #1dc2ec;
 }
 
