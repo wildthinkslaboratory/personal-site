@@ -29,6 +29,7 @@ export default function ResumeItem({
         </div>
         <div className="resume-item-data">
           <h3>{title1}</h3>
+          <h4>{title2}</h4>
           <p>{summary}</p>
         </div>
       </div>

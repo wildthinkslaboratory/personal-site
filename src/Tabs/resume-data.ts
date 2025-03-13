@@ -4,14 +4,14 @@ import wildthinksPic from "../assets/penroseLogoVert.jpg";
 import searchPic from "../assets/search.jpeg";
 // import phPic from "../assets/ph.jpg";
 
-export const RESUME_ITEMS = [
+export const PROJECT_ITEMS = [
   {
     id: 1,
     path: "wildthinks",
-    title1: "Web Developer and Math Curriculum",
-    title2: "WildThinks Website",
+    title1: "WildThinks Website",
+    title2: "",
     summary:
-      "Website with interactive applications of mathematical ideas. Includes a visual introduction to calculus plus interactive apps on fractals, penrose tilings, and alternative base systems.",
+      "I built a website with interactive applications of mathematical ideas. It includes a visual introduction to calculus plus interactive apps on fractals, penrose tilings, and alternative base systems.",
     start_date: "",
     end_date: "",
     image: wildthinksPic,
@@ -32,7 +32,8 @@ export const RESUME_ITEMS = [
     path: "pbchaff",
     title1: "Pseudo-Boolean SAT Solver",
     title2: "",
-    summary: "",
+    summary:
+      "I study systematic search methods for NP-complete problems. I built a pseudo-Boolean satisfiability solver that outperformed traditional SAT solvers on problems from the planning domain.",
     start_date: "",
     end_date: "",
     image: searchPic,

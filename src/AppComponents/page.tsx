@@ -1,26 +1,21 @@
 import "./App.css";
-import IntroTab from "../Tabs/IntroTab";
 import ProjectsTab from "../Tabs/ProjectsTab";
-import TeachingTab from "../Tabs/TeachingTab";
-import PublicationsTab from "../Tabs/PublicationsTab";
-import HobbiesTab from "../Tabs/HobbiesTab";
 
 function Page() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className="main_nav">
-          <ul>
-            <li className="main_nav_item">Education</li>
-            <li className="main_nav_item">Projects</li>
-            <li className="main_nav_item">Teaching</li>
-          </ul>
-        </nav>
-        <IntroTab></IntroTab>
-        <ProjectsTab></ProjectsTab>
-        <TeachingTab></TeachingTab>
-        <HobbiesTab></HobbiesTab>
-        <PublicationsTab></PublicationsTab>
+        <div className="main-page">
+          <div className="main-vertical-header">
+            <h1>Heidi Dixon</h1>
+            <h3 className="identity">
+              creative problem solver, programmer, teacher.
+            </h3>
+          </div>
+          <div className="main-vertical-scroller">
+            <ProjectsTab></ProjectsTab>
+          </div>
+        </div>
       </header>
     </div>
   );
