@@ -1,5 +1,5 @@
 .projectDiv {
-  background-color: #353535;
+  /* background-color: #353535; */
   /* height: 100vh; */
 }
 
@@ -8,16 +8,16 @@
 }
 
 a {
-  color: hotpink;
+  /* color: hotpink; */
 }
 
 .homeButtonTitle {
   padding-top: 1%;
   text-align: left;
   margin-left: 2%;
-  font-size: 3vw;
-  color: white;
-  font-family: Futura;
+  /* font-size: 3vw; */
+  /* color: white; */
+  font-family: inherit;
 }
 
 .horizDiv {
@@ -38,18 +38,18 @@ a {
   margin-left: 7.5%;
   margin-top: 10%;
   text-align: left;
-  font-size: 2vw;
-  color: white;
-  font-family: Futura;
-  font-weight: bold;
+  /* font-size: 2vw; */
+  /* color: white; */
+  font-family: inherit;
+  /* font-weight: bold; */
 }
 
 .projectParagraph {
   margin: 5%;
   text-align: left;
-  color: white;
-  font-family: Futura;
-  font-size: 1vw;
+  /* color: white; */
+  font-family: inherit;
+  /* font-size: 1vw; */
   overflow-y: scroll;
 }
 
@@ -71,7 +71,7 @@ a {
 }
 
 .projectImage {
-  border-radius: 2%;
+  border-radius: 14px;
   width: 100%;
 }
 .musicImage {
@@ -83,7 +83,7 @@ a {
 }
 
 .iframe-video {
-  border-radius: 2%;
+  border-radius: 14px;
   width: 560px;
   height: 315px;
   max-width: 100%;
@@ -91,7 +91,7 @@ a {
 }
 
 .iframe-shorts-video {
-  border-radius: 2%;
+  border-radius: 14px;
   width: 315px;
   height: 560px;
   max-width: 100%;

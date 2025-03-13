@@ -1,12 +1,12 @@
 .publicationsTab {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .publicationList {
-  font-size: 1.5vw;
-  color: #222222;
+  /* font-size: 1.5vw; */
+  /* color: #222222; */
   text-align: left;
-  font-family: Futura;
+  font-family: inherit;
   float: left;
   margin-left: 15%;
   margin-right: 15%;

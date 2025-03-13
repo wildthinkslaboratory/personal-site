@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ProjectPage.css";
 import dfaPic from "../assets/dfa.001.jpeg";
+import phPic from "../assets/ph.jpg";
 
 function TeachingUOPage() {
   return (
@@ -50,6 +51,9 @@ function TeachingUOPage() {
         <div className="imageScroller">
           <div className="projectImageHolder">
             <img id="image" className="projectImage" src={dfaPic} alt=""></img>
+          </div>
+          <div className="projectImageHolder">
+            <img id="image" className="projectImage" src={phPic} alt=""></img>
           </div>
         </div>
       </div>

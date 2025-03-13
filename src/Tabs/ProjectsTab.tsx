@@ -6,6 +6,7 @@ import searchPic from "../assets/search.jpeg";
 import phPic from "../assets/ph.jpg";
 
 import { Link } from "react-router-dom";
+import ResumeList from "./ResumeList";
 
 // function scrollFunction(event: any) {
 //   const carousel = document.getElementById("projectScroller");

@@ -11,9 +11,7 @@ function ChewonkiPage() {
       </Link>
       <div className="horizDiv">
         <div className="vertDiv">
-          <div className="projectTitle">
-            The Chewonki Foundation: Maine Coast Sememster
-          </div>
+          <div className="projectTitle">High School Math Teacher</div>
           <div className="projectParagraph">
             <p>
               I taught high school algebra, calculus and statistics at the{" "}
