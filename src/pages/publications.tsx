@@ -1,16 +1,7 @@
-import "./PublicationsTab.css";
-
-function PublicationsTab() {
+function Publications() {
   return (
-    <div className="publicationsTab">
-      <div className="projectsBorder">
-        <div className="titleDiv">
-          <div className="wordHolder">
-            <div className="projectsTitle">Publications</div>
-          </div>
-        </div>
-      </div>
-
+    <div className="publications-page">
+      <h2>Publications</h2>
       <div className="publicationList">
         <ul>
           <li>
@@ -91,4 +82,4 @@ function PublicationsTab() {
   );
 }
 
-export default PublicationsTab;
+export default Publications;

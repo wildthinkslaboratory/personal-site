@@ -12,6 +12,7 @@ import ChewonkiPage from "../Projects/ChewonkiPage";
 import PBChaffPage from "../Projects/PBchaffPage";
 import ProofPage from "../Projects/ProofPage";
 import ZapPage from "../Projects/ZapPage";
+import Publications from "./publications";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -33,6 +34,7 @@ export function RouteElement() {
         <Route path="chewonki" element={<ChewonkiPage />} />
         <Route path="zap" element={<ZapPage />} />
         <Route path="proof" element={<ProofPage />} />
+        <Route path="pubs" element={<Publications />} />
       </Route>
     </Routes>
   );

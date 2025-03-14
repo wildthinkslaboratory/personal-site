@@ -6,6 +6,9 @@ import roboticsPic from "../../assets/legoRobotics.jpg";
 import grPic from "../../assets/GR.png";
 import uoPic from "../../assets/oregonO.jpg";
 import chewonkiPic from "../../assets/chewonki.jpg";
+import climbingPic from "../../assets/climbingWhite.jpg";
+import artPic from "../../assets/chalkoctopus.jpeg";
+import chalkbotPic from "../../assets/chalkbot.png";
 
 export const PROJECT_ITEMS = [
   {
@@ -47,7 +50,7 @@ export const PROJECT_ITEMS = [
     title1: "Proof Complexity",
     title2: "",
     summary:
-      "I studied propositional proof systems. I created a new proof system that uses permutation groups. It has powerful inference rules and can produce short proofs of many hard combinatorial problems.",
+      "I studied propositional proof systems and created a new proof system that uses permutation groups. It has powerful inference rules and can produce short proofs of many hard combinatorial problems.",
     start_date: "",
     end_date: "",
     image: phPic,
@@ -98,5 +101,26 @@ export const TEACHING_ITEMS = [
     start_date: "",
     end_date: "",
     image: chewonkiPic,
+  },
+];
+
+export const HOBBY_ITEMS = [
+  {
+    id: 1,
+    path: "climbing",
+    title: "rock climbing",
+    image: climbingPic,
+  },
+  {
+    id: 2,
+    path: "art",
+    title: "arts and crafts",
+    image: artPic,
+  },
+  {
+    id: 3,
+    path: "chalkbot",
+    title: "chalkbot",
+    image: chalkbotPic,
   },
 ];
