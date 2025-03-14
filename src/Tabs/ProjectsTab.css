@@ -113,19 +113,19 @@
   transform: translate(-50%, -50%);
 }
 
-#resume-item-page {
+.resume-item-page {
   /* width: 80%;
   max-width: 80rem;
   margin: 3rem auto; */
   padding: 4rem;
 }
 
-#resume-item-page a {
+.resume-item-page a {
   color: rgba(72, 85, 109, 0.87);
   font-weight: normal;
 }
 
-#resume-item-page h2 {
+.resume-item-page h2 {
   /* margin: 2rem 0 0.5rem 0;
   font-size: 1.5rem; */
 }

@@ -32,7 +32,6 @@ export function RouteElement() {
         <Route path="homeschool" element={<HomeschoolPage />} />
         <Route path="teachingUO" element={<TeachingUOPage />} />
         <Route path="chewonki" element={<ChewonkiPage />} />
-        <Route path="piano" element={<PianoPage />} />
         <Route path="zap" element={<ZapPage />} />
         <Route path="proof" element={<ProofPage />} />
       </Route>

@@ -1,6 +1,8 @@
 import "./App.css";
-import ProjectsTab from "../Tabs/ProjectsTab";
-
+import "../Tabs/ProjectsTab.css";
+import ResumeList from "../Tabs/ResumeList";
+import { PROJECT_ITEMS } from "../Tabs/resume-data";
+import { TEACHING_ITEMS } from "../Tabs/resume-data";
 function Page() {
   return (
     <div className="App">
@@ -13,7 +15,12 @@ function Page() {
             </h3>
           </div>
           <div className="main-vertical-scroller">
-            <ProjectsTab></ProjectsTab>
+            <article className="resume-item-page">
+              <ResumeList items={PROJECT_ITEMS} />
+            </article>
+            <article className="resume-item-page">
+              <ResumeList items={TEACHING_ITEMS} />
+            </article>
           </div>
         </div>
       </header>
