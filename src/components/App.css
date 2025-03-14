@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.App-header {
-  /* background-color: #1e1e1e; */
-}
+/* .App-header {
+ 
+} */
 
 .borderDiv {
   margin-top: auto;
@@ -47,8 +47,8 @@
   text-align: left;
 }
 
-.main_nav {
-}
+/* .main_nav {
+} */
 
 .main_nav_item {
   display: inline-block;

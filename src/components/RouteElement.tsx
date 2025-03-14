@@ -8,7 +8,6 @@ import ArtPage from "../Projects/ArtPage";
 import ChalkbotPage from "../Projects/ChalkbotPage";
 import HomeschoolPage from "../Projects/HomeschoolPage";
 import TeachingUOPage from "../Projects/TeachingUOPage";
-import PianoPage from "../Projects/PianoPage";
 import ChewonkiPage from "../Projects/ChewonkiPage";
 import PBChaffPage from "../Projects/PBchaffPage";
 import ProofPage from "../Projects/ProofPage";

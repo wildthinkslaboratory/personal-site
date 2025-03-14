@@ -1,8 +1,9 @@
 import "./App.css";
-import "../Tabs/ProjectsTab.css";
-import ResumeList from "../Tabs/ResumeList";
-import { PROJECT_ITEMS } from "../Tabs/resume-data";
-import { TEACHING_ITEMS } from "../Tabs/resume-data";
+import "./resume/resume.css";
+import ResumeList from "./resume/ResumeList";
+import { PROJECT_ITEMS } from "./resume/resume-data";
+import { TEACHING_ITEMS } from "./resume/resume-data";
+
 function Page() {
   return (
     <div className="App">
