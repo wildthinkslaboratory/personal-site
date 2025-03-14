@@ -1,5 +1,32 @@
-import ResumeItem from "./ResumeItem";
-import { ResumeItemProps } from "./ResumeItem";
+import { Link } from "react-router-dom";
+
+type ResumeItemProps = {
+  id: number;
+  path: string;
+  title1: string;
+  title2: string;
+  summary: string;
+  start_date: string;
+  end_date: string;
+  image: string;
+};
+
+function ResumeItem({ path, title1, title2, summary, image }: ResumeItemProps) {
+  return (
+    <Link to={path}>
+      <div className="resume-item">
+        <div className="resume-item-image-holder">
+          <img src={image} />
+        </div>
+        <div className="resume-item-data">
+          <h3>{title1}</h3>
+          <h4>{title2}</h4>
+          <p>{summary}</p>
+        </div>
+      </div>
+    </Link>
+  );
+}
 
 type ResumeItemListProps = {
   items: ResumeItemProps[];

@@ -1,6 +1,6 @@
 .resume-item-page {
   /* padding: 0 4rem; */
-  padding: 0 4rem 2rem 4rem;
+  padding: 0 6rem 2rem 6rem;
 }
 
 .resume-item-page a {
@@ -89,5 +89,24 @@
   display: inline-block;
   font-weight: bold;
   font-size: x-large;
-  margin: 0 8px 0 0;
+  margin: 0 10px 0 0;
+}
+
+.education-item {
+  padding: 20px 40px 20px 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.education-item .year {
+  font-size: large;
+  display: inline-block;
+  margin: 0 40px;
+  vertical-align: middle;
+}
+
+.education-item .school-info {
+  display: inline-block;
+  width: 75%;
+  vertical-align: middle;
 }

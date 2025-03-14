@@ -3,10 +3,12 @@ import "../components/resume.css";
 import ResumeList from "../components/ResumeList";
 import HobbyList from "../components/Hobby";
 import Socials from "../components/Socials";
+import EducationList from "../components/EducationList";
 
 import { PROJECT_ITEMS } from "../components/resume-data";
 import { TEACHING_ITEMS } from "../components/resume-data";
 import { HOBBY_ITEMS } from "../components/resume-data";
+import { EDUCATION_ITEMS } from "../components/resume-data";
 
 function Page() {
   return (
@@ -34,6 +36,10 @@ function Page() {
         <article className="resume-item-page">
           <h2>Teaching</h2>
           <ResumeList items={TEACHING_ITEMS} />
+        </article>
+        <article className="resume-item-page">
+          <h2>Education</h2>
+          <EducationList items={EDUCATION_ITEMS} />
         </article>
       </div>
     </main>

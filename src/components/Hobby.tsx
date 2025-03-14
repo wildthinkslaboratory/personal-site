@@ -7,7 +7,7 @@ export type HobbyProps = {
   image: string;
 };
 
-function Hobby({ id, path, title, image }: HobbyProps) {
+function Hobby({ path, image }: HobbyProps) {
   return (
     <Link to={path}>
       <div className="hobby-image-holder">

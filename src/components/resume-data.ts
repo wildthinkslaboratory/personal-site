@@ -124,3 +124,25 @@ export const HOBBY_ITEMS = [
     image: chalkbotPic,
   },
 ];
+
+export const EDUCATION_ITEMS = [
+  {
+    id: 1,
+    advisor: "Advisor: Matthew Ginsberg",
+    thesis:
+      "Thesis: Automating Pseudo-Boolean Inference within a DPLL Framework",
+    department: "Computer Science",
+    school: "University of Oregon",
+    degree: "Ph.D.",
+    year: "2004",
+  },
+  {
+    id: 2,
+    advisor: "",
+    thesis: "",
+    department: "Geology",
+    school: "Oberlin College",
+    degree: "B.A.",
+    year: "1993",
+  },
+];
