@@ -41,6 +41,7 @@ function Page() {
           <h2>Education</h2>
           <EducationList items={EDUCATION_ITEMS} />
         </article>
+        <div className="footer"></div>
       </div>
     </main>
   );

@@ -7,6 +7,24 @@ function ZapPage() {
       <Link className="homeButton" to="/">
         <div className="homeButtonTitle">HOME</div>
       </Link>
+      <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">
+        Robot icons created by Dooder - Flaticon
+      </a>
+      <a
+        href="https://www.flaticon.com/free-icons/rock-climbing"
+        title="rock climbing icons"
+      >
+        Rock climbing icons created by cube29 - Flaticon
+      </a>
+      <a
+        href="https://www.flaticon.com/free-icons/watercolor"
+        title="Watercolor icons"
+      >
+        Watercolor icons created by Nhor Phai - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/craft" title="craft icons">
+        Craft icons created by Icongeek26 - Flaticon
+      </a>
       <div className="horizDiv">
         <div className="vertDiv">
           <div className="projectTitle">ZAP</div>
