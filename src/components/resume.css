@@ -1,5 +1,6 @@
 .resume-item-page {
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
+  padding: 0 4rem 2rem 4rem;
 }
 
 .resume-item-page a {
@@ -42,7 +43,7 @@
 
 .resume-item-data {
   display: inline-block;
-  padding: 20px;
+  padding: 20px 40px 20px 20px;
   width: 75%;
   text-align: left;
   vertical-align: middle;

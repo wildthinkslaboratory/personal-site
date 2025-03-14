@@ -14,12 +14,12 @@ export default function Socials() {
       </li>
       <li>
         <a href="">
-          <FiBook />
+          <SiReaddotcv />
         </a>
       </li>
       <li>
         <Link to="pubs">
-          <SiReaddotcv />
+          <FiBook />
         </Link>
       </li>
     </ul>

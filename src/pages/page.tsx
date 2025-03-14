@@ -1,12 +1,12 @@
 import "../App.css";
-import "../components/resume/resume.css";
-import ResumeList from "../components/resume/ResumeList";
-import HobbyList from "../components/resume/Hobby";
-import Socials from "../components/resume/Socials";
+import "../components/resume.css";
+import ResumeList from "../components/ResumeList";
+import HobbyList from "../components/Hobby";
+import Socials from "../components/Socials";
 
-import { PROJECT_ITEMS } from "../components/resume/resume-data";
-import { TEACHING_ITEMS } from "../components/resume/resume-data";
-import { HOBBY_ITEMS } from "../components/resume/resume-data";
+import { PROJECT_ITEMS } from "../components/resume-data";
+import { TEACHING_ITEMS } from "../components/resume-data";
+import { HOBBY_ITEMS } from "../components/resume-data";
 
 function Page() {
   return (
@@ -28,9 +28,11 @@ function Page() {
       </div>
       <div className="main-vertical-scroller">
         <article className="resume-item-page">
+          <h2>Projects</h2>
           <ResumeList items={PROJECT_ITEMS} />
         </article>
         <article className="resume-item-page">
+          <h2>Teaching</h2>
           <ResumeList items={TEACHING_ITEMS} />
         </article>
       </div>

@@ -1,14 +1,14 @@
-import localsearchPic from "../../assets/localsearch2.png";
-import wildthinksPic from "../../assets/penroseLogoVert.jpg";
-import searchPic from "../../assets/search.jpeg";
-import phPic from "../../assets/ph.jpg";
-import roboticsPic from "../../assets/legoRobotics.jpg";
-import grPic from "../../assets/GR.png";
-import uoPic from "../../assets/oregonO.jpg";
-import chewonkiPic from "../../assets/chewonki.jpg";
-import climbingPic from "../../assets/climbingWhite.jpg";
-import artPic from "../../assets/chalkoctopus.jpeg";
-import chalkbotPic from "../../assets/chalkbot.png";
+import localsearchPic from "../assets/localsearch2.png";
+import wildthinksPic from "../assets/penroseLogoVert.jpg";
+import searchPic from "../assets/search.jpeg";
+import phPic from "../assets/ph.jpg";
+import roboticsPic from "../assets/legoRobotics.jpg";
+import grPic from "../assets/GR.png";
+import uoPic from "../assets/oregonO.jpg";
+import chewonkiPic from "../assets/chewonki.jpg";
+import climbingPic from "../assets/climbingWhite.jpg";
+import artPic from "../assets/chalkoctopus.jpeg";
+import chalkbotPic from "../assets/chalkbot.png";
 
 export const PROJECT_ITEMS = [
   {
