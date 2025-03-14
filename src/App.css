@@ -85,3 +85,29 @@
   overflow-y: scroll;
   width: 60%;
 }
+
+.gif {
+  width: 100%;
+  /* margin-top: -30%; */
+}
+
+.music {
+  width: 100%;
+  margin-top: 0%;
+}
+
+.imageHolder {
+  position: relative;
+  text-align: center;
+  /* color: white; */
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  font-size: 2vw;
+  /* color: black; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

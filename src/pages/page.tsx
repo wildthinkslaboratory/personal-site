@@ -1,8 +1,8 @@
-import "./App.css";
-import "./resume/resume.css";
-import ResumeList from "./resume/ResumeList";
-import { PROJECT_ITEMS } from "./resume/resume-data";
-import { TEACHING_ITEMS } from "./resume/resume-data";
+import "../App.css";
+import "../components/resume/resume.css";
+import ResumeList from "../components/resume/ResumeList";
+import { PROJECT_ITEMS } from "../components/resume/resume-data";
+import { TEACHING_ITEMS } from "../components/resume/resume-data";
 
 function Page() {
   return (
