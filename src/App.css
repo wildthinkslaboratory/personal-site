@@ -5,7 +5,7 @@
 
 .main-vertical-scroller,
 .main-vertical-header {
-  padding-top: 80px;
+  padding-top: 12vh;
 }
 
 .main-vertical-header {
@@ -13,8 +13,9 @@
   left: 0;
   top: 0;
   position: relative;
-  width: 35%;
-  margin: 0 0 8vw 8vw;
+  width: 25%;
+  margin: 0 0 10vh 10vw;
+  min-width: 200px;
 }
 
 .main-vertical-header,
@@ -38,5 +39,6 @@
   flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
-  width: 60%;
+  width: 74%;
+  min-width: 700px;
 }
