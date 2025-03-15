@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export type HobbyProps = {
-  id: number;
   path: string;
   title: string;
   image: string;
@@ -27,8 +26,8 @@ type HobbyListProps = {
 export default function HobbyList({ items }: HobbyListProps) {
   return (
     <ul className="hobby-list">
-      {items.map((item) => (
-        <li key={item.id}>
+      {items.map((item, index) => (
+        <li key={index}>
           <Hobby {...item} />
         </li>
       ))}

@@ -1,5 +1,4 @@
 export type EducationItemProps = {
-  id: number;
   advisor: string;
   thesis: string;
   department: string;
@@ -39,8 +38,8 @@ type EducationListProps = {
 export default function EducationList({ items }: EducationListProps) {
   return (
     <ul className="resume-item-list">
-      {items.map((item) => (
-        <li key={item.id}>
+      {items.map((item, index) => (
+        <li key={index}>
           <EducationItem {...item} />
         </li>
       ))}

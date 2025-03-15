@@ -9,10 +9,13 @@ import chewonkiPic from "../assets/chewonki.jpg";
 import climbingPic from "../assets/travel.png";
 import artPic from "../assets/craft.png";
 import chalkbotPic from "../assets/delivery.png";
+import ucPic from "../assets/uc.png";
+
+// import bogglePic from "../assets/boggle.png";
+import localsearchPic2 from "../assets/localsearch.png";
 
 export const PROJECT_ITEMS = [
   {
-    id: 1,
     path: "wildthinks",
     title1: "WildThinks Website",
     title2: "",
@@ -23,7 +26,6 @@ export const PROJECT_ITEMS = [
     image: wildthinksPic,
   },
   {
-    id: 2,
     path: "localsearch",
     title1: "Local Search Algorithms",
     title2: "",
@@ -34,7 +36,6 @@ export const PROJECT_ITEMS = [
     image: localsearchPic,
   },
   {
-    id: 3,
     path: "pbchaff",
     title1: "Pseudo-Boolean SAT Solver",
     title2: "",
@@ -45,7 +46,6 @@ export const PROJECT_ITEMS = [
     image: searchPic,
   },
   {
-    id: 4,
     path: "proof",
     title1: "Proof Complexity",
     title2: "",
@@ -59,7 +59,6 @@ export const PROJECT_ITEMS = [
 
 export const TEACHING_ITEMS = [
   {
-    id: 1,
     path: "robotics",
     title1: "Robotics Coach",
     title2: "",
@@ -70,7 +69,6 @@ export const TEACHING_ITEMS = [
     image: roboticsPic,
   },
   {
-    id: 2,
     path: "goldfishandrobin",
     title1: "Goldfish and Robin YouTube Channel",
     title2: "",
@@ -81,7 +79,6 @@ export const TEACHING_ITEMS = [
     image: grPic,
   },
   {
-    id: 3,
     path: "teachingUO",
     title1: "Adjunct Instructor",
     title2: "",
@@ -92,7 +89,6 @@ export const TEACHING_ITEMS = [
     image: uoPic,
   },
   {
-    id: 4,
     path: "chewonki",
     title1: "High School Mathematics Teacher",
     title2: "",
@@ -102,23 +98,29 @@ export const TEACHING_ITEMS = [
     end_date: "",
     image: chewonkiPic,
   },
+  {
+    path: "homeschool",
+    title1: "Homeschool Teacher",
+    title2: "",
+    summary: "",
+    start_date: "",
+    end_date: "",
+    image: ucPic,
+  },
 ];
 
 export const HOBBY_ITEMS = [
   {
-    id: 1,
     path: "climbing",
     title: "rock climbing",
     image: climbingPic,
   },
   {
-    id: 2,
     path: "art",
     title: "arts and crafts",
     image: artPic,
   },
   {
-    id: 3,
     path: "chalkbot",
     title: "chalkbot",
     image: chalkbotPic,
@@ -127,7 +129,6 @@ export const HOBBY_ITEMS = [
 
 export const EDUCATION_ITEMS = [
   {
-    id: 1,
     advisor: "Advisor: Matthew Ginsberg",
     thesis:
       "Thesis: Automating Pseudo-Boolean Inference within a DPLL Framework",
@@ -137,7 +138,6 @@ export const EDUCATION_ITEMS = [
     year: "2004",
   },
   {
-    id: 2,
     advisor: "",
     thesis: "",
     department: "Geology",
@@ -146,3 +146,18 @@ export const EDUCATION_ITEMS = [
     year: "1993",
   },
 ];
+
+export const LS_PAGE = {
+  title1: "Local Search",
+  title2: "beep bob",
+  content: [
+    "For my PhD I studied solution methods for solving NP-complete problems. When the search space of an optimization problem is too large to solve completely, the only option is to use local search methods. Two domains my lab specialized in were large scale scheduling and routing problems. We used a variety of algorithms such as variants of hill climbing and Squeaky Wheel optimization.",
+    " Effective search algorithms require the inner search loop to be highly optimized. You need the most efficient data structures and code with the best time complexity for the problem. You need to understand compiler optimizations and how to keep critical data structures in the cache. I have a lot of experience optimizing code for both analytical time scaling and more practical concerns such as cache optimizations.",
+  ],
+  media: [
+    { mediaContent: localsearchPic2, mediaType: "image" },
+    { mediaContent: localsearchPic2, mediaType: "image" },
+    { mediaContent: localsearchPic2, mediaType: "image" },
+    { mediaContent: localsearchPic2, mediaType: "image" },
+  ],
+};

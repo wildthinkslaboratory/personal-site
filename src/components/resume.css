@@ -125,3 +125,56 @@
   font-size: x-large;
   margin: 0 10px 0 0;
 }
+
+.content-div {
+  flex-direction: row;
+  display: flex;
+}
+
+.media-vert-div,
+.content-vert-div {
+  padding-top: 12vh;
+}
+
+.content-vert-div {
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  position: relative;
+  width: 74%;
+  margin: 0 0 10vh 10vw;
+  min-width: 200px;
+}
+
+.content-div p {
+  margin-bottom: 1.5rem;
+}
+
+.media-vert-div {
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 25%;
+  min-width: 700px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vh;
+}
+
+.content-vert-div h1 {
+  color: chocolate;
+}
+
+.content-vert-div h3 {
+  color: chartreuse;
+}
+
+.media-holder {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.media-holder img {
+  border-radius: 14px;
+  width: 100%;
+}

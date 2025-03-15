@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 type ResumeItemProps = {
-  id: number;
   path: string;
   title1: string;
   title2: string;
@@ -35,8 +34,8 @@ type ResumeItemListProps = {
 export default function ResumeList({ items }: ResumeItemListProps) {
   return (
     <ul className="resume-item-list">
-      {items.map((item) => (
-        <li key={item.id}>
+      {items.map((item, index) => (
+        <li key={index}>
           <ResumeItem {...item} />
         </li>
       ))}

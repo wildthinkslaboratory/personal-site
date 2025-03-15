@@ -3,7 +3,6 @@ import ClimbingPage from "../Projects/ClimbingPage";
 import LegoRoboticsPage from "../Projects/LegoRoboticsPage";
 import GoldfishRobinPage from "../Projects/GoldfishRobinPage";
 import WildthinksPage from "../Projects/WildthinksPage";
-import LocalsearchPage from "../Projects/LocalsearchPage";
 import ArtPage from "../Projects/ArtPage";
 import ChalkbotPage from "../Projects/ChalkbotPage";
 import HomeschoolPage from "../Projects/HomeschoolPage";
@@ -13,6 +12,9 @@ import PBChaffPage from "../Projects/PBchaffPage";
 import ProofPage from "../Projects/ProofPage";
 import ZapPage from "../Projects/ZapPage";
 import Publications from "./publications";
+
+import ResumeItemContent from "../components/ResumeItemContent";
+import { LS_PAGE } from "../components/resume-data";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -26,7 +28,10 @@ export function RouteElement() {
         <Route path="climbing" element={<ClimbingPage />} />
         <Route path="wildthinks" element={<WildthinksPage />} />
         <Route path="pbchaff" element={<PBChaffPage />} />
-        <Route path="localsearch" element={<LocalsearchPage />} />
+        <Route
+          path="localsearch"
+          element={<ResumeItemContent {...LS_PAGE} />}
+        />
         <Route path="art" element={<ArtPage />} />
         <Route path="chalkbot" element={<ChalkbotPage />} />
         <Route path="homeschool" element={<HomeschoolPage />} />

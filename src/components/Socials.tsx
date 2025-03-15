@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-
-import { FaGithubAlt } from "react-icons/fa";
 import { FiBook } from "react-icons/fi";
 import { SiReaddotcv } from "react-icons/si";
+import { BsGithub } from "react-icons/bs";
 
 export default function Socials() {
   return (
     <ul className="socials">
       <li>
         <a href="https://github.com/wildthinkslaboratory">
-          <FaGithubAlt />
+          <BsGithub />
         </a>
       </li>
       <li>
