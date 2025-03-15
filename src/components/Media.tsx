@@ -28,7 +28,6 @@ function Media({ media, mediaType, link }: MediaProps) {
               className="iframe-shorts-video"
               src={media}
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
@@ -39,8 +38,6 @@ function Media({ media, mediaType, link }: MediaProps) {
           <div className="media-video-holder">
             <iframe
               className="iframe-video"
-              width="315"
-              height="560"
               src={media}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

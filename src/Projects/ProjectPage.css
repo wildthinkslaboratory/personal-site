@@ -73,19 +73,3 @@ a {
 .mekaTankImage {
   width: 50%;
 }
-
-.iframe-video {
-  border-radius: 14px;
-  width: 560px;
-  height: 315px;
-  max-width: 100%;
-  max-height: calc((100vw - 40px) / (560 / 315));
-}
-
-.iframe-shorts-video {
-  border-radius: 14px;
-  width: 315px;
-  height: 560px;
-  max-width: 100%;
-  max-height: calc((100vw - 40px) / (315 / 560));
-}
