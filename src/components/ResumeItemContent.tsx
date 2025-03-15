@@ -1,8 +1,10 @@
+import Media from "./Media";
+
 type ResumeItemContentProps = {
   title1: string;
   title2: string;
   content: string[];
-  media: { mediaContent: string; mediaType: string }[];
+  media: { mediaContent: string; mediaType: string; link: string }[];
 };
 
 function ResumeItemContent({
@@ -23,11 +25,14 @@ function ResumeItemContent({
         </div>
       </div>
       <div className="media-vert-div">
-        <div className="media-holder">
-          {media.map((item) => (
-            <img className="media-image" src={item.mediaContent}></img>
-          ))}
-        </div>
+        {media.map((item, index) => (
+          <Media
+            key={index}
+            media={item.mediaContent}
+            mediaType={item.mediaType}
+            link={item.link}
+          />
+        ))}
       </div>
     </div>
   );

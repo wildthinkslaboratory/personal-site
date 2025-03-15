@@ -155,9 +155,23 @@ export const LS_PAGE = {
     " Effective search algorithms require the inner search loop to be highly optimized. You need the most efficient data structures and code with the best time complexity for the problem. You need to understand compiler optimizations and how to keep critical data structures in the cache. I have a lot of experience optimizing code for both analytical time scaling and more practical concerns such as cache optimizations.",
   ],
   media: [
-    { mediaContent: localsearchPic2, mediaType: "image" },
-    { mediaContent: localsearchPic2, mediaType: "image" },
-    { mediaContent: localsearchPic2, mediaType: "image" },
-    { mediaContent: localsearchPic2, mediaType: "image" },
+    { mediaContent: localsearchPic2, mediaType: "image", link: "" },
+    {
+      mediaContent: localsearchPic2,
+      mediaType: "image link",
+      link: "https://wildthinks.org/pages/SuperJulia",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/X6yaPpIIUHk?si=ve9GLNRWEq8SIGky",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent: "https://youtube.com/embed/YnA8bkeFmDI?si=E2nuq3ccuAL9DCtZ",
+      mediaType: "short",
+      link: "",
+    },
+    { mediaContent: localsearchPic2, mediaType: "shdsort", link: "" },
   ],
 };
