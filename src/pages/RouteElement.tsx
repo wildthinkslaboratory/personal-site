@@ -11,7 +11,8 @@ import { GR_PAGE } from "../components/resume-data";
 import { LR_PAGE } from "../components/resume-data";
 import { CB_PAGE } from "../components/resume-data";
 import { UO_PAGE } from "../components/resume-data";
-
+import { PC_PAGE } from "../components/resume-data";
+import { HS_PAGE } from "../components/resume-data";
 import { Route, Routes } from "react-router-dom";
 
 export function RouteElement() {
@@ -24,6 +25,8 @@ export function RouteElement() {
           path="goldfishandrobin"
           element={<ResumeContent {...GR_PAGE} />}
         />
+        <Route path="homeschool" element={<ResumeContent {...HS_PAGE} />} />
+        <Route path="proof" element={<ResumeContent {...PC_PAGE} />} />
         <Route path="chalkbot" element={<ResumeContent {...CB_PAGE} />} />
         <Route path="teachingUO" element={<ResumeContent {...UO_PAGE} />} />
         <Route path="wildthinks" element={<ResumeContent {...WT_PAGE} />} />

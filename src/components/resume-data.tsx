@@ -19,11 +19,12 @@ import chewonkiPic2 from "../assets/chewonki2.jpg";
 import julia13Pic from "../assets/julia13.png";
 import ftcPic from "../assets/ftc.png";
 import calcRectPic from "../assets/calcRect.png";
-
 import chalkBotPic1 from "../assets/chalkbot.jpeg";
 import electronicsPic from "../assets/electronics.jpeg";
 import chalkBot2Pic from "../assets/chalkbot2.jpeg";
 import chalkBot3Pic from "../assets/chalkbot3.jpeg";
+import robotartPic from "../assets/robotart.jpeg";
+import dfaPic from "../assets/dfa.001.jpeg";
 
 export const PROJECT_ITEMS = [
   {
@@ -523,17 +524,238 @@ export const CB_PAGE = {
 };
 
 export const LR_PAGE = {
-  title1: "",
+  title1: "Robotics Coach",
   title2: "",
-  content: <div></div>,
-  media: [],
+  content: (
+    <div>
+      <p>
+        Kids are more fun than adults and I loved all the creative, fanciful and
+        sometimes crazy ideas my students came up with. My job as a coach is to
+        give them the tools to make their ideas practical and realizable.
+        Coaching robotics was a lot of work, but it was rewarding and just so
+        joyful.
+      </p>
+      <p>
+        {" "}
+        I coached Lego Robotics for five years. I coached teams at{" "}
+        <a href="https://riverroad.4j.lane.edu/">
+          El Camino del Rio Elementary School
+        </a>{" "}
+        and at{" "}
+        <a href="https://spencerbutte.4j.lane.edu/">
+          Spencer Butte Middle School
+        </a>
+        . Our teams participated in{" "}
+        <a href="https://www.firstlegoleague.org/">First Lego League (FLL)</a>{" "}
+        competitions. Check out the videos on the right to see some of my teams
+        in action.
+      </p>
+      <p>
+        My fourth and fifth grade teams focused on learning basic coding skills
+        such as control structures and hardware control. They used these skills
+        to build simple missions that they tested, refined, and prepared for
+        competition.
+      </p>
+      <p>
+        My middle school teams designed and built their own robots to take on
+        multi-part missions. To do this in the allotted time, students need to
+        use a design cycle that allows for multiple iterations through a
+        prototype, test and refine cycle. The first prototype design is often
+        too complex. Designs need to be simplified and streamlined. Students who
+        are ready to implement multi-part missions also need to learn to manage
+        complexity. The more complex a mission is, the more things can go wrong.
+        To be successful, students need to build precise strategies that reduce
+        error or build strategies that are flexible enough to tolerate error.
+      </p>
+      <p>
+        I've taught so many talented, creative and curious kids. I've had three
+        teams qualify to go to state competitions and one team won the IBM Award
+        for Innovation at the state competition. My students are grown now and
+        many are studying STEM fields in college. It's exciting to see them
+        begin STEM careers.
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/yvGqmgsHjUw?si=3yWY_3lQfnvgRpff",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/rsEAEUUMDEw?si=pQcVerHpI2WB_ka-",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent: robotartPic,
+      mediaType: "image",
+      link: "",
+    },
+  ],
   code: "",
   link: "",
   pubs: [],
 };
 
 export const GR_PAGE = {
-  title1: "",
+  title1: "Goldfish and Robin YouTube Channel",
+  title2: "Channel Mentor",
+  content: (
+    <div>
+      <p>
+        This all started with my kids. They desperately wanted to have a YouTube
+        Channel. I agreed to a channel if it was educational and that I would
+        review all posts before they were uploaded. They decided to make a
+        series of videos about programming in Minecraft. I helped them organize
+        their ideas a bit and we learned editing together. That’s how{" "}
+        <a href="https://www.youtube.com/@goldfishandrobin7020">
+          GoldfisAndRobin
+        </a>{" "}
+        was born.
+      </p>
+      <p>
+        Things progressed when{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://en.wikipedia.org/wiki/James_Tanton"
+        >
+          James Tanton
+        </a>{" "}
+        saw a video they made on Exploding Dots. Exploding Dots is a James
+        Tanton curriculum that teaches arithmetic in alternate base systems to
+        young kids and curious adults. James asked the kids to make more videos
+        so he could include them in his first{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://globalmathproject.org/gmw"
+        >
+          Global Math Week
+        </a>{" "}
+        , an online math program that is put on by the{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://globalmathproject.org/"
+        >
+          Global Math Project
+        </a>{" "}
+        . We taught a class on Exploding Dots at{" "}
+        <a href="https://riverroad.4j.lane.edu/">
+          El Camino del Rio Elementary School
+        </a>{" "}
+        . This helped expand the cast of characters for their videos and also
+        allowed them to make some of their videos in Spanish. Over all they made
+        a total of 44 videos. Their most popular video has about 50 thousand
+        views. Their videos are still sprinkled throughout James Tanton’s
+        personal Exploding Dots page.
+      </p>
+      <p>
+        My role in this project was primarily as a mentor to the group. The
+        videos were mostly made by the kids. I helped them organize their ideas
+        and in the end I did a lot of editing because the timeline for the first
+        Exploding Dots week was tight and it turned out to be too much work for
+        them. But they did the presentation, most of the filming and 100% of the
+        creativity.{" "}
+      </p>
+      <p>
+        My kids outgrew the channel when they hit middle school and moved on to
+        other things. This was always a kid driven project so when they lost
+        interest production stopped. The videos they made are fantastic and I’m
+        super proud of all the group achieved.
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/jCBwHGtEV5M?si=LL-G73P2VW5BqUKr",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/0chOl7JnYSQ?si=QPL1Q7GoZwpvfqe2",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/eQYLL7XnM-4?si=c5DNfgkUW4w8qlrN",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/9Xy-Bbzvlls?si=NGlBCxb2WsM9UkV5",
+      mediaType: "video",
+      link: "",
+    },
+  ],
+  code: "",
+  link: "",
+  pubs: [],
+};
+
+export const UO_PAGE = {
+  title1: "Adjunct Instructor in Computer Science",
+  title2: "",
+  content: (
+    <div>
+      <p>
+        I taught classes in the Computer Science department at the University of
+        Oregon. I taught their undergraduate/graduate level Automata Theory
+        class and the graduate level Algorithms and Complexity class.
+      </p>
+      <p>
+        My automata theory class used Sipser's{" "}
+        <u>Introduction to the Theory of Computation</u> book. Some topics
+        included were regular languages, finite automata (DFA), regular
+        expressions, regular grammars, pushdown automata (PDA), context free
+        grammars, Turing machines, nondeterminism, the Cook-Levin theorem,
+        complexity classes P, NP and NP-complete, undecidable languages and
+        Gödel's incompleteness theorem.
+      </p>
+      <p>
+        My Algorithms and Complexity class covered topics like proofs of
+        correctness, algorithm analysis, amortized time complexity, divide and
+        conquer, dynamic programming, graph algorithms, greedy algorithms,
+        Dijkstra's algorithm, the Cook-Levin theorem, complexity classes P, NP
+        and NP-complete, local search methods.
+      </p>
+      <p>
+        Students taking these classes are expected to know how to write clean
+        well structured proofs. However, in practice, students come to these
+        classes from a wide variety of backgrounds with vastly different levels
+        of preparation. In addition to introducing students to topics in
+        theoretical computer science, a major focus of these classes is helping
+        students refine their proof writing skills.
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent: phPic,
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: dfaPic,
+      mediaType: "image",
+      link: "",
+    },
+  ],
+  code: "",
+  link: "",
+  pubs: [],
+};
+
+export const PC_PAGE = {
+  title1: "Proof Complexity",
   title2: "",
   content: <div></div>,
   media: [],
@@ -542,8 +764,8 @@ export const GR_PAGE = {
   pubs: [],
 };
 
-export const UO_PAGE = {
-  title1: "",
+export const HS_PAGE = {
+  title1: "Homeschool Teacher",
   title2: "",
   content: <div></div>,
   media: [],
