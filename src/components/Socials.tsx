@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FiBook } from "react-icons/fi";
 import { SiReaddotcv } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
+import CV from "../assets/HeidiDixonResume.pdf";
 
 export default function Socials() {
   return (
@@ -12,7 +13,7 @@ export default function Socials() {
         </a>
       </li>
       <li>
-        <a href="">
+        <a href={CV}>
           <SiReaddotcv />
         </a>
       </li>
