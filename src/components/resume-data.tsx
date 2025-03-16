@@ -128,7 +128,7 @@ export const HOBBY_ITEMS = [
     image: climbingPic,
   },
   {
-    path: "art",
+    path: "gallery",
     title: "arts and crafts",
     image: artPic,
   },
@@ -773,3 +773,66 @@ export const HS_PAGE = {
   link: "",
   pubs: [],
 };
+
+import teapotPic from "../assets/teapot.jpeg";
+import snowbunPic from "../assets/snowbunny.jpeg";
+import adwallPic from "../assets/artdecowall.jpeg";
+import chalktopus from "../assets/chalktopus.jpeg";
+import circPic from "../assets/circ.png";
+import fp1Pic from "../assets/facepaint1.jpeg";
+import fp2Pic from "../assets/facepaint2.jpeg";
+import knitfistPic from "../assets/knitfish.jpg";
+import owlPic from "../assets/owl.jpg";
+import treequiltPic from "../assets/treequilt.jpg";
+import lunchPic from "../assets/lunch.jpeg";
+
+export const ART = [
+  {
+    image: snowbunPic,
+    description: "snow bunny",
+  },
+  {
+    image: adwallPic,
+    description: "art deco wall mural",
+  },
+  {
+    image: chalkBotPic1,
+    description: "ChalkBot drawing",
+  },
+  {
+    image: knitfistPic,
+    description: "knitted fish tesselation",
+  },
+  {
+    image: circPic,
+    description: "mathematical drawing",
+  },
+  {
+    image: fp2Pic,
+    description: "tiger facepaint",
+  },
+  {
+    image: owlPic,
+    description: "mixed media owl",
+  },
+  {
+    image: lunchPic,
+    description: "chalk drawing",
+  },
+  {
+    image: treequiltPic,
+    description: "forest inspired quilt",
+  },
+  {
+    image: teapotPic,
+    description: "glazed teapot",
+  },
+  {
+    image: fp1Pic,
+    description: "butterfly facepaint",
+  },
+  {
+    image: chalktopus,
+    description: "chalk drawing",
+  },
+];

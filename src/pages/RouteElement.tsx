@@ -1,5 +1,6 @@
 import Page from "./page";
 import Publications from "./publications";
+import Gallery from "./gallery";
 
 import ResumeContent from "../components/ResumeContent";
 import { LS_PAGE } from "../components/resume-data";
@@ -35,6 +36,7 @@ export function RouteElement() {
         <Route path="localsearch" element={<ResumeContent {...LS_PAGE} />} />
         <Route path="climbing" element={<ResumeContent {...CLIMBING_PAGE} />} />
         <Route path="pubs" element={<Publications />} />
+        <Route path="gallery" element={<Gallery />} />
       </Route>
     </Routes>
   );
