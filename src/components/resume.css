@@ -253,12 +253,13 @@ media-video-holder {
 .gallery-page {
   margin: 0;
   padding: 0;
+  background-color: #dddddd;
+  padding-top: 12vh;
 }
 
-.container {
+.gallery {
   position: relative;
   min-height: 100vh;
-  background-color: #dddddd;
 
   display: flex;
   flex-direction: row;
@@ -268,11 +269,11 @@ media-video-holder {
   justify-content: center;
 }
 
-.container h1 {
+.gallery h1 {
   text-align: center;
 }
 
-.container .image-container {
+.gallery .image-container {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -280,7 +281,7 @@ media-video-holder {
   padding: 10px;
 }
 
-.container .image-container .image {
+.gallery .image-container .image {
   width: 350px;
   height: 250px;
   border: 10px solid #fff;
@@ -290,13 +291,13 @@ media-video-holder {
   cursor: pointer;
 }
 
-.container .image-container .image img {
+.gallery .image-container .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: 0.2s linear;
 }
-.container .image-container .image:hover img {
+.gallery .image-container .image:hover img {
   transform: scale(1.1);
 }
 

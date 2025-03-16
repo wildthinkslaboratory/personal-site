@@ -1,9 +1,31 @@
-import GalleryImage from "../components/GalleryImage";
 import { ART } from "../components/resume-data";
+
+type GaleryImageProps = {
+  description: string;
+  image: string;
+};
+
+function GalleryImage({ description, image }: GaleryImageProps) {
+  let popupImage = () => {
+    let popup = document.querySelector("#popup-image");
+    if (popup) {
+      popup?.setAttribute("style", "display:block");
+      let popup_image = document.querySelector("#popup-image img");
+      if (popup_image) {
+        popup_image?.setAttribute("src", image);
+      }
+    }
+  };
+
+  return (
+    <div className="image">
+      <img src={image} alt={description} onClick={popupImage}></img>
+    </div>
+  );
+}
 
 function Gallery() {
   let closePopup = () => {
-    console.log("close popup");
     let popup = document.querySelector("#popup-image");
     if (popup) {
       popup?.setAttribute("style", "display:none");
@@ -12,7 +34,7 @@ function Gallery() {
 
   return (
     <div className="gallery-page">
-      <div className="container">
+      <div className="gallery">
         <h1>Gallery</h1>
         <div className="image-container">
           {ART.map((item, index) => (
@@ -23,7 +45,7 @@ function Gallery() {
         </div>
         <div id="popup-image">
           <span onClick={closePopup}>&times;</span>
-          <img src={ART[0].image}></img>
+          <img src=""></img>
         </div>
       </div>
     </div>
