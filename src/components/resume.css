@@ -145,6 +145,10 @@
   margin: 0 0 10vh 10vw;
 }
 
+.content-vert-div h3 {
+  padding: 1rem 0;
+}
+
 .content-div p {
   margin-bottom: 1.5rem;
 }
@@ -233,4 +237,7 @@ media-video-holder {
 
 .pubs li {
   margin-bottom: 1.5rem;
+}
+.pubs a:hover {
+  color: #09aee5;
 }

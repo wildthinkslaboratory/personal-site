@@ -24,14 +24,15 @@
 
 a {
   /* font-weight: bold; */
-  color: #414188;
+  color: #1d1dc6;
   text-decoration: inherit;
+  font-weight: bold;
 }
 
 a:hover,
 a:visited {
   /* font-weight: bold; */
-  color: #414188;
+  color: #1d1dc6;
 }
 
 body {

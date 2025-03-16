@@ -1,21 +1,17 @@
 import Page from "./page";
-import LegoRoboticsPage from "../Projects/LegoRoboticsPage";
-import GoldfishRobinPage from "../Projects/GoldfishRobinPage";
-import WildthinksPage from "../Projects/WildthinksPage";
-import ArtPage from "../Projects/ArtPage";
-import ChalkbotPage from "../Projects/ChalkbotPage";
-import HomeschoolPage from "../Projects/HomeschoolPage";
-import TeachingUOPage from "../Projects/TeachingUOPage";
-import ChewonkiPage from "../Projects/ChewonkiPage";
-import PBChaffPage from "../Projects/PBchaffPage";
-import ProofPage from "../Projects/ProofPage";
-import ZapPage from "../Projects/ZapPage";
 import Publications from "./publications";
 
-import ResumeItemContent from "../components/ResumeItemContent";
+import ResumeContent from "../components/ResumeContent";
 import { LS_PAGE } from "../components/resume-data";
 import { CLIMBING_PAGE } from "../components/resume-data";
 import { PBCHAFF_PAGE } from "../components/resume-data";
+import { CHEWONKI_PAGE } from "../components/resume-data";
+import { WT_PAGE } from "../components/resume-data";
+import { GR_PAGE } from "../components/resume-data";
+import { LR_PAGE } from "../components/resume-data";
+import { CB_PAGE } from "../components/resume-data";
+import { UO_PAGE } from "../components/resume-data";
+
 import { Route, Routes } from "react-router-dom";
 
 export function RouteElement() {
@@ -23,28 +19,18 @@ export function RouteElement() {
     <Routes>
       <Route path="/">
         <Route path="/" element={<Page />} />
-        <Route path="robotics" element={<LegoRoboticsPage />} />
-        <Route path="goldfishandrobin" element={<GoldfishRobinPage />} />
-        <Route path="wildthinks" element={<WildthinksPage />} />
+        <Route path="robotics" element={<ResumeContent {...LR_PAGE} />} />
         <Route
-          path="pbchaff"
-          element={<ResumeItemContent {...PBCHAFF_PAGE} />}
+          path="goldfishandrobin"
+          element={<ResumeContent {...GR_PAGE} />}
         />
-        <Route
-          path="localsearch"
-          element={<ResumeItemContent {...LS_PAGE} />}
-        />
-        <Route
-          path="climbing"
-          element={<ResumeItemContent {...CLIMBING_PAGE} />}
-        />
-        <Route path="art" element={<ArtPage />} />
-        <Route path="chalkbot" element={<ChalkbotPage />} />
-        <Route path="homeschool" element={<HomeschoolPage />} />
-        <Route path="teachingUO" element={<TeachingUOPage />} />
-        <Route path="chewonki" element={<ChewonkiPage />} />
-        <Route path="zap" element={<ZapPage />} />
-        <Route path="proof" element={<ProofPage />} />
+        <Route path="chalkbot" element={<ResumeContent {...CB_PAGE} />} />
+        <Route path="teachingUO" element={<ResumeContent {...UO_PAGE} />} />
+        <Route path="wildthinks" element={<ResumeContent {...WT_PAGE} />} />
+        <Route path="chewonki" element={<ResumeContent {...CHEWONKI_PAGE} />} />
+        <Route path="pbchaff" element={<ResumeContent {...PBCHAFF_PAGE} />} />
+        <Route path="localsearch" element={<ResumeContent {...LS_PAGE} />} />
+        <Route path="climbing" element={<ResumeContent {...CLIMBING_PAGE} />} />
         <Route path="pubs" element={<Publications />} />
       </Route>
     </Routes>

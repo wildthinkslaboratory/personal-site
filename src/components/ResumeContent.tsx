@@ -2,17 +2,17 @@ import Media from "./Media";
 import { BsGithub } from "react-icons/bs";
 import { LuLink } from "react-icons/lu";
 
-type ResumeItemContentProps = {
+type ResumeContentProps = {
   title1: string;
   title2: string;
-  content: string[];
+  content: JSX.Element;
   media: { mediaContent: string; mediaType: string; link: string }[];
   code: string;
   link: string;
   pubs: { citation: string; link: string }[];
 };
 
-function ResumeItemContent({
+function ResumeContent({
   title1,
   title2,
   content,
@@ -20,17 +20,14 @@ function ResumeItemContent({
   code,
   link,
   pubs,
-}: ResumeItemContentProps) {
+}: ResumeContentProps) {
+  console.log(content);
   return (
     <div className="content-div">
       <div className="content-vert-div">
         <h1>{title1}</h1>
         <h3 className="">{title2}</h3>
-        <div className="content-paragraphs">
-          {content.map((item, index) => (
-            <p key={index}>{item}</p>
-          ))}
-        </div>
+        <div className="content-paragraphs">{content}</div>
         <div className="accessories">
           {code !== "" && (
             <a href={code} className="button">
@@ -69,4 +66,4 @@ function ResumeItemContent({
   );
 }
 
-export default ResumeItemContent;
+export default ResumeContent;
