@@ -1,3 +1,17 @@
+.main-vertical-header {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.main-vertical-scroller,
+.main-vertical-header {
+  padding-top: 8vh;
+}
+
+.main-vertical-header p {
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 40rem) {
   .main-page {
     flex-direction: row;
@@ -17,6 +31,8 @@
     width: 25%;
     margin: 0 0 10vh 10vw;
     min-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .main-vertical-header,
@@ -33,7 +49,7 @@
   .main-vertical-header h1,
   .main-vertical-header .identity {
     text-align: left;
-    padding: 10px 0 10px 0;
+    padding-bottom: 10px;
   }
 
   .main-vertical-scroller {
