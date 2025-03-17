@@ -1,6 +1,9 @@
+import HomeButton from "../components/HomeButton";
+
 function Publications() {
   return (
     <div className="publications-page">
+      <HomeButton />
       <h2>Publications</h2>
       <div className="publicationList">
         <ul>

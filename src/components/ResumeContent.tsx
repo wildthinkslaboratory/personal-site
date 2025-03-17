@@ -1,6 +1,7 @@
 import Media from "./Media";
 import { BsGithub } from "react-icons/bs";
 import { LuLink } from "react-icons/lu";
+import HomeButton from "./HomeButton";
 
 type ResumeContentProps = {
   title1: string;
@@ -21,9 +22,9 @@ function ResumeContent({
   link,
   pubs,
 }: ResumeContentProps) {
-  console.log(content);
   return (
     <div className="content-div">
+      <HomeButton />
       <div className="content-vert-div">
         <h1>{title1}</h1>
         <h3 className="">{title2}</h3>

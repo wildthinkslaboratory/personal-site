@@ -1,4 +1,5 @@
 import { ART } from "../components/resume-data";
+import HomeButton from "../components/HomeButton";
 
 type GaleryImageProps = {
   description: string;
@@ -34,6 +35,7 @@ function Gallery() {
 
   return (
     <div className="gallery-page">
+      <HomeButton />
       <div className="gallery">
         <h1>Gallery</h1>
         <div className="image-container">
