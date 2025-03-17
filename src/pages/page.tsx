@@ -1,5 +1,4 @@
 import "../App.css";
-import "../components/resume.css";
 import ResumeList from "../components/ResumeList";
 import HobbyList from "../components/Hobby";
 import Socials from "../components/Socials";

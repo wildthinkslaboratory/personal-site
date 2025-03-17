@@ -15,73 +15,17 @@
   padding-bottom: 0.5rem;
 }
 
-@media (min-width: 40rem) {
-  .main-vertical-header {
-    padding-left: 6vw;
-    padding-right: 6vw;
-  }
-
-  .main-vertical-scroller,
-  .main-vertical-header {
-    padding-top: 8vh;
-  }
-}
-
-@media (min-width: 60rem) {
-  .main-page {
-    flex-direction: row;
-    display: flex;
-  }
-
-  .main-vertical-header {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-
-  .main-vertical-scroller,
-  .main-vertical-header {
-    padding-top: 12vh;
-  }
-
-  .main-vertical-header {
-    flex-direction: column;
-    left: 0;
-    top: 0;
-    position: relative;
-    width: 25%;
-    margin: 0 0 10vh 10vw;
-    min-width: 200px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .main-vertical-header,
-  .main-vertical-header .lower-header-div {
-    /* padding: 6vw; */
-  }
-
-  .main-vertical-header .lower-header-div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .main-vertical-scroller {
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
-    width: 74%;
-    min-width: 700px;
-  }
+.main-vertical-header h1 {
+  font-size: 3rem;
 }
 
 .resume-item-page {
   /* padding: 0 4rem; */
-  padding: 0 10vw 2vh 10vw;
+  padding: 0 6vw 2vh 6vw;
 }
 
 .publications-page {
-  margin: 15vh 20vw;
+  margin: 8vh 8vw;
 }
 
 .publications-page li {
@@ -297,39 +241,6 @@
   padding-top: 12vh;
 }
 
-@media (min-width: 40rem) {
-  .content-div {
-    flex-direction: row;
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* .media-vert-div,
-  .content-vert-div {
-    padding-top: 12vh;
-  } */
-
-  .content-vert-div {
-    flex-direction: column;
-    left: 0;
-    top: 0;
-    position: relative;
-    width: 50%;
-    margin: 0 0 10vh 10vw;
-  }
-
-  .media-vert-div {
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
-    width: 50%;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 10vh;
-  }
-}
-
 .gallery-page {
   margin: 0;
   padding: 0;
@@ -433,4 +344,146 @@
   transform: scale(1.1);
   background-color: #09aee5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.citationsLi {
+  align-content: center;
+  position: relative;
+}
+.citations {
+  visibility: hidden;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: small;
+  position: absolute;
+  background-color: #fff;
+  color: #666688;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 1;
+  margin-left: calc(- (100% - 20px) / 2);
+  width: 60vw;
+}
+
+.citations p {
+  font-size: medium;
+  font-weight: normal;
+}
+
+.citationsLi:hover {
+  color: #09aee5;
+}
+.citationsLi:hover .citations {
+  visibility: visible;
+}
+
+@media (min-width: 40rem) {
+  .main-vertical-header {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .main-vertical-scroller,
+  .main-vertical-header {
+    padding-top: 8vh;
+  }
+
+  .resume-item-page {
+    /* padding: 0 4rem; */
+    padding: 0 6vw 2vh 6vw;
+  }
+
+  .publications-page {
+    margin: 10vh 15vw;
+  }
+}
+
+@media (min-width: 70rem) {
+  .content-div {
+    flex-direction: row;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-vert-div {
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 39%;
+    margin: 0 0 10vh 10vw;
+  }
+
+  .media-vert-div {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 60%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10vh;
+  }
+}
+
+@media (min-width: 70rem) {
+  .main-page {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .main-vertical-header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .main-vertical-scroller,
+  .main-vertical-header {
+    padding-top: 12vh;
+  }
+
+  .resume-item-page {
+    /* padding: 0 4rem; */
+    padding: 0 10vw 2vh 10vw;
+  }
+
+  .publications-page {
+    margin: 15vh 20vw;
+  }
+
+  .main-vertical-header {
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 25%;
+    margin: 0 0 10vh 10vw;
+    min-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-vertical-header,
+  .main-vertical-header .lower-header-div {
+    /* padding: 6vw; */
+  }
+
+  .main-vertical-header .lower-header-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .main-vertical-scroller {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 74%;
+    min-width: 700px;
+  }
+
+  .citations {
+    bottom: 2.5rem;
+    width: 40vw;
+  }
 }
