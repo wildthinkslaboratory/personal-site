@@ -22,10 +22,6 @@ function Page() {
         </p>
         <div className="lower-header-div">
           <Socials />
-          <h3>Hobbies:</h3>
-          <div className="hobby-list-holder">
-            <HobbyList items={HOBBY_ITEMS} />
-          </div>
         </div>
       </div>
       <div className="main-vertical-scroller">
@@ -40,6 +36,12 @@ function Page() {
         <article className="resume-item-page">
           <h2>Education</h2>
           <EducationList items={EDUCATION_ITEMS} />
+        </article>
+        <article className="resume-item-page">
+          <h2>Hobbies</h2>
+          <div className="hobby-list-holder">
+            <HobbyList items={HOBBY_ITEMS} />
+          </div>
         </article>
         <div className="footer"></div>
       </div>

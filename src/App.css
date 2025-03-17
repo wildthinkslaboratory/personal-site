@@ -1,44 +1,46 @@
-.main-page {
-  flex-direction: row;
-  display: flex;
-}
+@media (min-width: 40rem) {
+  .main-page {
+    flex-direction: row;
+    display: flex;
+  }
 
-.main-vertical-scroller,
-.main-vertical-header {
-  padding-top: 12vh;
-}
+  .main-vertical-scroller,
+  .main-vertical-header {
+    padding-top: 12vh;
+  }
 
-.main-vertical-header {
-  flex-direction: column;
-  left: 0;
-  top: 0;
-  position: relative;
-  width: 25%;
-  margin: 0 0 10vh 10vw;
-  min-width: 200px;
-}
+  .main-vertical-header {
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 25%;
+    margin: 0 0 10vh 10vw;
+    min-width: 200px;
+  }
 
-.main-vertical-header,
-.main-vertical-header .lower-header-div {
-  /* padding: 6vw; */
-}
+  .main-vertical-header,
+  .main-vertical-header .lower-header-div {
+    /* padding: 6vw; */
+  }
 
-.main-vertical-header .lower-header-div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+  .main-vertical-header .lower-header-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-.main-vertical-header h1,
-.main-vertical-header .identity {
-  text-align: left;
-  padding: 10px 0 10px 0;
-}
+  .main-vertical-header h1,
+  .main-vertical-header .identity {
+    text-align: left;
+    padding: 10px 0 10px 0;
+  }
 
-.main-vertical-scroller {
-  flex-direction: column;
-  height: 100vh;
-  overflow-y: scroll;
-  width: 74%;
-  min-width: 700px;
+  .main-vertical-scroller {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 74%;
+    min-width: 700px;
+  }
 }
