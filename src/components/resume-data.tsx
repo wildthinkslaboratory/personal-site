@@ -1,11 +1,12 @@
-import localsearchPic from "../assets/localsearch2.png";
-import wildthinksPic from "../assets/favicon.png";
-import searchPic from "../assets/search.jpeg";
+// import localsearchPic from "../assets/localsearch2.png";
+import wildthinksPic from "../assets/wildthinksLogoFun.svg";
+import searchPic from "../assets/searchtree.svg";
 import phPic from "../assets/ph.jpg";
+import timecompPic from "../assets/timecomplexity.png";
 import roboticsPic from "../assets/legoRobotics.jpg";
 import grPic from "../assets/GR.png";
-import uoPic from "../assets/oregonO.jpg";
-import chewonkiPic from "../assets/chewonki.jpg";
+import uoPic from "../assets/Oregon_Ducks_logo.png";
+import chewonkiPic from "../assets/chewonki.svg";
 import climbingPic from "../assets/travel.png";
 import artPic from "../assets/craft.png";
 import chalkbotPic from "../assets/delivery.png";
@@ -45,7 +46,7 @@ export const PROJECT_ITEMS = [
       "I have experience building local search methods for large scale scheduling and routing problems. Here I use local search to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
     start_date: "",
     end_date: "",
-    image: localsearchPic,
+    image: ucPic,
   },
   {
     path: "pbchaff",
@@ -65,7 +66,7 @@ export const PROJECT_ITEMS = [
       "I studied propositional proof systems and created a new proof system that uses permutation groups. It has powerful inference rules and can produce short proofs of many hard combinatorial problems.",
     start_date: "",
     end_date: "",
-    image: phPic,
+    image: timecompPic,
   },
 ];
 
