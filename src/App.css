@@ -1,3 +1,42 @@
+/* first a bunch of color stuff I want to keep coordinated */
+a,
+.main-vertical-header h1,
+.citationsLi {
+  color: #4d4d89;
+  text-decoration: inherit;
+  font-weight: bold;
+}
+
+.resume-item-page a,
+.resume-item-page a:hover {
+  color: #666688;
+}
+
+.hobby-image-holder {
+  border: 2px solid rgba(72, 85, 109, 0.87);
+}
+
+.citations {
+  color: #666688;
+}
+
+.accessories a:hover,
+.home-button:hover {
+  background-color: #0696f6;
+}
+
+a:hover,
+.pubs a:hover,
+.citationsLi:hover {
+  /* font-weight: bold; */
+  color: #0672f6;
+}
+
+.home-button,
+.accessories .button {
+  background-color: #0672f6;
+}
+
 .main-vertical-header {
   padding-left: 6vw;
   padding-right: 6vw;
@@ -17,7 +56,6 @@
 
 .main-vertical-header h1 {
   font-size: 3rem;
-  color: #4d4d89;
 }
 
 .resume-item-page {
@@ -38,7 +76,6 @@
 }
 
 .resume-item-page a {
-  color: #666688;
   font-weight: normal;
 }
 
@@ -121,12 +158,12 @@
 }
 
 .hobby-image-holder {
-  border: 2px solid rgba(72, 85, 109, 0.87);
   border-radius: 6px;
 }
 
 .hobby-image-holder:hover {
   transform: scale(1.1);
+  background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
@@ -210,7 +247,6 @@
 }
 
 .accessories .button {
-  background-color: #0672f6;
   border: none;
   color: white;
   padding: 12px 16px;
@@ -222,15 +258,11 @@
 
 .accessories a:hover {
   transform: scale(1.1);
-  background-color: #0696f6;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .pubs li {
   margin-bottom: 1.5rem;
-}
-.pubs a:hover {
-  color: #0672f6;
 }
 
 .content-div {
@@ -331,7 +363,6 @@
   min-width: 60px;
   height: 60px;
   border-radius: 50px;
-  background-color: #0672f6;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -344,7 +375,6 @@
 
 .home-button:hover {
   transform: scale(1.1);
-  background-color: #0696f6;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
@@ -352,6 +382,7 @@
   align-content: center;
   position: relative;
 }
+
 .citations {
   visibility: hidden;
   padding: 1rem 2rem;
@@ -359,7 +390,6 @@
   font-size: small;
   position: absolute;
   background-color: #fff;
-  color: #666688;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   z-index: 1;
@@ -372,9 +402,6 @@
   font-weight: normal;
 }
 
-.citationsLi:hover {
-  color: #0672f6;
-}
 .citationsLi:hover .citations {
   visibility: visible;
 }
