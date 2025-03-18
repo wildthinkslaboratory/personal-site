@@ -72,14 +72,13 @@ export const PROJECT_ITEMS = [
 
 export const TEACHING_ITEMS = [
   {
-    path: "robotics",
-    title1: "Robotics Coach",
+    path: "homeschool",
+    title1: "Homeschool Teacher",
     title2: "",
-    summary:
-      "I taught basic programming and robotics skills to students in the 4th through 8th grade. My curriculum focused on iterative design, helping students manage complexity, and creating strategies that are precise and tolerant of error. ",
+    summary: "",
     start_date: "",
     end_date: "",
-    image: roboticsPic,
+    image: ucPic,
   },
   {
     path: "goldfishandrobin",
@@ -90,6 +89,16 @@ export const TEACHING_ITEMS = [
     start_date: "",
     end_date: "",
     image: grPic,
+  },
+  {
+    path: "robotics",
+    title1: "Robotics Coach",
+    title2: "",
+    summary:
+      "I taught basic programming and robotics skills to students in the 4th through 8th grade. My curriculum focused on iterative design, helping students manage complexity, and creating strategies that are precise and tolerant of error. ",
+    start_date: "",
+    end_date: "",
+    image: roboticsPic,
   },
   {
     path: "teachingUO",
@@ -110,15 +119,6 @@ export const TEACHING_ITEMS = [
     start_date: "",
     end_date: "",
     image: chewonkiPic,
-  },
-  {
-    path: "homeschool",
-    title1: "Homeschool Teacher",
-    title2: "",
-    summary: "",
-    start_date: "",
-    end_date: "",
-    image: ucPic,
   },
 ];
 
