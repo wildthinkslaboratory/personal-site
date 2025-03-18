@@ -321,7 +321,7 @@
   transform: translate(-50%, -50%);
   border: 10px solid #fff;
   border-radius: 5px;
-  width: 75%;
+  width: 95%;
   object-fit: cover;
 }
 
@@ -406,6 +406,10 @@
   .citations p {
     font-size: medium;
     font-weight: normal;
+  }
+
+  #popup-image img {
+    width: 75%;
   }
 }
 
