@@ -766,11 +766,10 @@ import adwallPic from "../assets/artdeco.jpg";
 import chalktopus from "../assets/chalktopus.jpeg";
 import circPic from "../assets/circ.png";
 import fp1Pic from "../assets/facepaint1.jpeg";
-import fp2Pic from "../assets/facepaint2.jpeg";
 import knitfistPic from "../assets/knitfish.jpg";
 import owlPic from "../assets/owl.jpg";
 import treequiltPic from "../assets/treequilt.jpg";
-import lunchPic from "../assets/lunch.jpeg";
+import lunchPic from "../assets/dino.jpeg";
 import mural from "../assets/murals.jpg";
 import mandalaquilt from "../assets/reneequilt.jpeg";
 
@@ -794,10 +793,6 @@ export const ART = [
   {
     image: circPic,
     description: "mathematical drawing",
-  },
-  {
-    image: fp2Pic,
-    description: "tiger facepaint",
   },
   {
     image: owlPic,
