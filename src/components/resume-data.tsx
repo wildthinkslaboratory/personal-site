@@ -770,7 +770,7 @@ import fp2Pic from "../assets/facepaint2.jpeg";
 import knitfistPic from "../assets/knitfish.jpg";
 import owlPic from "../assets/owl.jpg";
 import treequiltPic from "../assets/treequilt.jpg";
-import lunchPic from "../assets/dino.jpeg";
+import lunchPic from "../assets/lunch.jpeg";
 import mural from "../assets/murals.jpg";
 import mandalaquilt from "../assets/reneequilt.jpeg";
 
