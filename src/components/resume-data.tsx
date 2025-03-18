@@ -762,7 +762,7 @@ export const HS_PAGE = {
 
 import teapotPic from "../assets/teapot.jpeg";
 import snowbunPic from "../assets/snowbunny.jpeg";
-import adwallPic from "../assets/artdecowall.jpeg";
+import adwallPic from "../assets/artdeco.jpg";
 import chalktopus from "../assets/chalktopus.jpeg";
 import circPic from "../assets/circ.png";
 import fp1Pic from "../assets/facepaint1.jpeg";
@@ -770,7 +770,9 @@ import fp2Pic from "../assets/facepaint2.jpeg";
 import knitfistPic from "../assets/knitfish.jpg";
 import owlPic from "../assets/owl.jpg";
 import treequiltPic from "../assets/treequilt.jpg";
-import lunchPic from "../assets/lunch.jpeg";
+import lunchPic from "../assets/dino.jpeg";
+import mural from "../assets/murals.jpg";
+import mandalaquilt from "../assets/reneequilt.jpeg";
 
 export const ART = [
   {
@@ -820,5 +822,13 @@ export const ART = [
   {
     image: chalktopus,
     description: "chalk drawing",
+  },
+  {
+    image: mural,
+    description: "bedroom mural",
+  },
+  {
+    image: mandalaquilt,
+    description: "mandala quilt",
   },
 ];
