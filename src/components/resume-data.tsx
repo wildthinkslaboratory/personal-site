@@ -3,7 +3,7 @@ import wildthinksPic from "../assets/wildthinksLogoFun.svg";
 import searchPic from "../assets/searchtree.svg";
 import phPic from "../assets/ph.jpg";
 import timecompPic from "../assets/timecomplexity.png";
-import roboticsPic from "../assets/legoRobotics.jpg";
+import roboticsPic from "../assets/boxbot.jpeg";
 import grPic from "../assets/GR.png";
 import uoPic from "../assets/Oregon_Ducks_logo.png";
 import chewonkiPic from "../assets/chewonki.svg";
