@@ -26,6 +26,7 @@ import chalkBot2Pic from "../assets/chalkbot2.jpeg";
 import chalkBot3Pic from "../assets/chalkbot3.jpeg";
 import robotartPic from "../assets/robotart.jpeg";
 import dfaPic from "../assets/dfa.001.jpeg";
+import localsearchPic from "../assets/localsearchGrid.png";
 
 export const PROJECT_ITEMS = [
   {
@@ -46,7 +47,7 @@ export const PROJECT_ITEMS = [
       "I have experience building local search methods for large scale scheduling and routing problems. Here I use local search to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
     start_date: "",
     end_date: "",
-    image: ucPic,
+    image: localsearchPic,
   },
   {
     path: "pbchaff",
@@ -188,7 +189,7 @@ export const LS_PAGE = {
     </div>
   ),
   media: [
-    { mediaContent: localsearchPic2, mediaType: "image", link: "" },
+    { mediaContent: localsearchPic, mediaType: "image", link: "" },
     {
       mediaContent: bogglePic,
       mediaType: "image",
