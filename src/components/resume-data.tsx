@@ -1,6 +1,5 @@
-// import localsearchPic from "../assets/localsearch2.png";
 import wildthinksPic from "../assets/wildthinksLogoFun.svg";
-import searchPic from "../assets/searchtree.svg";
+import searchPic from "../assets/searchtree2.png";
 import phPic from "../assets/ph.jpg";
 import timecompPic from "../assets/timecomplexity.png";
 import roboticsPic from "../assets/boxbot.jpeg";
@@ -15,7 +14,6 @@ import dpll1Pic from "../assets/dpll1.png";
 import dpll2Pic from "../assets/dpll2.png";
 import cutPic from "../assets/branchCut.png";
 import bogglePic from "../assets/boggle.png";
-import localsearchPic2 from "../assets/localsearch.png";
 import chewonkiPic2 from "../assets/chewonki2.jpg";
 import julia13Pic from "../assets/julia13.png";
 import ftcPic from "../assets/ftc.png";
