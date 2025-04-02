@@ -228,6 +228,21 @@ a:hover,
   max-height: calc((100vw - 40px) / (560 / 315));
 }
 
+.iframe-desmos {
+  border-radius: 14px;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  /* max-height: calc((100vw - 40px) / (560 / 315)); */
+}
+
+.stl-viewer {
+  top: 0;
+  left: 0;
+  width: "100%";
+  aspect-ratio: 1;
+}
+
 .iframe-shorts-video {
   border-radius: 14px;
   width: 315px;

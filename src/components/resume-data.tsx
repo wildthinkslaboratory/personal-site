@@ -1,30 +1,20 @@
-import wildthinksPic from "../assets/wildthinksLogoFun.svg";
-import searchPic from "../assets/searchtree2.png";
-import phPic from "../assets/ph.jpg";
-import timecompPic from "../assets/timecomplexity.png";
-import roboticsPic from "../assets/boxbot.jpeg";
-import grPic from "../assets/GR.png";
-import uoPic from "../assets/Oregon_Ducks_logo.png";
-import chewonkiPic from "../assets/chewonki.svg";
-import climbingPic from "../assets/travel.png";
-import artPic from "../assets/craft.png";
-import chalkbotPic from "../assets/delivery.png";
 import ucPic from "../assets/uc.png";
-import dpll1Pic from "../assets/dpll1.png";
-import dpll2Pic from "../assets/dpll2.png";
-import cutPic from "../assets/branchCut.png";
-import bogglePic from "../assets/boggle.png";
-import chewonkiPic2 from "../assets/chewonki2.jpg";
-import julia13Pic from "../assets/julia13.png";
-import ftcPic from "../assets/ftc.png";
-import calcRectPic from "../assets/calcRect.png";
-import chalkBotPic1 from "../assets/chalkbot.jpeg";
-import electronicsPic from "../assets/electronics.jpeg";
-import chalkBot2Pic from "../assets/chalkbot2.jpeg";
-import chalkBot3Pic from "../assets/chalkbot3.jpeg";
-import robotartPic from "../assets/robotart.jpeg";
-import dfaPic from "../assets/dfa.001.jpeg";
+
+// empty page format
+// export const MY_PAGE = {
+//   title1: "",
+//   title2: "",
+//   content: <div></div>,
+//   media: [],
+//   code: "",
+//   link: "",
+//   pubs: [],
+// };
+
+import wildthinksPic from "../assets/wildthinksLogoFun.svg";
 import localsearchPic from "../assets/localsearchGrid.png";
+import searchPic from "../assets/searchtree2.png";
+import timecompPic from "../assets/timecomplexity.png";
 
 export const PROJECT_ITEMS = [
   {
@@ -68,6 +58,11 @@ export const PROJECT_ITEMS = [
     image: timecompPic,
   },
 ];
+
+import roboticsPic from "../assets/boxbot.jpeg";
+import grPic from "../assets/GR.png";
+import chewonkiPic from "../assets/chewonki.svg";
+import uoPic from "../assets/Oregon_Ducks_logo.png";
 
 export const TEACHING_ITEMS = [
   {
@@ -121,6 +116,10 @@ export const TEACHING_ITEMS = [
   },
 ];
 
+import climbingPic from "../assets/travel.png";
+import artPic from "../assets/craft.png";
+import chalkbotPic from "../assets/delivery.png";
+
 export const HOBBY_ITEMS = [
   {
     path: "climbing",
@@ -158,6 +157,8 @@ export const EDUCATION_ITEMS = [
     year: "1993",
   },
 ];
+
+import bogglePic from "../assets/boggle.png";
 
 export const LS_PAGE = {
   title1: "Local Search",
@@ -253,15 +254,9 @@ export const CLIMBING_PAGE = {
   pubs: [],
 };
 
-// export const MY_PAGE = {
-//   title1: "",
-//   title2: "",
-//   content: <div></div>,
-//   media: [],
-//   code: "",
-//   link: "",
-//   pubs: [],
-// };
+import dpll1Pic from "../assets/dpll1.png";
+import dpll2Pic from "../assets/dpll2.png";
+import cutPic from "../assets/branchCut.png";
 
 export const PBCHAFF_PAGE = {
   title1: "Pseudo-Boolean SAT Solver",
@@ -335,6 +330,8 @@ export const PBCHAFF_PAGE = {
   ],
 };
 
+import chewonkiPic2 from "../assets/chewonki2.jpg";
+
 export const CHEWONKI_PAGE = {
   title1: "High School Teacher",
   title2: "Chewonki Maine Coast Semester Program",
@@ -370,6 +367,10 @@ export const CHEWONKI_PAGE = {
   link: "",
   pubs: [],
 };
+
+import julia13Pic from "../assets/julia13.png";
+import ftcPic from "../assets/ftc.png";
+import calcRectPic from "../assets/calcRect.png";
 
 export const WT_PAGE = {
   title1: "Wild Thinks Website",
@@ -441,6 +442,11 @@ export const WT_PAGE = {
   pubs: [],
 };
 
+import chalkBotPic1 from "../assets/chalkbot.jpeg";
+import electronicsPic from "../assets/electronics.jpeg";
+import chalkBot2Pic from "../assets/chalkbot2.jpeg";
+import chalkBot3Pic from "../assets/chalkbot3.jpeg";
+
 export const CB_PAGE = {
   title1: "ChalkBot",
   title2: "2D CNC style printer for the sidewalk",
@@ -511,6 +517,10 @@ export const CB_PAGE = {
   pubs: [],
 };
 
+import robotartPic from "../assets/robotart.jpeg";
+import champsPic from "../assets/champs.jpg";
+import robotartPic2 from "../assets/robot-art.jpeg";
+
 export const LR_PAGE = {
   title1: "Robotics Coach",
   title2: "",
@@ -569,7 +579,17 @@ export const LR_PAGE = {
       link: "",
     },
     {
+      mediaContent: champsPic,
+      mediaType: "image",
+      link: "",
+    },
+    {
       mediaContent: robotartPic,
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: robotartPic2,
       mediaType: "image",
       link: "",
     },
@@ -686,6 +706,9 @@ export const GR_PAGE = {
   pubs: [],
 };
 
+import dfaPic from "../assets/dfa.001.jpeg";
+import phPic from "../assets/ph.jpg";
+
 export const UO_PAGE = {
   title1: "Adjunct Instructor in Computer Science",
   title2: "",
@@ -749,11 +772,52 @@ export const PC_PAGE = {
   pubs: [],
 };
 
+import hsProfile from "../assets/homeschool_profile.pdf";
+import hsClases from "../assets/class_descriptions.pdf";
+import driftBoat from "../assets/driftboat.001.jpeg";
+import booksPic from "../assets/books_pencil.jpg";
+
 export const HS_PAGE = {
   title1: "Homeschool Teacher",
-  title2: "",
-  content: <div></div>,
-  media: [],
+  title2: "Andre Mones Homeschool",
+  content: (
+    <div>
+      <p>
+        <a href={hsProfile}>Home School Profile</a>
+      </p>
+      <p>
+        <a href={hsClases}>Class Descriptions</a>
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent: booksPic,
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/4PG_Tg4CxuI?si=NlqzMzdntvBI-Mci",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent: driftBoat,
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: "src/assets/Driftboatmodel.stl",
+      mediaType: "stl",
+      link: "",
+    },
+    {
+      mediaContent: "https://www.desmos.com/calculator/s1c2bqq4pt?embed",
+      mediaType: "desmos",
+      link: "",
+    },
+  ],
   code: "",
   link: "",
   pubs: [],

@@ -1,3 +1,5 @@
+import { StlViewer } from "react-stl-viewer";
+
 export type MediaProps = {
   media: string;
   mediaType: string;
@@ -5,6 +7,11 @@ export type MediaProps = {
 };
 
 function Media({ media, mediaType, link }: MediaProps) {
+  const modelProps = {
+    scale: 2,
+    positionX: 0,
+  };
+
   const renderGreeting = () => {
     switch (mediaType) {
       case "image":
@@ -43,6 +50,24 @@ function Media({ media, mediaType, link }: MediaProps) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+          </div>
+        );
+      case "desmos":
+        return (
+          <div className="media-image-holder">
+            <iframe className="iframe-desmos" src={media}></iframe>
+          </div>
+        );
+      case "stl":
+        return (
+          <div className="media-image-holder">
+            <StlViewer
+              className="stl-viewer"
+              orbitControls
+              shadows
+              modelProps={modelProps}
+              url={media}
+            />
           </div>
         );
       default:
