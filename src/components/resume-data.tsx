@@ -63,16 +63,17 @@ import roboticsPic from "../assets/boxbot.jpeg";
 import grPic from "../assets/GR.png";
 import chewonkiPic from "../assets/chewonki.svg";
 import uoPic from "../assets/Oregon_Ducks_logo.png";
+import heidiPic from "../assets/HeidiAvatar.png";
 
 export const TEACHING_ITEMS = [
   {
     path: "homeschool",
     title1: "Homeschool Teacher",
     title2: "",
-    summary: "",
+    summary: "I homeschooled my son from fourth grade through high school",
     start_date: "",
     end_date: "",
-    image: ucPic,
+    image: heidiPic,
   },
   {
     path: "goldfishandrobin",
@@ -776,18 +777,108 @@ import hsProfile from "../assets/homeschool_profile.pdf";
 import hsClases from "../assets/class_descriptions.pdf";
 import driftBoat from "../assets/driftboat.001.jpeg";
 import booksPic from "../assets/books_pencil.jpg";
+import izzyPic from "../assets/IzzyAvatarV6.png";
 
 export const HS_PAGE = {
   title1: "Homeschool Teacher",
-  title2: "Andre Mones Homeschool",
+  title2: "",
   content: (
     <div>
       <p>
-        <a href={hsProfile}>Home School Profile</a>
+        My younger son has disabilities that made it impossible for him to
+        attend a regular school. When he was in the fourth grade I quit my job
+        to stay home with him full time. It’s the most challenging thing I’ve
+        ever done and I’m a better person for having done it.
       </p>
+      <h3>Working with children with disabilities</h3>
       <p>
-        <a href={hsClases}>Class Descriptions</a>
+        Here's what I learned from working with my son and other children with
+        disabilites during my volunteer work.
       </p>
+      <ul>
+        <li>
+          <strong>Different is not the same as bad or wrong</strong> Sometimes a
+          person with a disability can’t do an important task easily achieved by
+          a normie. More often, they can do the task, they just can’t do it the
+          way everyone else does. Much of the struggle with a disability is
+          being outside the norm and being in an environment that doesn’t allow
+          alternative strategies.
+        </li>
+        <li>
+          <strong>Observe</strong> Every neuro-divergent kid diverges in their
+          own unique way. Watch, take notes and figure out what a kid’s unique
+          struggles and strengths are. Finding strategies to cope and function
+          should be a science experiment you do with the child, trying new
+          things until something works.
+        </li>
+        <li>
+          <strong>Reflect</strong> People who are different are misunderstood on
+          a daily basis so they don’t expect to be seen. All people need to see
+          themselves reflected back accurately through another person’s eyes. A
+          good mirror reflects back both a person’s strengths and their
+          struggles. It doesn’t need to be all sunshine and roses, it needs to
+          be non-judgemental and it needs to be true.
+        </li>
+        <li>
+          <strong>Build trust</strong> People with disabilities have good
+          reasons to be distrustful. If you are patient and don’t go away you
+          will earn trust.
+        </li>
+        <li>
+          <strong>A deficit in one context is a super power in another</strong>{" "}
+          Many people with disabilities have profound abilities that arise from
+          their deficits, so figure out how to harness those powers. Building
+          first on a child's strengths creates a foundation of esteem that
+          allows them to later master their weaknesses.
+        </li>
+        <li>
+          <strong>Be flexible and creative</strong> It’s good to make a plan,
+          but be open to what arises each day and respond creatively. Many days
+          my son couldn’t do any school at all. We’d just go for a walk in the
+          woods which always made him happy. For kids with disabilities, we
+          can’t predict the future or to what degree they will learn to
+          function, so it’s most important to savor the moments we have with
+          them and make them count.
+        </li>
+      </ul>
+      <h3>Our school</h3>
+      <p>
+        Our homeschool philosophy combined project based learning at home
+        together with instruction from outside institutions like{" "}
+        <a href="https://artofproblemsolving.com/?srsltid=AfmBOoq4NboKZqfMWPN5quFnWRmc8M63wPjS8QLobkaQbDkgpG3u6Ft3">
+          The Art of Problem Solving
+        </a>{" "}
+        and <a href="https://www.uoregon.edu/">University of Oregon</a>. The
+        details of our instruction are in our{" "}
+        <a href={hsProfile}>school profile</a> and{" "}
+        <a href={hsClases}>class descriptions</a>.
+      </p>
+      <h3>Math Instruction</h3>
+      <p>
+        My son loves mathematics. During his highschool years he took many math
+        classes at the University of Oregon. Because he was unable to attend
+        classes in person we replaced class lectures and study sessions with our
+        own instruction at home. He completed class homeworks in the usual way
+        and took the class exams at the University’s testing center. I made sure
+        to know the content of the classes so I could answer any questions he
+        had and help him with his homework. He completed the following classes
+        at the University of Oregon earning a 4.09 GPA. He is hoping to attend
+        the University of Oregon full time next year. We are so proud of him.
+      </p>
+      <ul>
+        <li>MATH 251 Calculus I</li>
+        <li>MATH 253 Calculus III</li>
+        <li>MATH 231 Discrete Math I</li>
+        <li>MATH 232 Discrete Math II</li>
+        <li>MATH 341 Linear Algebra I</li>
+        <li>MATH 342 Linear Algebra II</li>
+        <li>MATH 316 Fundamentals of Analysis I</li>
+        <li>MATH 317 Fundamentals of Analysis I</li>
+        <li>MATH 347 Fundamentals of Number Theory I</li>
+        <li>MATH 444 Introduction to Abstract Algebra I</li>
+        <li>CS 122 Introduction to Programming and Problem Solving </li>
+        <li>CS 420 Automata Theory</li>
+      </ul>
     </div>
   ),
   media: [
@@ -803,6 +894,16 @@ export const HS_PAGE = {
       link: "",
     },
     {
+      mediaContent: izzyPic,
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: "https://www.desmos.com/calculator/tvuxwxvnew?embed",
+      mediaType: "desmos",
+      link: "",
+    },
+    {
       mediaContent: driftBoat,
       mediaType: "image",
       link: "",
@@ -810,11 +911,6 @@ export const HS_PAGE = {
     {
       mediaContent: "src/assets/Driftboatmodel.stl",
       mediaType: "stl",
-      link: "",
-    },
-    {
-      mediaContent: "https://www.desmos.com/calculator/s1c2bqq4pt?embed",
-      mediaType: "desmos",
       link: "",
     },
   ],
