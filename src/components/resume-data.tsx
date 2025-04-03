@@ -1,4 +1,4 @@
-import ucPic from "../assets/uc.png";
+// import ucPic from "../assets/uc.png";
 
 // empty page format
 // export const MY_PAGE = {
@@ -70,7 +70,8 @@ export const TEACHING_ITEMS = [
     path: "homeschool",
     title1: "Homeschool Teacher",
     title2: "",
-    summary: "I homeschooled my son from fourth grade through high school",
+    summary:
+      "I homeschooled my son from fourth grade through high school. Our homeschool philosophy combined project-based learning with additional instruction from outside institutions.",
     start_date: "",
     end_date: "",
     image: heidiPic,
