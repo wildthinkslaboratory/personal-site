@@ -766,12 +766,55 @@ export const UO_PAGE = {
 
 export const PC_PAGE = {
   title1: "Proof Complexity",
-  title2: "",
-  content: <div></div>,
-  media: [],
+  title2: "building efficient propositional proof systems",
+  content: (
+    <div>
+      <p>
+        When you solve a search or optimization problem, the goal is to find a
+        solution, preferably an optimal one, or to verify that no solution
+        exists. Verifying that no solution exists requires producing a proof of
+        some sort. Verification proofs that are excessively long will take a
+        long time to produce and check.
+      </p>
+      <p>
+        The field of proof complexity studies the lengths of proofs that can be
+        produced by different proof systems. Results from proof complexity help
+        those working in search and optimization build more efficient search
+        methods. Studying the lengths of proofs also helps us understand the
+        complexity class co-NP and whether it might be equal to the class NP.
+      </p>
+      <p>
+        Many examples of problems that require exponential length proofs in
+        simple logical proof systems like resolution are actually highly
+        symmetric. I helped create a proof system that augments logical
+        statements with permutation groups. This allows the system to capture
+        and reason about the symmetry of a problem and leads to short proofs. We
+        then built a solver that uses this proof system to solve search
+        problems.
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent: phPic,
+      mediaType: "image",
+      link: "",
+    },
+  ],
   code: "",
   link: "",
-  pubs: [],
+  pubs: [
+    {
+      citation:
+        "Heidi E. Dixon, Matthew L. Ginsberg, Eugene M. Luks, and Andrew J. Parkes, 2004 Generalizing Boolean Satisfiability II: Theory. Journal of Artificial Intelligence Research, 22:481-534.",
+      link: "https://arxiv.org/abs/1109.2134",
+    },
+    {
+      citation:
+        "Heidi E. Dixon, Matthew L. Ginsberg, David Hofer, Eugene M. Luks, and Andrew J. Parkes, 2005. Generalizing Boolean Satisfiability III: Implementation. Journal of Artificial Intelligence Research, 23:441-531.",
+      link: "https://www.jair.org/index.php/jair/article/view/10407/24941",
+    },
+  ],
 };
 
 import hsProfile from "../assets/homeschool_profile.pdf";
