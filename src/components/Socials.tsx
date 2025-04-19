@@ -9,19 +9,28 @@ export default function Socials() {
   return (
     <ul className="socials">
       <li>
-        <a href="https://github.com/wildthinkslaboratory">
-          <BsGithub />
-        </a>
+        <div className="social-div">
+          <a href="https://github.com/wildthinkslaboratory">
+            <BsGithub />
+          </a>
+          <span className="social-name">github</span>
+        </div>
       </li>
       <li>
-        <a href={CV}>
-          <SiReaddotcv />
-        </a>
+        <div className="social-div">
+          <a href={CV}>
+            <SiReaddotcv />
+          </a>
+          <span className="social-name">resume</span>
+        </div>
       </li>
       <li>
-        <Link to="pubs">
-          <FiBook />
-        </Link>
+        <div className="social-div">
+          <Link to="pubs">
+            <FiBook />
+          </Link>
+          <span className="social-name">publications</span>
+        </div>
       </li>
       <li className="citationsLi">
         <BsFillChatSquareQuoteFill />

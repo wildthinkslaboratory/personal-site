@@ -198,7 +198,19 @@ a:hover,
   font-size: x-large;
   margin: 0 20px 0 0;
 }
+.social-name {
+  visibility: hidden;
+  padding: 30px 0px;
+  text-align: center;
+  font-size: small;
+  position: absolute;
+  z-index: 1;
+  margin-left: -30px;
+}
 
+.social-div:hover .social-name {
+  visibility: visible;
+}
 .content-vert-div h3 {
   padding: 1rem 0;
 }
