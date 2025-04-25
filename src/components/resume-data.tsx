@@ -168,9 +168,17 @@ export const LS_PAGE = {
   content: (
     <div>
       <p>
-        When the search space of an optimization problem is too large to solve
-        completely, the only option is to use local search methods. Two domains
-        my lab specialized in were large scale scheduling and routing problems.
+        During my time working for On Time Systems and Connected Signals, we
+        worked on applying artificial-intelligence methods to solve large-scale
+        scheduling, routing and planning problems. When the search space of an
+        optimization problem is too large to solve completely, the only option
+        is to use local search methods. Local search methods such as hill
+        climbing and squeaky wheel optimization were integral tools in our
+        toolbox.
+      </p>
+      <p>
+        In this project I use local search to solve the boggle problem (find a
+        maximally scoring boggle board relative to a given dictionary).
       </p>
       <p>
         Effective search algorithms require the inner search loop to be highly
