@@ -324,7 +324,7 @@ export const PBCHAFF_PAGE = {
   pubs: [
     {
       citation:
-        "Heidi E. Dixon, PhD Thesis. Automating Pseudo-Boolean Inference withing a DPLL Framework University of Oregon. 2004.",
+        "Heidi E. Dixon, PhD Thesis. Automating Pseudo-Boolean Inference withing a DPLL Framework. University of Oregon. 2004.",
       link: "https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884",
     },
     {
@@ -815,7 +815,7 @@ export const PC_PAGE = {
     {
       citation:
         "Heidi E. Dixon, Matthew L. Ginsberg, Eugene M. Luks, and Andrew J. Parkes, 2004 Generalizing Boolean Satisfiability II: Theory. Journal of Artificial Intelligence Research, 22:481-534.",
-      link: "https://arxiv.org/abs/1109.2134",
+      link: "https://www.jair.org/index.php/jair/article/view/10397/24905",
     },
     {
       citation:

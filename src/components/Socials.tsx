@@ -3,6 +3,7 @@ import { FiBook } from "react-icons/fi";
 import { SiReaddotcv } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { BsFillChatSquareQuoteFill } from "react-icons/bs";
+import { RiAwardFill } from "react-icons/ri";
 import CV from "../assets/HeidiDixonResume.pdf";
 
 export default function Socials() {
@@ -30,6 +31,14 @@ export default function Socials() {
             <FiBook />
           </Link>
           <span className="social-name">publications</span>
+        </div>
+      </li>
+      <li>
+        <div className="social-div">
+          <a href="https://patents.justia.com/inventor/heidi-dixon">
+            <RiAwardFill />
+          </a>
+          <span className="social-name">patents</span>
         </div>
       </li>
       <li className="citationsLi">

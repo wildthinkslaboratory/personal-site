@@ -27,14 +27,14 @@ function Publications() {
           <li>
             Heidi E. Dixon, PhD Thesis.{" "}
             <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884">
-              Automating Pseudo-Boolean Inference withing a DPLL Framework
+              Automating Pseudo-Boolean Inference withing a DPLL Framework.
             </a>{" "}
             University of Oregon. 2004.
           </li>
           <li>
             Heidi E. Dixon, Matthew L. Ginsberg, Eugene M. Luks, and Andrew J.
             Parkes, 2004.{" "}
-            <a href="https://arxiv.org/abs/1109.2134">
+            <a href="https://www.jair.org/index.php/jair/article/view/10397/24905">
               Generalizing Boolean Satisfiability II: Theory.
             </a>{" "}
             Journal of Artificial Intelligence Research, 22:481-534.
@@ -50,7 +50,7 @@ function Publications() {
           </li>
           <li>
             Heidi E. Dixon, Matthew L. Ginsberg, and Andrew J. Parkes, 2004.{" "}
-            <a href="https://arxiv.org/abs/1107.0040">
+            <a href="https://www.jair.org/index.php/jair/article/view/10369/24816">
               Generalizing Boolean Satisfiability I: Background and survey of
               existing work.
             </a>{" "}
@@ -59,7 +59,7 @@ function Publications() {
           <li>
             Heidi E. Dixon, Matthew L. Ginsberg, and Andrew J. Parkes, 2002.{" "}
             <a href="https://www.researchgate.net/publication/2539695_Likely_Near-term_Advances_in_SAT_Solvers">
-              Likely Near-term Advances in SAT Solvers
+              Likely Near-term Advances in SAT Solvers.
             </a>{" "}
             Workshop on Microprocessor Test and Verification (MTV 2002). Held in
             Austin, Texas, USA. June 2002.
