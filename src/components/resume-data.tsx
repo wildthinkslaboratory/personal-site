@@ -824,6 +824,8 @@ import driftBoat from "../assets/driftboat.001.jpeg";
 import booksPic from "../assets/books_pencil.jpg";
 import izzyPic from "../assets/IzzyAvatarV6.png";
 
+import driftboatStl from "../assets/driftboatmodel.stl";
+
 export const HS_PAGE = {
   title1: "Homeschool Teacher",
   title2: "",
@@ -954,7 +956,7 @@ export const HS_PAGE = {
       link: "",
     },
     {
-      mediaContent: "src/assets/driftboatmodel.stl",
+      mediaContent: driftboatStl,
       mediaType: "stl",
       link: "",
     },
