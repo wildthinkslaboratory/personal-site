@@ -236,12 +236,6 @@ export const CLIMBING_PAGE = {
   ),
   media: [
     {
-      mediaContent:
-        "https://www.youtube.com/embed/A_r-XQ5sLCA?si=B7HV-ogMNFmhvWHg",
-      mediaType: "video",
-      link: "",
-    },
-    {
       mediaContent: "https://youtube.com/embed/YnA8bkeFmDI?si=E2nuq3ccuAL9DCtZ",
       mediaType: "short",
       link: "",
@@ -253,9 +247,8 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent:
-        "https://www.youtube.com/embed/X6yaPpIIUHk?si=ve9GLNRWEq8SIGky",
-      mediaType: "video",
+      mediaContent: "https://www.youtube.com/embed/-gQQRK8Lc4Y",
+      mediaType: "short",
       link: "",
     },
   ],
@@ -961,7 +954,7 @@ export const HS_PAGE = {
       link: "",
     },
     {
-      mediaContent: "src/assets/Driftboatmodel.stl",
+      mediaContent: "src/assets/driftboatmodel.stl",
       mediaType: "stl",
       link: "",
     },
