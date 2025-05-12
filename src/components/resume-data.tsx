@@ -241,9 +241,8 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent:
-        "https://www.youtube.com/embed/s7JqHHQ9L_E?si=D88N7B6qNyOPxm2J",
-      mediaType: "video",
+      mediaContent: "https://youtube.com/embed/Qs-pHOdNhZw?si=mPtamq3y0kqvdk96",
+      mediaType: "short",
       link: "",
     },
     {
