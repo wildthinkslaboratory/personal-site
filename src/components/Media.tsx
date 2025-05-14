@@ -2,22 +2,24 @@ import { StlViewer } from "react-stl-viewer";
 
 export type MediaProps = {
   media: string;
+  caption: string;
   mediaType: string;
   link: string;
 };
 
-function Media({ media, mediaType, link }: MediaProps) {
+function Media({ media, caption, mediaType, link }: MediaProps) {
   const modelProps = {
     scale: 2,
     positionX: 0,
   };
 
-  const renderGreeting = () => {
+  const renderMedia = () => {
     switch (mediaType) {
       case "image":
         return (
           <div className="media-image-holder">
             <img src={media}></img>
+            <span className="media-caption">{caption}</span>
           </div>
         );
       case "image link":
@@ -26,6 +28,7 @@ function Media({ media, mediaType, link }: MediaProps) {
             <a href={link}>
               <img src={media}></img>
             </a>
+            <span className="media-caption">{caption}</span>
           </div>
         );
       case "short":
@@ -38,6 +41,7 @@ function Media({ media, mediaType, link }: MediaProps) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+            <span className="media-caption">{caption}</span>
           </div>
         );
       case "video":
@@ -50,12 +54,14 @@ function Media({ media, mediaType, link }: MediaProps) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+            <span className="media-caption">{caption}</span>
           </div>
         );
       case "desmos":
         return (
           <div className="media-image-holder">
             <iframe className="iframe-desmos" src={media}></iframe>
+            <span className="media-caption">{caption}</span>
           </div>
         );
       case "stl":
@@ -68,6 +74,7 @@ function Media({ media, mediaType, link }: MediaProps) {
               modelProps={modelProps}
               url={media}
             />
+            <span className="media-caption">{caption}</span>
           </div>
         );
       default:
@@ -75,7 +82,7 @@ function Media({ media, mediaType, link }: MediaProps) {
     }
   };
 
-  return <div className="media-holder">{renderGreeting()}</div>;
+  return <div className="media-holder">{renderMedia()}</div>;
 }
 
 export default Media;

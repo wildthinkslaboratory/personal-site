@@ -419,11 +419,13 @@ export const WT_PAGE = {
   media: [
     {
       mediaContent: julia13Pic,
+      caption: "Julia set generator",
       mediaType: "image link",
       link: "https://wildthinks.org/pages/SuperJulia",
     },
     {
       mediaContent: ftcPic,
+      caption: "Fundamental theorem of calculus exploration",
       mediaType: "image link",
       link: "https://wildthinks.org/pages/ftc1/",
     },
@@ -435,6 +437,7 @@ export const WT_PAGE = {
     },
     {
       mediaContent: calcRectPic,
+      caption: "Estimating areas with rectangles",
       mediaType: "image link",
       link: "https://wildthinks.org/pages/rectangle1/",
     },
@@ -592,6 +595,7 @@ export const LR_PAGE = {
     },
     {
       mediaContent: robotartPic2,
+      caption: "Robot generated art",
       mediaType: "image",
       link: "",
     },
@@ -930,17 +934,20 @@ export const HS_PAGE = {
   media: [
     {
       mediaContent: booksPic,
+      caption: "Drawing from ART:Digital Design II",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent:
         "https://www.youtube.com/embed/4PG_Tg4CxuI?si=NlqzMzdntvBI-Mci",
+      caption: "Water sample from Microbiology",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent: izzyPic,
+      caption: "Avatar from ART:Digital Design II",
       mediaType: "image",
       link: "",
     },
@@ -951,11 +958,13 @@ export const HS_PAGE = {
     },
     {
       mediaContent: driftBoat,
+      caption: "Driftboat used in Driftboat Modeling project",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: driftboatStl,
+      caption: "3D model produced in Driftboat Modeling project",
       mediaType: "stl",
       link: "",
     },
