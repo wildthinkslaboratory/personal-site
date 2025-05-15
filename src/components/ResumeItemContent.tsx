@@ -6,7 +6,12 @@ type ResumeItemContentProps = {
   title1: string;
   title2: string;
   content: string[];
-  media: { mediaContent: string; mediaType: string; link: string }[];
+  media: {
+    mediaContent: string;
+    caption: string;
+    mediaType: string;
+    link: string;
+  }[];
   code: string;
   link: string;
   pubs: { citation: string; link: string }[];
@@ -60,6 +65,7 @@ function ResumeItemContent({
           <Media
             key={index}
             media={item.mediaContent}
+            caption={item.caption}
             mediaType={item.mediaType}
             link={item.link}
           />

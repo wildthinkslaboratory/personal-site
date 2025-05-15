@@ -198,9 +198,10 @@ export const LS_PAGE = {
     </div>
   ),
   media: [
-    { mediaContent: localsearchPic, mediaType: "image", link: "" },
+    { mediaContent: localsearchPic, caption: "", mediaType: "image", link: "" },
     {
       mediaContent: bogglePic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -237,16 +238,19 @@ export const CLIMBING_PAGE = {
   media: [
     {
       mediaContent: "https://youtube.com/embed/YnA8bkeFmDI?si=E2nuq3ccuAL9DCtZ",
+      caption: "",
       mediaType: "short",
       link: "",
     },
     {
       mediaContent: "https://youtube.com/embed/Qs-pHOdNhZw?si=mPtamq3y0kqvdk96",
+      caption: "",
       mediaType: "short",
       link: "",
     },
     {
       mediaContent: "https://www.youtube.com/embed/-gQQRK8Lc4Y",
+      caption: "",
       mediaType: "short",
       link: "",
     },
@@ -297,16 +301,19 @@ export const PBCHAFF_PAGE = {
   media: [
     {
       mediaContent: dpll1Pic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: dpll2Pic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: cutPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -361,6 +368,7 @@ export const CHEWONKI_PAGE = {
   media: [
     {
       mediaContent: chewonkiPic2,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -432,12 +440,13 @@ export const WT_PAGE = {
     {
       mediaContent:
         "https://www.youtube.com/embed/oXyek2Q40AI?si=E3mT4sUw4i__iz1Z",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent: calcRectPic,
-      caption: "Estimating areas with rectangles",
+      caption: "Solving rate problems with rectangles",
       mediaType: "image link",
       link: "https://wildthinks.org/pages/rectangle1/",
     },
@@ -487,32 +496,38 @@ export const CB_PAGE = {
     {
       mediaContent:
         "https://www.youtube.com/embed/X55FPYN8blc?si=63p6wqMWMn7Oc6x8",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent: chalkBotPic1,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent:
         "https://www.youtube.com/embed/Tdn9ZR6qVBE?si=KhFjbuUBvQDiDec_",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent: chalkBot2Pic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: electronicsPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: chalkBot3Pic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -574,22 +589,26 @@ export const LR_PAGE = {
     {
       mediaContent:
         "https://www.youtube.com/embed/yvGqmgsHjUw?si=3yWY_3lQfnvgRpff",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent:
         "https://www.youtube.com/embed/rsEAEUUMDEw?si=pQcVerHpI2WB_ka-",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent: champsPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: robotartPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -685,24 +704,28 @@ export const GR_PAGE = {
     {
       mediaContent:
         "https://www.youtube.com/embed/jCBwHGtEV5M?si=LL-G73P2VW5BqUKr",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent:
         "https://www.youtube.com/embed/0chOl7JnYSQ?si=QPL1Q7GoZwpvfqe2",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent:
         "https://www.youtube.com/embed/eQYLL7XnM-4?si=c5DNfgkUW4w8qlrN",
+      caption: "",
       mediaType: "video",
       link: "",
     },
     {
       mediaContent:
         "https://www.youtube.com/embed/9Xy-Bbzvlls?si=NGlBCxb2WsM9UkV5",
+      caption: "",
       mediaType: "video",
       link: "",
     },
@@ -754,11 +777,13 @@ export const UO_PAGE = {
   media: [
     {
       mediaContent: phPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
     {
       mediaContent: dfaPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -801,6 +826,7 @@ export const PC_PAGE = {
   media: [
     {
       mediaContent: phPic,
+      caption: "",
       mediaType: "image",
       link: "",
     },
@@ -952,11 +978,6 @@ export const HS_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://www.desmos.com/calculator/tvuxwxvnew?embed",
-      mediaType: "desmos",
-      link: "",
-    },
-    {
       mediaContent: driftBoat,
       caption: "Driftboat used in Driftboat Modeling project",
       mediaType: "image",
@@ -966,6 +987,12 @@ export const HS_PAGE = {
       mediaContent: driftboatStl,
       caption: "3D model produced in Driftboat Modeling project",
       mediaType: "stl",
+      link: "",
+    },
+    {
+      mediaContent: "https://www.desmos.com/calculator/tvuxwxvnew?embed",
+      caption: "",
+      mediaType: "desmos",
       link: "",
     },
   ],

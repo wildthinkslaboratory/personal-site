@@ -38,7 +38,7 @@ export default function Socials() {
           <a href="https://patents.justia.com/inventor/heidi-dixon">
             <RiAwardFill />
           </a>
-          <span className="social-name">patents</span>
+          <span className="social-name">patent</span>
         </div>
       </li>
       <li className="citationsLi">
