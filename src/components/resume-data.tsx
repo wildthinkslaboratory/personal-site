@@ -118,9 +118,9 @@ export const TEACHING_ITEMS = [
   },
 ];
 
-import climbingPic from "../assets/travel.png";
-import artPic from "../assets/craft.png";
-import chalkbotPic from "../assets/delivery.png";
+import climbingPic from "../assets/climb.svg";
+import artPic from "../assets/craft.svg";
+import chalkbotPic from "../assets/robot.svg";
 
 export const HOBBY_ITEMS = [
   {
@@ -949,7 +949,7 @@ export const HS_PAGE = {
         <li>MATH 341 Linear Algebra I</li>
         <li>MATH 342 Linear Algebra II</li>
         <li>MATH 316 Fundamentals of Analysis I</li>
-        <li>MATH 317 Fundamentals of Analysis I</li>
+        <li>MATH 317 Fundamentals of Analysis II</li>
         <li>MATH 347 Fundamentals of Number Theory I</li>
         <li>MATH 444 Introduction to Abstract Algebra I</li>
         <li>CS 122 Introduction to Programming and Problem Solving </li>
