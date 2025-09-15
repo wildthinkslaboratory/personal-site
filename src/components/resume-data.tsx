@@ -15,6 +15,7 @@ import wildthinksPic from "../assets/wildthinksLogoFun.svg";
 import localsearchPic from "../assets/localsearchGrid.png";
 import searchPic from "../assets/searchtree2.png";
 import timecompPic from "../assets/timecomplexity.png";
+import balancingRobotPic from "../assets/robot.svg";
 
 export const PROJECT_ITEMS = [
   {
@@ -56,6 +57,21 @@ export const PROJECT_ITEMS = [
     start_date: "",
     end_date: "",
     image: timecompPic,
+  },
+  {
+    path: "balancebot",
+    title1: "Control Theory",
+    title2: "",
+    summary:
+      "I’ve been exploring some control theory topics. I built a robot that balances on two wheels using a linear quadratic gaussian (LQG) control algorithm.",
+    image: balancingRobotPic,
+  },
+  {
+    path: "drone",
+    title1: "NMPC Drone Project",
+    title2: "",
+    summary: "drone project",
+    image: balancingRobotPic,
   },
 ];
 
@@ -999,6 +1015,116 @@ export const HS_PAGE = {
   code: "",
   link: "",
   pubs: [],
+};
+
+export const CONTROL_PAGE = {
+  title1: "Control Theory",
+  title2: "Balancing Robot Project",
+  content: (
+    <div>
+      <p>
+        Building a control system requires knowledge of physics, engineering,
+        mathematics and computer science. While I’m strong in the areas of
+        mathematics and computer science, I’m new to the areas of physics and
+        engineering. My son is an undergraduate student majoring in aerospace
+        and mechanical engineering. This project was a great way for us to
+        combine our skill sets to do something that would be very hard for
+        either of us to do alone.
+      </p>
+      <p>
+        We built a robot that balances on two wheels using a linear quadratic
+        gaussian (LQG) algorithm. The system of differential equations for a
+        balancing robot is nonlinear and therefore difficult to solve. However,
+        the system can be linearized at the robot’s vertical balance point. This
+        point is an unstable fixed point that is made stable by adding just the
+        right torque from the motors. So long as the robot stays in the
+        neighborhood of this fixed point, the linear model provides a good
+        estimate of the nonlinear system.{" "}
+      </p>
+      <p>
+        From the linearized system, we can construct an optimal control law that
+        gives us the optimal torque for our wheels to maintain our balance,
+        reduce the energy costs of our motors and move the robot to our goal
+        state in the xy plane. We can also use the linear system to estimate our
+        state variables, filtering out noise from sensor readings.
+      </p>
+      <p>
+        Our project is a work in progress. We are still refining our
+        implementation and working out the kinks.
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent: "https://youtube.com/embed/XT-ZjQa27o4?si=FyryLAMiXVuWf9pc",
+      caption: "",
+      mediaType: "short",
+      link: "",
+    },
+  ],
+  code: "https://github.com/wildthinkslaboratory/balancing-robot-rasppi",
+  link: "",
+  pubs: [
+    {
+      citation: "Unfinished Project Technical Report",
+      link: "https://github.com/wildthinkslaboratory/balancing-robot-rasppi/blob/main/documents/balancing-robot.pdf",
+    },
+  ],
+};
+
+export const DRONE_PAGE = {
+  title1: "Control Theory",
+  title2: "DRONE Page",
+  content: (
+    <div>
+      <p>
+        Building a control system requires knowledge of physics, engineering,
+        mathematics and computer science. While I’m strong in the areas of
+        mathematics and computer science, I’m new to the areas of physics and
+        engineering. My son is an undergraduate student majoring in aerospace
+        and mechanical engineering. This project was a great way for us to
+        combine our skill sets to do something that would be very hard for
+        either of us to do alone.
+      </p>
+      <p>
+        We built a robot that balances on two wheels using a linear quadratic
+        gaussian (LQG) algorithm. The system of differential equations for a
+        balancing robot is nonlinear and therefore difficult to solve. However,
+        the system can be linearized at the robot’s vertical balance point. This
+        point is an unstable fixed point that is made stable by adding just the
+        right torque from the motors. So long as the robot stays in the
+        neighborhood of this fixed point, the linear model provides a good
+        estimate of the nonlinear system.{" "}
+      </p>
+      <p>
+        From the linearized system, we can construct an optimal control law that
+        gives us the optimal torque for our wheels to maintain our balance,
+        reduce the energy costs of our motors and move the robot to our goal
+        state in the xy plane. We can also use the linear system to estimate our
+        state variables, filtering out noise from sensor readings.
+      </p>
+      <p>
+        Our project is a work in progress. We are still refining our
+        implementation and working out the kinks.
+      </p>
+    </div>
+  ),
+  media: [
+    {
+      mediaContent: "https://youtube.com/embed/XT-ZjQa27o4?si=FyryLAMiXVuWf9pc",
+      caption: "",
+      mediaType: "short",
+      link: "",
+    },
+  ],
+  code: "https://github.com/wildthinkslaboratory/balancing-robot-rasppi",
+  link: "",
+  pubs: [
+    {
+      citation: "Unfinished Project Technical Report",
+      link: "https://github.com/wildthinkslaboratory/balancing-robot-rasppi/blob/main/documents/balancing-robot.pdf",
+    },
+  ],
 };
 
 import teapotPic from "../assets/teapot.jpeg";

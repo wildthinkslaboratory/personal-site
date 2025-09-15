@@ -14,6 +14,8 @@ import { CB_PAGE } from "../components/resume-data";
 import { UO_PAGE } from "../components/resume-data";
 import { PC_PAGE } from "../components/resume-data";
 import { HS_PAGE } from "../components/resume-data";
+import { CONTROL_PAGE } from "../components/resume-data";
+import { DRONE_PAGE } from "../components/resume-data";
 import { Route, Routes } from "react-router-dom";
 
 export function RouteElement() {
@@ -35,6 +37,11 @@ export function RouteElement() {
         <Route path="pbchaff" element={<ResumeContent {...PBCHAFF_PAGE} />} />
         <Route path="localsearch" element={<ResumeContent {...LS_PAGE} />} />
         <Route path="climbing" element={<ResumeContent {...CLIMBING_PAGE} />} />
+        <Route
+          path="balancebot"
+          element={<ResumeContent {...CONTROL_PAGE} />}
+        />
+        <Route path="drone" element={<ResumeContent {...DRONE_PAGE} />} />
         <Route path="pubs" element={<Publications />} />
         <Route path="gallery" element={<Gallery />} />
       </Route>
