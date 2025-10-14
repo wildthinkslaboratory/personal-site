@@ -15,7 +15,8 @@ import wildthinksPic from "../assets/wildthinksLogoFun.svg";
 import localsearchPic from "../assets/localsearchGrid.png";
 import searchPic from "../assets/searchtree2.png";
 import timecompPic from "../assets/timecomplexity.png";
-import balancingRobotPic from "../assets/robot.svg";
+// import balancingRobotPic from "../assets/robot.svg";
+import droneCartoon from "../assets/tvcdroneCartoon.png";
 
 export const PROJECT_ITEMS = [
   {
@@ -59,19 +60,14 @@ export const PROJECT_ITEMS = [
     image: timecompPic,
   },
   {
-    path: "balancebot",
-    title1: "Control Theory",
+    path: "drone",
+    title1: "Thrust-Vector-Control Drone Project",
     title2: "",
     summary:
-      "I’ve been exploring some control theory topics. I built a robot that balances on two wheels using a linear quadratic gaussian (LQG) control algorithm.",
-    image: balancingRobotPic,
-  },
-  {
-    path: "drone",
-    title1: "NMPC Drone Project",
-    title2: "",
-    summary: "drone project",
-    image: balancingRobotPic,
+      "I helped design and build a thrust vector controlled drone. We developed a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
+    start_date: "",
+    end_date: "",
+    image: droneCartoon,
   },
 ];
 
@@ -1072,57 +1068,90 @@ export const CONTROL_PAGE = {
   ],
 };
 
+import gimbalTestPic from "../assets/gimbalTest.gif";
+import dronePic from "../assets/dronePic.jpeg";
+// import droneCad from "../assets/Assembly_1.glb?inline";
+
 export const DRONE_PAGE = {
-  title1: "Control Theory",
-  title2: "DRONE Page",
+  title1: "Thrust-Vector Control Drone Project",
+  title2: "Rocket Prototype",
   content: (
     <div>
       <p>
-        Building a control system requires knowledge of physics, engineering,
-        mathematics and computer science. While I’m strong in the areas of
-        mathematics and computer science, I’m new to the areas of physics and
-        engineering. My son is an undergraduate student majoring in aerospace
-        and mechanical engineering. This project was a great way for us to
-        combine our skill sets to do something that would be very hard for
-        either of us to do alone.
+        I worked on this drone project with{" "}
+        <a href="https://izzymones.github.io/personal-website/">my older son</a>{" "}
+        who is studying Mechanical and Aerospace Engineering at UC Davis. A{" "}
+        <a href="https://en.wikipedia.org/wiki/Thrust_vectoring">
+          thrust-vector-controlled (TVC)
+        </a>{" "}
+        drone is a safe and inexpensive way to study control algorithms for
+        vertical takeoff and landing of thrust-vector-controlled rockets. Our
+        drone thrust is two stacked brushless motors on a servo-driven gimbal.
+        The motors rotate in opposite directions to counteract induced torques
+        about the vertical axis. It uses a <a href="https://px4.io/">Pixhawk</a>{" "}
+        flight controller, and it runs a{" "}
+        <a href="https://en.wikipedia.org/wiki/Model_predictive_control">
+          nonlinear model predictive control (NMPC)
+        </a>{" "}
+        algorithm on a Raspberry Pi 5. The overall result is a vehicle that
+        recreates many of the challenges of controlling a real rocket.
       </p>
       <p>
-        We built a robot that balances on two wheels using a linear quadratic
-        gaussian (LQG) algorithm. The system of differential equations for a
-        balancing robot is nonlinear and therefore difficult to solve. However,
-        the system can be linearized at the robot’s vertical balance point. This
-        point is an unstable fixed point that is made stable by adding just the
-        right torque from the motors. So long as the robot stays in the
-        neighborhood of this fixed point, the linear model provides a good
-        estimate of the nonlinear system.{" "}
+        There are a variety of ways to formulate an NMPC problem instance as a
+        nonlinear programming problem. Different formulations may vary in their
+        computation times and solution accuracy. We experimented with different
+        choices of NLP formulations and evaluated their speed and accuracy. We
+        compared three approaches: a Runge-Kutta multiple-shooting method, an
+        orthogonal collocation with Gauss-Radau nodes implemented in the{" "}
+        <a href="https://www.do-mpc.com/en/latest/">do-mpc</a> library, and a
+        Chebyshev pseudospectral collocation approach. These methods are all
+        based on different numerical methods for solving and integrating systems
+        of differential equations. These types of control algorithms use many of
+        the well known linear and nonlinear optimization solvers from Operations
+        Research that I studied during my Ph.D. program so it was fun to apply
+        some of my old knowledge in a fresh new domain.
       </p>
       <p>
-        From the linearized system, we can construct an optimal control law that
-        gives us the optimal torque for our wheels to maintain our balance,
-        reduce the energy costs of our motors and move the robot to our goal
-        state in the xy plane. We can also use the linear system to estimate our
-        state variables, filtering out noise from sensor readings.
-      </p>
-      <p>
-        Our project is a work in progress. We are still refining our
-        implementation and working out the kinks.
+        This project involves managing significant complexity: tracking multiple
+        data streams within a precise timing grid while running iterative,
+        recursive control algorithms that can produce unpredictable or emergent
+        behaviors. We emphasized modular design and rigorous testing. We built
+        testing suites, data logging pipelines, and visualization tools to
+        evaluate performance, diagnose instability, and refine controller
+        behavior. This structured approach helped us make sense of the drone's
+        behavior, find bugs and improve performance.
       </p>
     </div>
   ),
+
   media: [
     {
-      mediaContent: "https://youtube.com/embed/XT-ZjQa27o4?si=FyryLAMiXVuWf9pc",
-      caption: "",
-      mediaType: "short",
+      mediaContent:
+        "https://www.youtube.com/embed/qP2U-lA7jI4?si=F3cORvvv8r0TS7KZ",
+      caption: "simulations",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent: gimbalTestPic,
+      caption: "gimbal test",
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: dronePic,
+      caption: "TVC drone",
+      mediaType: "image",
       link: "",
     },
   ],
-  code: "https://github.com/wildthinkslaboratory/balancing-robot-rasppi",
+  code: "https://github.com/wildthinkslaboratory/hop",
   link: "",
   pubs: [
     {
-      citation: "Unfinished Project Technical Report",
-      link: "https://github.com/wildthinkslaboratory/balancing-robot-rasppi/blob/main/documents/balancing-robot.pdf",
+      citation:
+        "Isidore Mones and Heidi Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
+      link: "https://github.com/wildthinkslaboratory/hop/blob/main/documents/simulation.pdf",
     },
   ],
 };
