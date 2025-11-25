@@ -249,7 +249,7 @@ export const CLIMBING_PAGE = {
   ),
   media: [
     {
-      mediaContent: "https://youtube.com/embed/YnA8bkeFmDI?si=E2nuq3ccuAL9DCtZ",
+      mediaContent: "https://youtube.com/embed/CkZDJfFMSY0?si=vVpC8MSIpDZXfszL",
       caption: "",
       mediaType: "short",
       link: "",
