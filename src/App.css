@@ -216,13 +216,6 @@ a:hover,
 .social-div:hover .social-name {
   visibility: visible;
 }
-.content-vert-div h3 {
-  padding: 1rem 0;
-}
-
-.content-div p {
-  margin-bottom: 1.5rem;
-}
 
 .media-holder {
   padding-bottom: 40px;
@@ -322,6 +315,14 @@ a:hover,
 .media-vert-div,
 .content-vert-div {
   padding-top: 12vh;
+}
+
+.content-vert-div h3 {
+  padding: 1rem 0;
+}
+
+.content-div p {
+  margin-bottom: 1.5rem;
 }
 
 .gallery-page {

@@ -1068,9 +1068,9 @@ export const CONTROL_PAGE = {
   ],
 };
 
-import gimbalTestPic from "../assets/gimbalTest.gif";
 import dronePic from "../assets/dronePic.jpeg";
 // import droneCad from "../assets/Assembly_1.glb?inline";
+import DronePaper from "../assets/simulation.pdf";
 
 export const DRONE_PAGE = {
   title1: "Thrust-Vector Control Drone Project",
@@ -1097,19 +1097,21 @@ export const DRONE_PAGE = {
         recreates many of the challenges of controlling a real rocket.
       </p>
       <p>
-        There are a variety of ways to formulate an NMPC problem instance as a
-        nonlinear programming problem. Different formulations may vary in their
-        computation times and solution accuracy. We experimented with different
-        choices of NLP formulations and evaluated their speed and accuracy. We
-        compared three approaches: a Runge-Kutta multiple-shooting method, an
-        orthogonal collocation with Gauss-Radau nodes implemented in the{" "}
-        <a href="https://www.do-mpc.com/en/latest/">do-mpc</a> library, and a
-        Chebyshev pseudospectral collocation approach. These methods are all
-        based on different numerical methods for solving and integrating systems
-        of differential equations. These types of control algorithms use many of
-        the well known linear and nonlinear optimization solvers from Operations
-        Research that I studied during my Ph.D. program so it was fun to apply
-        some of my old knowledge in a fresh new domain.
+        To create a fast and responsive control algorithm, we needed our NMPC
+        algorithm to run at 50Hz on the Raspberry Pi 5. The primary computation
+        task of an NMPC solver is the solution of the embedded nonlinear
+        programming problem (NLP). We experimented with three formulations for
+        the NLP, a standard multiple shooting version, a Chebyshev
+        pseudospectral collocation method and an orthogonal collocation method.
+        These methods are all based on different numerical methods for solving
+        and integrating systems of differential equations. These types of
+        control algorithms use many of the well known linear and nonlinear
+        optimization solvers from Operations Research that I studied during my
+        Ph.D. program so it was fun to apply some of my old knowledge in a fresh
+        new domain. We compared the relative efficiency and accuracy of our
+        formulations. With proper tuning, all of these methods met the stated
+        performance requirement and produced robust trajectories that converged
+        to the goal state.
       </p>
       <p>
         This project involves managing significant complexity: tracking multiple
@@ -1119,7 +1121,11 @@ export const DRONE_PAGE = {
         testing suites, data logging pipelines, and visualization tools to
         evaluate performance, diagnose instability, and refine controller
         behavior. This structured approach helped us make sense of the drone's
-        behavior, find bugs and improve performance.
+        behavior, find bugs and improve performance. Our initial testing
+        produced robust flight behavior in an indoor environment, but you can
+        see from the video on the right that we don’t yet have precise position
+        control. We’ll do another round of testing when my son comes home for
+        spring break.
       </p>
     </div>
   ),
@@ -1127,15 +1133,24 @@ export const DRONE_PAGE = {
   media: [
     {
       mediaContent:
+        "https://www.youtube.com/embed/N2oum2yvaio?si=0yl7i9JgERu6SJx4",
+      caption: "drone flight",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent:
         "https://www.youtube.com/embed/qP2U-lA7jI4?si=F3cORvvv8r0TS7KZ",
       caption: "simulations",
       mediaType: "video",
       link: "",
     },
+
     {
-      mediaContent: gimbalTestPic,
-      caption: "gimbal test",
-      mediaType: "image",
+      mediaContent:
+        "https://www.youtube.com/embed/m86OpVHrvyQ?si=ErMlOUO9U45eMsKa",
+      caption: "gimbal closeup",
+      mediaType: "video",
       link: "",
     },
     {
@@ -1151,7 +1166,7 @@ export const DRONE_PAGE = {
     {
       citation:
         "Isidore Mones and Heidi Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
-      link: "https://github.com/wildthinkslaboratory/hop/blob/main/documents/simulation.pdf",
+      link: DronePaper,
     },
   ],
 };
