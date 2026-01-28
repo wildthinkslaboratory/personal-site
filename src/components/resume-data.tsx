@@ -20,6 +20,16 @@ import droneCartoon from "../assets/tvcdroneCartoon.png";
 
 export const PROJECT_ITEMS = [
   {
+    path: "drone",
+    title1: "Thrust-Vector-Control Drone Project",
+    title2: "",
+    summary:
+      "I helped design and build a thrust vector controlled drone. We developed a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
+    start_date: "",
+    end_date: "",
+    image: droneCartoon,
+  },
+  {
     path: "wildthinks",
     title1: "WildThinks Website",
     title2: "",
@@ -58,16 +68,6 @@ export const PROJECT_ITEMS = [
     start_date: "",
     end_date: "",
     image: timecompPic,
-  },
-  {
-    path: "drone",
-    title1: "Thrust-Vector-Control Drone Project",
-    title2: "",
-    summary:
-      "I helped design and build a thrust vector controlled drone. We developed a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
-    start_date: "",
-    end_date: "",
-    image: droneCartoon,
   },
 ];
 
@@ -228,42 +228,38 @@ export const CLIMBING_PAGE = {
   title2: "",
   content: (
     <div>
-      <p>
-        I started climbing about seven years ago when my kids got interested in
-        it. Now I can’t imagine my life without it. When you climb, the body is
-        like a complex force meter. Neurons from fingertips to toes and
-        everywhere in between flood the brain with messages and senses about
-        directional forces. In a flow state, the brain just integrates them and
-        perfectly calculates the next movement. I love this experience, building
-        the neural circuitry needed through volume and repetition until our body
-        just knows what to do. Climbing is also a way to practice managing fear.
-        I am by nature a risk averse person. To climb well, you need to be able
-        to move well when you’re scared. You need to move freely and with
-        commitment while your brain is screaming at you to freeze. When you move
-        through that barrier of fear and flow upward, grasp the next hold and
-        your fingers stick, the burst of exhilaration is unbeatable. It’s so
-        hard and at the same time addictive. It becomes a need and I have to
-        climb.
-      </p>
+      <p>I spend a lot of time climbing. It makes me feel alive.</p>
     </div>
   ),
   media: [
     {
-      mediaContent: "https://youtube.com/embed/CkZDJfFMSY0?si=vVpC8MSIpDZXfszL",
-      caption: "",
-      mediaType: "short",
-      link: "",
-    },
-    {
       mediaContent: "https://youtube.com/embed/Qs-pHOdNhZw?si=mPtamq3y0kqvdk96",
-      caption: "",
-      mediaType: "short",
+      caption: "easy dyno",
+      mediaType: "horzShort",
       link: "",
     },
     {
       mediaContent: "https://www.youtube.com/embed/-gQQRK8Lc4Y",
-      caption: "",
-      mediaType: "short",
+      caption: "muscle up",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
+      mediaContent: "https://youtube.com/embed/CkZDJfFMSY0?si=vVpC8MSIpDZXfszL",
+      caption: "black with bat hang",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
+      mediaContent: "https://youtube.com/embed/S0NDByGanvQ?si=oPuHrnJvRk_APbBd",
+      caption: "scary black move",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
+      mediaContent: "https://youtube.com/embed/tEbeUr101JI?si=7KAtGhUz70K49xoN",
+      caption: "black on slab",
+      mediaType: "horzShort",
       link: "",
     },
   ],
@@ -335,17 +331,17 @@ export const PBCHAFF_PAGE = {
   pubs: [
     {
       citation:
-        "Heidi E. Dixon, PhD Thesis. Automating Pseudo-Boolean Inference withing a DPLL Framework. University of Oregon. 2004.",
+        "Dixon, H. E. (2004). Automating pseudo-Boolean inference within a DPLL framework (PhD thesis, University of Oregon).",
       link: "https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884",
     },
     {
       citation:
-        "Heidi E. Dixon and Matthew L. Ginsberg, 2002. Inference methods for a pseudo-Boolean satisfiability solver. The Eighteenth National Conference on Artificial Intelligence (AAAI-2002).",
+        "Dixon & Ginsberg, “Inference methods for a pseudo-Boolean satisfiability solver,” AAAI-2002.",
       link: "https://cdn.aaai.org/AAAI/2002/AAAI02-095.pdf",
     },
     {
       citation:
-        "Heidi E. Dixon and Matthew L. Ginsberg, 2000. Combining Satisfiability techniques from AI and OR. The Knowledge Engineering Review 15(1).",
+        "Dixon & Ginsberg, “Combining satisfiability techniques from AI and OR,” KER 15(1), 2000.",
       link: "https://dl.acm.org/doi/abs/10.1017/S0269888900001041",
     },
   ],
@@ -848,12 +844,12 @@ export const PC_PAGE = {
   pubs: [
     {
       citation:
-        "Heidi E. Dixon, Matthew L. Ginsberg, Eugene M. Luks, and Andrew J. Parkes, 2004 Generalizing Boolean Satisfiability II: Theory. Journal of Artificial Intelligence Research, 22:481-534.",
+        "Dixon et al. (2004). Generalizing Boolean Satisfiability II: Theory. JAIR, 22:481-534.",
       link: "https://www.jair.org/index.php/jair/article/view/10397/24905",
     },
     {
       citation:
-        "Heidi E. Dixon, Matthew L. Ginsberg, David Hofer, Eugene M. Luks, and Andrew J. Parkes, 2005. Generalizing Boolean Satisfiability III: Implementation. Journal of Artificial Intelligence Research, 23:441-531.",
+        "Dixon et al., “Generalizing Boolean Satisfiability III: Implementation,” JAIR, 23:441–531, 2005.",
       link: "https://www.jair.org/index.php/jair/article/view/10407/24941",
     },
   ],
@@ -1121,11 +1117,15 @@ export const DRONE_PAGE = {
         testing suites, data logging pipelines, and visualization tools to
         evaluate performance, diagnose instability, and refine controller
         behavior. This structured approach helped us make sense of the drone's
-        behavior, find bugs and improve performance. Our initial testing
-        produced robust flight behavior in an indoor environment, but you can
-        see from the video on the right that we don’t yet have precise position
-        control. We’ll do another round of testing when my son comes home for
-        spring break.
+        behavior, find bugs and improve performance.
+      </p>
+      <p>
+        Our initial testing produced robust flight behavior in an indoor
+        environment, but you can see from the video on the right that we don’t
+        yet have precise position control. We’ll do another round of testing
+        when my son comes home for spring break. Below I've included our
+        technical report on our experiments with different NLP formulations and
+        a pointer to the github code.
       </p>
     </div>
   ),
@@ -1165,7 +1165,7 @@ export const DRONE_PAGE = {
   pubs: [
     {
       citation:
-        "Isidore Mones and Heidi Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
+        "Mones and Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
       link: DronePaper,
     },
   ],

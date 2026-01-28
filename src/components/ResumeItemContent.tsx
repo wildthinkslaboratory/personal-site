@@ -49,6 +49,7 @@ function ResumeItemContent({
           )}
         </div>
         <div className="pubs">
+          {pubs.length > 0 && <h5>Papers</h5>}
           {pubs.length > 0 && (
             <ul>
               {pubs.map((item, index) => (

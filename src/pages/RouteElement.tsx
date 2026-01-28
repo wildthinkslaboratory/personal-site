@@ -3,6 +3,7 @@ import Publications from "./publications";
 import Gallery from "./gallery";
 
 import ResumeContent from "../components/ResumeContent";
+import ResumeHorzContent from "../components/ResumeHorzContent";
 import { LS_PAGE } from "../components/resume-data";
 import { CLIMBING_PAGE } from "../components/resume-data";
 import { PBCHAFF_PAGE } from "../components/resume-data";
@@ -36,7 +37,10 @@ export function RouteElement() {
         <Route path="chewonki" element={<ResumeContent {...CHEWONKI_PAGE} />} />
         <Route path="pbchaff" element={<ResumeContent {...PBCHAFF_PAGE} />} />
         <Route path="localsearch" element={<ResumeContent {...LS_PAGE} />} />
-        <Route path="climbing" element={<ResumeContent {...CLIMBING_PAGE} />} />
+        <Route
+          path="climbing"
+          element={<ResumeHorzContent {...CLIMBING_PAGE} />}
+        />
         <Route
           path="balancebot"
           element={<ResumeContent {...CONTROL_PAGE} />}

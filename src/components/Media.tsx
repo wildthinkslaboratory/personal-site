@@ -44,6 +44,19 @@ function Media({ media, caption, mediaType, link }: MediaProps) {
             <span className="media-caption">{caption}</span>
           </div>
         );
+      case "horzShort":
+        return (
+          <div className="media-horz-short-holder">
+            <iframe
+              className="iframe-shorts-video"
+              src={media}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <span className="media-caption">{caption}</span>
+          </div>
+        );
       case "video":
         return (
           <div className="media-video-holder">

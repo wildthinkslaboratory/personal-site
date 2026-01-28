@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { LuLink } from "react-icons/lu";
 import HomeButton from "./HomeButton";
 
-type ResumeContentProps = {
+export type ResumeContentProps = {
   title1: string;
   title2: string;
   content: JSX.Element;
@@ -47,6 +47,7 @@ function ResumeContent({
           )}
         </div>
         <div className="pubs">
+          {/* {pubs.length > 0 && <h4>Papers</h4>} */}
           {pubs.length > 0 && (
             <ul>
               {pubs.map((item, index) => (

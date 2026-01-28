@@ -220,6 +220,19 @@ a:hover,
 .media-holder {
   padding-bottom: 40px;
 }
+
+.media-horz-short-holder {
+  flex: 0 0 auto;
+  width: 35vh;
+  height: 100%;
+}
+
+.iframe-shorts-video {
+  border-radius: 20px;
+  height: 50vh;
+  width: calc((50vh) * (315 / 560));
+}
+
 .media-image-holder {
   position: relative;
   width: 100%;
@@ -252,14 +265,6 @@ a:hover,
   left: 0;
   width: "100%";
   aspect-ratio: 1;
-}
-
-.iframe-shorts-video {
-  border-radius: 14px;
-  width: 315px;
-  height: 560px;
-  max-width: 100%;
-  max-height: calc((100vw - 40px) / (315 / 560));
 }
 
 .media-image-holder:hover .media-caption {
@@ -303,8 +308,14 @@ a:hover,
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
+.pubs a {
+  font-weight: normal;
+}
 .pubs li {
   margin-bottom: 1.5rem;
+  font-weight: normal;
+  font-size: small;
+  line-height: 1;
 }
 
 .content-div {
@@ -318,6 +329,14 @@ a:hover,
 }
 
 .content-vert-div h3 {
+  padding: 1rem 0;
+}
+
+.content-horz-div {
+  padding-top: 12vh;
+}
+
+.content-horz-div h3 {
   padding: 1rem 0;
 }
 
@@ -506,14 +525,23 @@ a:hover,
   .content-vert-div {
     flex-direction: column;
     height: 100vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     left: 0;
     top: 0;
     position: relative;
     width: 49%;
-    margin: 0 0 10vh 10vw;
+    margin: 0 0 0 10vw;
     padding-right: 5vw;
-    padding-bottom: 10vw;
+    /* padding-bottom: 10vw; */
+  }
+
+  .content-paragraphs {
+    height: 50vh; /* fixed height */
+    overflow-y: auto; /* vertical scroll only when needed */
+    overflow-x: hidden; /* prevents sideways scroll */
+    /* fade effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+    mask-image: linear-gradient(to bottom, black 80%, transparent);
   }
 
   .media-vert-div {
@@ -523,7 +551,30 @@ a:hover,
     width: 50%;
     padding-left: 5vw;
     padding-right: 10vw;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
+  }
+
+  .content-wrapper-horz-div {
+    flex-direction: column;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-horz-div {
+    flex-direction: row;
+    overflow-y: scroll;
+    margin: 0 10vw 0 10vw;
+  }
+
+  .media-horz-div {
+    flex-direction: row;
+    display: flex;
+    height: 70vh;
+    overflow-x: scroll;
+    width: 100vw;
+    overflow-x: auto;
+    margin-bottom: 10vh;
   }
 }
 
