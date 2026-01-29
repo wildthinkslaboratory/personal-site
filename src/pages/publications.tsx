@@ -12,6 +12,7 @@ function Publications() {
             <a
               href="https://aaai.org/papers/7798-green-driver-ai-in-a-microcosm/"
               target="_blank"
+              className="external-link"
             >
               Green Driver: AI in a Microcosm.
             </a>{" "}
@@ -23,6 +24,7 @@ function Publications() {
             <a
               href="https://www.jair.org/index.php/jair/article/view/10407/24941"
               target="_blank"
+              className="external-link"
             >
               Generalizing Boolean Satisfiability III: Implementation.
             </a>{" "}
@@ -33,6 +35,7 @@ function Publications() {
             <a
               href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884"
               target="_blank"
+              className="external-link"
             >
               Automating Pseudo-Boolean Inference withing a DPLL Framework.
             </a>{" "}
@@ -43,6 +46,7 @@ function Publications() {
             <a
               href="https://www.jair.org/index.php/jair/article/view/10397/24905"
               target="_blank"
+              className="external-link"
             >
               Generalizing Boolean Satisfiability II: Theory.
             </a>{" "}
@@ -54,6 +58,7 @@ function Publications() {
             <a
               href="https://aaai.org/papers/00055-aaai04-009-implementing-a-generalized-version-of-resolution/"
               target="_blank"
+              className="external-link"
             >
               Implementing a generalized version of resolution.
             </a>{" "}
@@ -64,6 +69,7 @@ function Publications() {
             <a
               href="https://www.jair.org/index.php/jair/article/view/10369/24816"
               target="_blank"
+              className="external-link"
             >
               Generalizing Boolean Satisfiability I: Background and survey of
               existing work.
@@ -75,6 +81,7 @@ function Publications() {
             <a
               href="https://www.researchgate.net/publication/2539695_Likely_Near-term_Advances_in_SAT_Solvers"
               target="_blank"
+              className="external-link"
             >
               Likely Near-term Advances in SAT Solvers.
             </a>{" "}
@@ -85,6 +92,7 @@ function Publications() {
             <a
               href="https://cdn.aaai.org/AAAI/2002/AAAI02-095.pdf"
               target="_blank"
+              className="external-link"
             >
               Inference methods for a pseudo-Boolean satisfiability solver.
             </a>{" "}
@@ -95,6 +103,7 @@ function Publications() {
             <a
               href="https://dl.acm.org/doi/abs/10.1017/S0269888900001041"
               target="_blank"
+              className="external-link"
             >
               Combining Satisfiability techniques from AI and OR.
             </a>{" "}

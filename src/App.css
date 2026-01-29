@@ -9,12 +9,34 @@ h6 {
 }
 
 a {
-  color: var(--highlight-1);
+  color: var(--text-color-1);
   text-decoration: none;
 }
 
 a:hover {
   color: var(--highlight-1);
+}
+
+a.external-link {
+  color: var(--highlight-1);
+}
+
+a.external-link:hover {
+  color: var(--highlight-1-fade);
+}
+
+a.external-link::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+
+  background-size: 100%;
+  background-color: var(--text-color-3); /* icon color */
+
+  mask: url("assets/external-link.svg") no-repeat center / contain;
+  -webkit-mask: url("assets/external-link.svg") no-repeat center / contain;
 }
 
 /* --------------------------- MAIN PAGE ------------------------------------ */
@@ -43,7 +65,7 @@ a:hover {
 /* --------------------------- SOCIAL MEDIA BUTTONS ------------------------------------ */
 .socials a,
 .citationsLi {
-  color: var(--text-color-3);
+  color: var(--text-color-4);
   text-decoration: inherit;
   font-weight: bold;
 }
@@ -83,8 +105,7 @@ a:hover {
   color: var(--text-color-2);
 }
 
-.accessories a:hover,
-.home-button:hover {
+.accessories a:hover {
   background-color: var(--highlight-1);
 }
 
@@ -114,12 +135,12 @@ a:hover {
 }
 
 .citations a {
-  color: var(--text-color-1);
+  color: var(--highlight-1);
   font-weight: var(--font-weight-1);
 }
 
 .citations a:hover {
-  color: var(--highlight-1);
+  color: var(--highlight-1-fade);
 }
 
 .citationsLi:hover .citations {
@@ -150,7 +171,6 @@ a:hover {
   border: 2px solid var(--text-color-2);
 }
 
-.home-button,
 .accessories .button {
   background-color: var(--highlight-1);
 }
@@ -304,6 +324,23 @@ a:hover {
   .publications-page {
     margin: 15vh 30vw;
   }
+}
+
+/* --------------------------- HOME BUTTON ------------------------------------ */
+.home-button {
+  color: var(--text-color-4);
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  cursor: pointer;
+  margin-left: -5rem;
+}
+
+.home-button:hover {
+  color: var(--text-color-3);
+  /* transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); */
 }
 
 /* -------------- CONTENT PAGES ----------- */
@@ -515,26 +552,6 @@ a:hover {
   border-radius: 5px;
   width: 95%;
   object-fit: cover;
-}
-
-.home-button {
-  position: absolute;
-  min-width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: xx-large;
-  color: #fff;
-  top: 30px;
-  right: 30px;
-}
-
-.home-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 /* --------------------------------------------------------------- */

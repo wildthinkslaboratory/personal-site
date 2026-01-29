@@ -11,7 +11,7 @@ export default function Socials() {
     <ul className="socials">
       <li>
         <div className="social-div">
-          <a href="https://github.com/wildthinkslaboratory">
+          <a href="https://github.com/wildthinkslaboratory" target="_blank">
             <BsGithub />
           </a>
           <span className="social-name">github</span>
@@ -19,7 +19,7 @@ export default function Socials() {
       </li>
       <li>
         <div className="social-div">
-          <a href={CV}>
+          <a href={CV} target="_blank">
             <SiReaddotcv />
           </a>
           <span className="social-name">resume</span>
@@ -35,7 +35,10 @@ export default function Socials() {
       </li>
       <li>
         <div className="social-div">
-          <a href="https://patents.justia.com/inventor/heidi-dixon">
+          <a
+            href="https://patents.justia.com/inventor/heidi-dixon"
+            target="_blank"
+          >
             <RiAwardFill />
           </a>
           <span className="social-name">patent</span>
@@ -46,18 +49,30 @@ export default function Socials() {
         <div className="citations">
           <p>
             Design ideas for this website come from{" "}
-            <a href="https://brittanychiang.com/" target="_blank">
+            <a
+              href="https://brittanychiang.com/"
+              target="_blank"
+              className="external-link"
+            >
               Brittany Chiang's
             </a>{" "}
             beautiful webpage.
           </p>
           <p>
             This is a{" "}
-            <a href="https://react.dev/" target="_blank">
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              className="external-link"
+            >
               React
             </a>{" "}
             page written in{" "}
-            <a href="https://www.typescriptlang.org/" target="_blank">
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              className="external-link"
+            >
               Typescript
             </a>{" "}
             by me.
