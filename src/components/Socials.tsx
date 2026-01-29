@@ -46,12 +46,21 @@ export default function Socials() {
         <div className="citations">
           <p>
             Design ideas for this website come from{" "}
-            <a href="https://brittanychiang.com/">Brittany Chiang's</a>{" "}
+            <a href="https://brittanychiang.com/" target="_blank">
+              Brittany Chiang's
+            </a>{" "}
             beautiful webpage.
           </p>
           <p>
-            This is a <a href="https://react.dev/">React</a> page written in{" "}
-            <a href="https://www.typescriptlang.org/">Typescript</a> by me.
+            This is a{" "}
+            <a href="https://react.dev/" target="_blank">
+              React
+            </a>{" "}
+            page written in{" "}
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              Typescript
+            </a>{" "}
+            by me.
           </p>
         </div>
       </li>

@@ -3,20 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* 
+.geist-test {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
 
 /* These are the main theme settings for the page */
 :root {
   /* font-family: "Roboto", sans-serif; */
-  font-family: "Funnel Sans", sans-serif;
+  font-family: "Geist", sans-serif;
+  /* JetBrains Mono */
+  /* font-family: "IBM Plex Sans", sans-serif; */
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   font-size: small;
 
+  --color-bg: #f7f7f7;
+  --text-color-1: #111;
+  --text-color-2: #777;
+  --text-color-3: #ccc;
+
+  --font-weight-1: 400;
+  --font-weight-2: 500;
+  --font-weight-3: 600;
+
+  --highlight-1: #0696f6;
+  --highlight-2: #0267ab;
+  --highlight-3: #fc8302;
+
+  --highlight-bg: #fff;
+
   color-scheme: light dark;
-  color: #666688;
-  background-color: #f7f7f9;
+  color: var(--text-color-2);
+  font-weight: var(--font-weight-1);
+  background-color: var(--color-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,6 +54,7 @@
   }
 }
 
+/* 
 body {
-  /* */
-}
+
+} */

@@ -25,7 +25,7 @@ function Page() {
       </div>
       <div className="main-vertical-scroller">
         <article className="resume-item-page">
-          <h2>Projects / Experience</h2>
+          <h2>Projects</h2>
           <ResumeList items={PROJECT_ITEMS} />
         </article>
         <article className="resume-item-page">

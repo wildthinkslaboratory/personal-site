@@ -4,80 +4,101 @@ function Publications() {
   return (
     <div className="publications-page">
       <HomeButton />
-      <h2>Publications</h2>
+      <h3>Publications</h3>
       <div className="publicationList">
         <ul>
           <li>
-            Apple, J.; Chang, P.; Clauson, A.; Dixon, H.; Fakhoury, H.;
-            Ginsberg, M.; Keenan, E.; Leighton, A.; Scavezze, K.; Smith, B..{" "}
-            <a href="https://aaai.org/papers/7798-green-driver-ai-in-a-microcosm/">
+            Apple, J. et al.{" "}
+            <a
+              href="https://aaai.org/papers/7798-green-driver-ai-in-a-microcosm/"
+              target="_blank"
+            >
               Green Driver: AI in a Microcosm.
             </a>{" "}
-            AAAI Conference on Artificial Intelligence, North America, aug.
-            2011.
+            AAAI, 2011.
           </li>
           <li>
-            Heidi E. Dixon, Matthew L. Ginsberg, David Hofer, Eugene M. Luks,
-            and Andrew J. Parkes, 2005.{" "}
-            <a href="https://www.jair.org/index.php/jair/article/view/10407/24941">
+            Dixon, H. E., Ginsberg, M. L., Hofer, D. K., Luks, E. M., and
+            Parkes, A.{" "}
+            <a
+              href="https://www.jair.org/index.php/jair/article/view/10407/24941"
+              target="_blank"
+            >
               Generalizing Boolean Satisfiability III: Implementation.
             </a>{" "}
-            Journal of Artificial Intelligence Research, 23:441-531.
+            JAIR, 2005.
           </li>
           <li>
-            Heidi E. Dixon, PhD Thesis.{" "}
-            <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884">
+            Heidi E. Dixon{" "}
+            <a
+              href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884"
+              target="_blank"
+            >
               Automating Pseudo-Boolean Inference withing a DPLL Framework.
             </a>{" "}
-            University of Oregon. 2004.
+            PhD Thesis. University of Oregon. 2004.
           </li>
           <li>
-            Heidi E. Dixon, Matthew L. Ginsberg, Eugene M. Luks, and Andrew J.
-            Parkes, 2004.{" "}
-            <a href="https://www.jair.org/index.php/jair/article/view/10397/24905">
+            Dixon, H. E., Ginsberg, M. L., Luks, E. M., and Parkes, A. J.{" "}
+            <a
+              href="https://www.jair.org/index.php/jair/article/view/10397/24905"
+              target="_blank"
+            >
               Generalizing Boolean Satisfiability II: Theory.
             </a>{" "}
-            Journal of Artificial Intelligence Research, 22:481-534.
+            JAIR, 2004.
           </li>
           <li>
-            Heidi E. Dixon, Matthew L. Ginsberg, David K. Hofer, Eugene M. Luks,
-            and Andrew Parkes 2004.{" "}
-            <a href="https://aaai.org/papers/00055-aaai04-009-implementing-a-generalized-version-of-resolution/">
+            Dixon, H. E., Ginsberg, M. L., Hofer, D. K., Luks, E. M., and
+            Parkes, A. J.{" "}
+            <a
+              href="https://aaai.org/papers/00055-aaai04-009-implementing-a-generalized-version-of-resolution/"
+              target="_blank"
+            >
               Implementing a generalized version of resolution.
             </a>{" "}
-            The Nineteenth National Conference on Artificial Intelligence
-            (AAAI-2004).
+            AAAI, 2004.
           </li>
           <li>
-            Heidi E. Dixon, Matthew L. Ginsberg, and Andrew J. Parkes, 2004.{" "}
-            <a href="https://www.jair.org/index.php/jair/article/view/10369/24816">
+            Dixon, H. E., Ginsberg, M. L., and Parkes, A. J.{" "}
+            <a
+              href="https://www.jair.org/index.php/jair/article/view/10369/24816"
+              target="_blank"
+            >
               Generalizing Boolean Satisfiability I: Background and survey of
               existing work.
             </a>{" "}
-            Journal of Artificial Intelligence Research, 21:193-243.
+            JAIR, 2004.
           </li>
           <li>
-            Heidi E. Dixon, Matthew L. Ginsberg, and Andrew J. Parkes, 2002.{" "}
-            <a href="https://www.researchgate.net/publication/2539695_Likely_Near-term_Advances_in_SAT_Solvers">
+            Dixon, H. E., Ginsberg, M. L., and Parkes, A. J.{" "}
+            <a
+              href="https://www.researchgate.net/publication/2539695_Likely_Near-term_Advances_in_SAT_Solvers"
+              target="_blank"
+            >
               Likely Near-term Advances in SAT Solvers.
             </a>{" "}
-            Workshop on Microprocessor Test and Verification (MTV 2002). Held in
-            Austin, Texas, USA. June 2002.
+            MTV Workshop, 2002.
           </li>
           <li>
-            Heidi E. Dixon and Matthew L. Ginsberg, 2002.{" "}
-            <a href="https://cdn.aaai.org/AAAI/2002/AAAI02-095.pdf">
+            Dixon H. E. and Ginsberg M. L.{" "}
+            <a
+              href="https://cdn.aaai.org/AAAI/2002/AAAI02-095.pdf"
+              target="_blank"
+            >
               Inference methods for a pseudo-Boolean satisfiability solver.
             </a>{" "}
-            The Eighteenth National Conference on Artificial Intelligence
-            (AAAI-2002).
+            AAAI, 2002.
           </li>
           <li>
-            Heidi E. Dixon and Matthew L. Ginsberg, 2000.{" "}
-            <a href="https://dl.acm.org/doi/abs/10.1017/S0269888900001041">
+            Dixon, H. E. and Ginsberg, M. L.{" "}
+            <a
+              href="https://dl.acm.org/doi/abs/10.1017/S0269888900001041"
+              target="_blank"
+            >
               Combining Satisfiability techniques from AI and OR.
             </a>{" "}
-            The Knowledge Engineering Review 15(1).
+            KER 15(1), 2000.
           </li>
         </ul>
       </div>
