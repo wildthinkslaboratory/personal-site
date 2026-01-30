@@ -1,23 +1,10 @@
 import Media from "./Media";
 import { BsGithub } from "react-icons/bs";
 import { LuLink } from "react-icons/lu";
+import HomeButton from "./HomeButton";
+import type { ResumeContentProps } from "./ResumeContent";
 
-type ResumeItemContentProps = {
-  title1: string;
-  title2: string;
-  content: string[];
-  media: {
-    mediaContent: string;
-    caption: string;
-    mediaType: string;
-    link: string;
-  }[];
-  code: string;
-  link: string;
-  pubs: { citation: string; link: string }[];
-};
-
-function ResumeItemContent({
+function ResumeHorzContent({
   title1,
   title2,
   content,
@@ -25,17 +12,14 @@ function ResumeItemContent({
   code,
   link,
   pubs,
-}: ResumeItemContentProps) {
+}: ResumeContentProps) {
   return (
-    <div className="content-div">
-      <div className="content-vert-div">
+    <div className="content-wrapper-horz-div">
+      <div className="content-horz-div">
+        <HomeButton />
         <h1>{title1}</h1>
         <h3 className="">{title2}</h3>
-        <div className="content-paragraphs">
-          {content.map((item, index) => (
-            <p key={index}>{item}</p>
-          ))}
-        </div>
+        <div className="content-paragraphs">{content}</div>
         <div className="accessories">
           {code !== "" && (
             <a href={code} className="button">
@@ -49,7 +33,6 @@ function ResumeItemContent({
           )}
         </div>
         <div className="pubs">
-          {pubs.length > 0 && <h5>Papers</h5>}
           {pubs.length > 0 && (
             <ul>
               {pubs.map((item, index) => (
@@ -61,7 +44,7 @@ function ResumeItemContent({
           )}
         </div>
       </div>
-      <div className="media-vert-div">
+      <div className="media-horz-div">
         {media.map((item, index) => (
           <Media
             key={index}
@@ -76,4 +59,4 @@ function ResumeItemContent({
   );
 }
 
-export default ResumeItemContent;
+export default ResumeHorzContent;

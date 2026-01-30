@@ -29,10 +29,10 @@ function ResumeContent({
 }: ResumeContentProps) {
   return (
     <div className="content-div">
-      <HomeButton />
       <div className="content-vert-div">
-        <h1>{title1}</h1>
-        <h3 className="">{title2}</h3>
+        <HomeButton />
+        <h3>{title1}</h3>
+        <h3>{title2}</h3>
         <div className="content-paragraphs">{content}</div>
         <div className="accessories">
           {code !== "" && (

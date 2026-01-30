@@ -44,7 +44,7 @@ export const PROJECT_ITEMS = [
     title1: "Local Search Algorithms",
     title2: "",
     summary:
-      "I have experience building local search methods for large scale scheduling and routing problems. Here I use local search to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
+      "I have experience building local search methods for large scale scheduling and routing problems. Here I use local search to solve the boggle problem.",
     start_date: "",
     end_date: "",
     image: localsearchPic,
@@ -83,7 +83,7 @@ export const TEACHING_ITEMS = [
     title1: "Homeschool Teacher",
     title2: "",
     summary:
-      "I homeschooled my son from fourth grade through high school. Our homeschool philosophy combined project-based learning with additional instruction from outside institutions.",
+      "I homeschooled my son from fourth grade through high school. We did project-based learning with additional instruction from outside institutions and lots and lots of math.",
     start_date: "",
     end_date: "",
     image: heidiPic,
@@ -123,7 +123,7 @@ export const TEACHING_ITEMS = [
     title1: "High School Mathematics Teacher",
     title2: "",
     summary:
-      "I taught high school mathematics at the Chewonki Foundation’s Maine Coast Semester Program. Mostly Algebra 2, but also a calculus class and a statistics class.",
+      "I taught high school mathematics at the Chewonki Foundation’s Maine Coast Semester Program. Mostly Algebra 2, but also calculus and a statistics class.",
     start_date: "",
     end_date: "",
     image: chewonkiPic,
@@ -155,18 +155,22 @@ export const HOBBY_ITEMS = [
 export const EDUCATION_ITEMS = [
   {
     advisor: "Advisor: Matthew Ginsberg",
-    thesis:
-      "Thesis: Automating Pseudo-Boolean Inference within a DPLL Framework",
+    thesis: "Automating Pseudo-Boolean Inference within a DPLL Framework",
+    thesis_link:
+      "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=15ee55bbb6396f9b5c2c6a088b7526c954d2f884",
     department: "Computer Science",
     school: "University of Oregon",
+    school_link: "https://www.uoregon.edu/",
     degree: "Ph.D.",
     year: "2004",
   },
   {
     advisor: "",
     thesis: "",
+    thesis_link: "",
     department: "Geology",
     school: "Oberlin College",
+    school_link: "https://www.oberlin.edu/",
     degree: "B.A.",
     year: "1993",
   },

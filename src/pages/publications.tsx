@@ -1,4 +1,5 @@
 import HomeButton from "../components/HomeButton";
+import DroneReport from "../assets/simulation.pdf";
 
 function Publications() {
   return (
@@ -108,6 +109,17 @@ function Publications() {
               Combining Satisfiability techniques from AI and OR.
             </a>{" "}
             KER 15(1), 2000.
+          </li>
+        </ul>
+        <h3>Technical Reports</h3>
+        <ul>
+          <li>
+            Mones I. and Dixon H.{" "}
+            <a href={DroneReport} target="_blank" className="external-link">
+              Comparison of Direct Methods for NMPC Applied to a
+              Thrust-Vector-Controlled Drone.
+            </a>{" "}
+            Thechnical Report. 2025.
           </li>
         </ul>
       </div>

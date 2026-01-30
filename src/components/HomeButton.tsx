@@ -1,11 +1,11 @@
 // import { IoHomeSharp } from "react-icons/io5";
-import { HiOutlineReply } from "react-icons/hi";
+import { GrUndo } from "react-icons/gr";
 
 export default function HomeButton() {
   return (
     <a href="">
       <div className="home-button">
-        <HiOutlineReply />
+        <GrUndo />
         <span>back</span>
       </div>
     </a>

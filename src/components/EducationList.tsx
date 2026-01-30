@@ -1,17 +1,20 @@
 export type EducationItemProps = {
   advisor: string;
   thesis: string;
+  thesis_link: string;
   department: string;
   school: string;
+  school_link: string;
   degree: string;
   year: string;
 };
 
 function EducationItem({
-  advisor,
   thesis,
+  thesis_link,
   department,
   school,
+  school_link,
   degree,
   year,
 }: EducationItemProps) {
@@ -20,11 +23,21 @@ function EducationItem({
       <div className="education-item">
         <span className="year">{year}</span>
         <div className="school-info">
-          <h4>
-            {degree} in {department} from {school}
-          </h4>
-          <p>{thesis}</p>
-          <p>{advisor}</p>
+          <p>
+            <span className="degree">{degree}</span> in{" "}
+            <span className="department">{department}</span> from{" "}
+            <a href={school_link} target="_blank" className="external-link">
+              {school}
+            </a>
+          </p>
+          {thesis.length > 0 && (
+            <p>
+              Thesis:{" "}
+              <a href={thesis_link} target="_blank" className="external-link">
+                {thesis}
+              </a>
+            </p>
+          )}
         </div>
       </div>
     </div>

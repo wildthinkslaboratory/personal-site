@@ -18,8 +18,8 @@ function ResumeItem({ path, title1, title2, summary, image }: ResumeItemProps) {
           <img src={image} />
         </div>
         <div className="resume-item-data">
-          <h3>{title1}</h3>
-          <h4>{title2}</h4>
+          <h4>{title1}</h4>
+          <h5>{title2}</h5>
           <p>{summary}</p>
         </div>
       </div>

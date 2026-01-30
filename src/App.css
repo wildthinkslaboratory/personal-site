@@ -59,13 +59,18 @@ a.external-link::after {
 }
 
 .main-vertical-header h1 {
-  font-size: 3rem;
+  font-weight: var(--font-weight-3);
+  font-size: 2rem;
+}
+
+.footer {
+  height: 10vh;
 }
 
 /* --------------------------- SOCIAL MEDIA BUTTONS ------------------------------------ */
 .socials a,
 .citationsLi {
-  color: var(--text-color-4);
+  color: var(--text-color-3);
   text-decoration: inherit;
   font-weight: bold;
 }
@@ -160,37 +165,12 @@ a.external-link::after {
     margin-bottom: -5px;
   }
 }
-/* --------------------------- RESUME ITEMS ------------------------------------ */
 
-.resume-item-page a,
-.resume-item-page a:hover {
-  color: var(--text-color-2);
-}
-
-.hobby-image-holder {
-  border: 2px solid var(--text-color-2);
-}
-
-.accessories .button {
-  background-color: var(--highlight-1);
-}
-
-.media-caption {
-  background-color: rgba(250, 250, 250, 0.85);
-}
+/* --------------------------- RESUME ITEMS / EDUCATION ------------------------------------ */
 
 .resume-item-page {
-  /* padding: 0 4rem; */
   padding: 0 6vw 2vh 6vw;
 }
-
-.footer {
-  height: 10vh;
-}
-
-/* .resume-item-page a {
-  font-weight: normal;
-} */
 
 .resume-item-list {
   list-style-type: none;
@@ -201,14 +181,13 @@ a.external-link::after {
 }
 
 .resume-item {
+  color: var(--text-color-2);
   font-family: inherit;
   border-radius: 6px;
 }
 
-.education-item {
-  /* padding: 20px 40px 20px 20px; */
-  width: 100%;
-  text-align: left;
+.resume-item h4 {
+  margin-bottom: 0.5rem;
 }
 
 .resume-item-image-holder,
@@ -219,19 +198,14 @@ a.external-link::after {
   padding: 2vw 2vw 2vw 4vw;
 }
 
-.education-item .year {
-  font-size: large;
-  text-align: center;
-}
-
 .resume-item img {
   width: 100%;
-  /* aspect-ratio: 1; */
   border-radius: 6px;
   object-fit: cover;
 }
 
 .resume-item:hover {
+  color: var(--text-color-2);
   background-color: var(--highlight-bg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
@@ -245,10 +219,32 @@ a.external-link::after {
   vertical-align: middle;
 }
 
-/* .hobby-list-holder {
+.education-item {
+  width: 100%;
+  text-align: left;
+}
+
+.education-item .year {
+  font-size: large;
+  text-align: center;
+}
+
+.degree,
+.department {
+  color: var(--text-color-1);
+  font-weight: var(--font-weight-2);
+}
+
+/* --------------------------- HOBBIES ------------------------------------ */
+
+.hobby-list-holder {
   width: 100%;
   padding: 10px 0;
-} */
+}
+
+.hobby-list {
+  padding: 20px 20px 0 20px;
+}
 
 .hobby-list ul {
   list-style-type: none;
@@ -266,8 +262,12 @@ a.external-link::after {
   position: relative;
 }
 
-.hobby-list {
-  padding: 20px 20px 0 20px;
+.hobby-div:hover .hobby-name {
+  visibility: visible;
+}
+
+.hobby-image-holder {
+  border: 2px solid var(--text-color-2);
 }
 
 .hobby-image-holder {
@@ -289,16 +289,13 @@ a.external-link::after {
 
 .hobby-name {
   visibility: hidden;
+  color: var(--text-color-2);
   padding: 10px 0;
-  text-align: center;
+  /* text-align: center; */
   font-size: small;
   position: absolute;
   z-index: 1;
   margin-left: -calc((100% - 20px) / 2);
-}
-
-.hobby-div:hover .hobby-name {
-  visibility: visible;
 }
 
 /* --------------------------- PUBLICATIONS PAGE ------------------------------------ */
@@ -335,6 +332,7 @@ a.external-link::after {
   gap: 0.25em;
   cursor: pointer;
   margin-left: -5rem;
+  margin-top: 0.1rem;
 }
 
 .home-button:hover {
@@ -344,6 +342,10 @@ a.external-link::after {
 }
 
 /* -------------- CONTENT PAGES ----------- */
+
+.media-caption {
+  background-color: rgba(250, 250, 250, 0.85);
+}
 .media-holder {
   padding-bottom: 40px;
 }
@@ -408,6 +410,10 @@ a.external-link::after {
   z-index: 1;
   left: 10px;
   top: 5px;
+}
+
+.accessories .button {
+  background-color: var(--highlight-1);
 }
 
 .accessories {
