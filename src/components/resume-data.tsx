@@ -1077,26 +1077,34 @@ export const DRONE_PAGE = {
   title2: "Rocket Prototype",
   content: (
     <div>
-      <p>
+      <p className="story_p" data-media="0">
         I worked on this drone project with{" "}
         <a href="https://izzymones.github.io/personal-website/">my older son</a>{" "}
-        who is studying Mechanical and Aerospace Engineering at UC Davis. A{" "}
+        who is studying Mechanical and Aerospace Engineering at UC Davis.
+      </p>
+      <p className="story_p" data-media="0">
+        A{" "}
         <a href="https://en.wikipedia.org/wiki/Thrust_vectoring">
           thrust-vector-controlled (TVC)
         </a>{" "}
         drone is a safe and inexpensive way to study control algorithms for
-        vertical takeoff and landing of thrust-vector-controlled rockets. Our
-        drone thrust is two stacked brushless motors on a servo-driven gimbal.
-        The motors rotate in opposite directions to counteract induced torques
-        about the vertical axis. It uses a <a href="https://px4.io/">Pixhawk</a>{" "}
-        flight controller, and it runs a{" "}
+        vertical takeoff and landing of thrust-vector-controlled rockets.
+      </p>
+      <p className="story_p" data-media="0">
+        Our drone thrust is two stacked brushless motors on a servo-driven
+        gimbal. The motors rotate in opposite directions to counteract induced
+        torques about the vertical axis.
+      </p>
+      <p className="story_p" data-media="0">
+        It uses a <a href="https://px4.io/">Pixhawk</a> flight controller, and
+        it runs a{" "}
         <a href="https://en.wikipedia.org/wiki/Model_predictive_control">
           nonlinear model predictive control (NMPC)
         </a>{" "}
         algorithm on a Raspberry Pi 5. The overall result is a vehicle that
         recreates many of the challenges of controlling a real rocket.
       </p>
-      <p>
+      <p className="story_p" data-media="0">
         To create a fast and responsive control algorithm, we needed our NMPC
         algorithm to run at 50Hz on the Raspberry Pi 5. The primary computation
         task of an NMPC solver is the solution of the embedded nonlinear
@@ -1113,7 +1121,7 @@ export const DRONE_PAGE = {
         performance requirement and produced robust trajectories that converged
         to the goal state.
       </p>
-      <p>
+      <p className="story_p" data-media="0">
         This project involves managing significant complexity: tracking multiple
         data streams within a precise timing grid while running iterative,
         recursive control algorithms that can produce unpredictable or emergent
@@ -1123,13 +1131,11 @@ export const DRONE_PAGE = {
         behavior. This structured approach helped us make sense of the drone's
         behavior, find bugs and improve performance.
       </p>
-      <p>
+      <p className="story_p" data-media="0">
         Our initial testing produced robust flight behavior in an indoor
         environment, but you can see from the video on the right that we don’t
         yet have precise position control. We’ll do another round of testing
-        when my son comes home for spring break. Below I've included our
-        technical report on our experiments with different NLP formulations and
-        a pointer to the github code.
+        when my son comes home for spring break.
       </p>
     </div>
   ),

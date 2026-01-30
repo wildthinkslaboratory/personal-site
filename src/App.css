@@ -39,6 +39,11 @@ a.external-link::after {
   -webkit-mask: url("assets/external-link.svg") no-repeat center / contain;
 }
 
+@media (min-width: 40rem) {
+}
+@media (min-width: 70rem) {
+}
+
 /* --------------------------- MAIN PAGE ------------------------------------ */
 
 .main-vertical-header {
@@ -67,7 +72,69 @@ a.external-link::after {
   height: 10vh;
 }
 
+/* ------  mid size screens  -------- */
+@media (min-width: 40rem) {
+  .main-vertical-header {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .main-vertical-scroller,
+  .main-vertical-header {
+    padding-top: 8vh;
+  }
+
+  #popup-image img {
+    width: 75%;
+  }
+}
+
+/* ------  large screens  -------- */
+@media (min-width: 70rem) {
+  .main-page {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .main-vertical-header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .main-vertical-scroller,
+  .main-vertical-header {
+    padding-top: 12vh;
+  }
+
+  .main-vertical-header {
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 25%;
+    margin: 0 0 10vh 10vw;
+    min-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-vertical-header .lower-header-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .main-vertical-scroller {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 74%;
+    min-width: 700px;
+  }
+}
+
 /* --------------------------- SOCIAL MEDIA BUTTONS ------------------------------------ */
+
 .socials a,
 .citationsLi {
   color: var(--text-color-3);
@@ -152,6 +219,7 @@ a.external-link::after {
   visibility: visible;
 }
 
+/* ------  mid size screens  -------- */
 @media (min-width: 40rem) {
   .citations p {
     font-size: medium;
@@ -235,6 +303,39 @@ a.external-link::after {
   font-weight: var(--font-weight-2);
 }
 
+/* ------  mid size screens  -------- */
+@media (min-width: 40rem) {
+  .resume-item-page {
+    padding: 0 6vw 2vh 6vw;
+  }
+
+  .resume-item-image-holder,
+  .education-item .year {
+    padding: 3vw 2vw 3vw 4vw;
+  }
+  .resume-item-data,
+  .education-item .school-info {
+    padding: 3vw 4vw 3vw 2vw;
+  }
+}
+
+@media (min-width: 70rem) {
+  .resume-item-page {
+    /* padding: 0 4rem; */
+    padding: 0 10vw 2vh 10vw;
+  }
+
+  .resume-item-image-holder,
+  .education-item .year {
+    padding: 1vw 1vw 1vw 2vw;
+  }
+
+  .resume-item-data,
+  .education-item .school-info {
+    padding: 1vw 2vw 1vw 1vw;
+  }
+}
+
 /* --------------------------- HOBBIES ------------------------------------ */
 
 .hobby-list-holder {
@@ -312,6 +413,7 @@ a.external-link::after {
   margin-bottom: 1.5rem;
 }
 
+/* ------  mid size screens  -------- */
 @media (min-width: 40rem) {
   .publications-page {
     margin: 10vh 20vw;
@@ -341,7 +443,7 @@ a.external-link::after {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); */
 }
 
-/* -------------- CONTENT PAGES ----------- */
+/* --------------------------- RESUME CONTENT PAGES ------------------------------------ */
 
 .media-caption {
   background-color: rgba(250, 250, 250, 0.85);
@@ -477,6 +579,73 @@ a.external-link::after {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 70rem) {
+  .content-div {
+    flex-direction: row;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-vert-div {
+    flex-direction: column;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 49%;
+    margin: 0 0 0 10vw;
+    padding-right: 5vw;
+    /* padding-bottom: 10vw; */
+  }
+
+  .content-paragraphs {
+    height: 50vh; /* fixed height */
+    overflow-y: auto; /* vertical scroll only when needed */
+    overflow-x: hidden; /* prevents sideways scroll */
+    /* fade effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+    mask-image: linear-gradient(to bottom, black 80%, transparent);
+  }
+
+  .media-vert-div {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 50%;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    /* padding-bottom: 10vh; */
+  }
+
+  .content-wrapper-horz-div {
+    flex-direction: column;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-horz-div {
+    flex-direction: row;
+    overflow-y: scroll;
+    margin: 0 10vw 0 10vw;
+  }
+
+  .media-horz-div {
+    flex-direction: row;
+    display: flex;
+    height: 70vh;
+    overflow-x: scroll;
+    width: 100vw;
+    overflow-x: auto;
+    margin-bottom: 10vh;
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+/* --------------------------- GALLERY PAGE ------------------------------------ */
 .gallery-page {
   margin: 0;
   padding: 0;
@@ -558,165 +727,4 @@ a.external-link::after {
   border-radius: 5px;
   width: 95%;
   object-fit: cover;
-}
-
-/* --------------------------------------------------------------- */
-@media (min-width: 40rem) {
-  .main-vertical-header {
-    padding-left: 6vw;
-    padding-right: 6vw;
-  }
-
-  .main-vertical-scroller,
-  .main-vertical-header {
-    padding-top: 8vh;
-  }
-
-  .resume-item-page {
-    /* padding: 0 4rem; */
-    padding: 0 6vw 2vh 6vw;
-  }
-
-  .resume-item-image-holder,
-  .education-item .year {
-    padding: 3vw 2vw 3vw 4vw;
-  }
-  .resume-item-data,
-  .education-item .school-info {
-    padding: 3vw 4vw 3vw 2vw;
-  }
-
-  #popup-image img {
-    width: 75%;
-  }
-}
-
-/* --------------------------------------------------------------- */
-
-@media (min-width: 70rem) {
-  .content-div {
-    flex-direction: row;
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content-vert-div {
-    flex-direction: column;
-    height: 100vh;
-    /* overflow-y: scroll; */
-    left: 0;
-    top: 0;
-    position: relative;
-    width: 49%;
-    margin: 0 0 0 10vw;
-    padding-right: 5vw;
-    /* padding-bottom: 10vw; */
-  }
-
-  .content-paragraphs {
-    height: 50vh; /* fixed height */
-    overflow-y: auto; /* vertical scroll only when needed */
-    overflow-x: hidden; /* prevents sideways scroll */
-    /* fade effect */
-    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
-    mask-image: linear-gradient(to bottom, black 80%, transparent);
-  }
-
-  .media-vert-div {
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
-    width: 50%;
-    padding-left: 5vw;
-    padding-right: 10vw;
-    /* padding-bottom: 10vh; */
-  }
-
-  .content-wrapper-horz-div {
-    flex-direction: column;
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content-horz-div {
-    flex-direction: row;
-    overflow-y: scroll;
-    margin: 0 10vw 0 10vw;
-  }
-
-  .media-horz-div {
-    flex-direction: row;
-    display: flex;
-    height: 70vh;
-    overflow-x: scroll;
-    width: 100vw;
-    overflow-x: auto;
-    margin-bottom: 10vh;
-  }
-}
-
-/* --------------------------------------------------------------- */
-
-@media (min-width: 70rem) {
-  .main-page {
-    flex-direction: row;
-    display: flex;
-  }
-
-  .main-vertical-header {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-
-  .main-vertical-scroller,
-  .main-vertical-header {
-    padding-top: 12vh;
-  }
-
-  .resume-item-page {
-    /* padding: 0 4rem; */
-    padding: 0 10vw 2vh 10vw;
-  }
-
-  .resume-item-image-holder,
-  .education-item .year {
-    padding: 1vw 1vw 1vw 2vw;
-  }
-  .resume-item-data,
-  .education-item .school-info {
-    padding: 1vw 2vw 1vw 1vw;
-  }
-
-  .main-vertical-header {
-    flex-direction: column;
-    left: 0;
-    top: 0;
-    position: relative;
-    width: 25%;
-    margin: 0 0 10vh 10vw;
-    min-width: 200px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .main-vertical-header,
-  .main-vertical-header .lower-header-div {
-    /* padding: 6vw; */
-  }
-
-  .main-vertical-header .lower-header-div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .main-vertical-scroller {
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
-    width: 74%;
-    min-width: 700px;
-  }
 }
