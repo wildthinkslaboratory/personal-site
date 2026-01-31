@@ -3,8 +3,9 @@ import Publications from "./publications";
 import Gallery from "./gallery";
 
 import ResumeContent from "../components/ResumeContent";
+import StoryContent from "../components/StoryContent";
 import ResumeHorzContent from "../components/ResumeHorzContent";
-import { LS_PAGE } from "../components/resume-data";
+import { DRONE_STORY, LS_PAGE } from "../components/resume-data";
 import { CLIMBING_PAGE } from "../components/resume-data";
 import { PBCHAFF_PAGE } from "../components/resume-data";
 import { CHEWONKI_PAGE } from "../components/resume-data";
@@ -16,7 +17,6 @@ import { UO_PAGE } from "../components/resume-data";
 import { PC_PAGE } from "../components/resume-data";
 import { HS_PAGE } from "../components/resume-data";
 import { CONTROL_PAGE } from "../components/resume-data";
-import { DRONE_PAGE } from "../components/resume-data";
 import { Route, Routes } from "react-router-dom";
 
 export function RouteElement() {
@@ -45,7 +45,7 @@ export function RouteElement() {
           path="balancebot"
           element={<ResumeContent {...CONTROL_PAGE} />}
         />
-        <Route path="drone" element={<ResumeContent {...DRONE_PAGE} />} />
+        <Route path="drone" element={<StoryContent {...DRONE_STORY} />} />
         <Route path="pubs" element={<Publications />} />
         <Route path="gallery" element={<Gallery />} />
       </Route>

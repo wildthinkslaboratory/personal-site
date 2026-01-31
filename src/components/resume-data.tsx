@@ -1090,12 +1090,12 @@ export const DRONE_PAGE = {
         drone is a safe and inexpensive way to study control algorithms for
         vertical takeoff and landing of thrust-vector-controlled rockets.
       </p>
-      <p className="story_p" data-media="0">
+      <p className="story_p" data-media="1">
         Our drone thrust is two stacked brushless motors on a servo-driven
         gimbal. The motors rotate in opposite directions to counteract induced
         torques about the vertical axis.
       </p>
-      <p className="story_p" data-media="0">
+      <p className="story_p" data-media="1">
         It uses a <a href="https://px4.io/">Pixhawk</a> flight controller, and
         it runs a{" "}
         <a href="https://en.wikipedia.org/wiki/Model_predictive_control">
@@ -1104,7 +1104,7 @@ export const DRONE_PAGE = {
         algorithm on a Raspberry Pi 5. The overall result is a vehicle that
         recreates many of the challenges of controlling a real rocket.
       </p>
-      <p className="story_p" data-media="0">
+      <p className="story_p" data-media="2">
         To create a fast and responsive control algorithm, we needed our NMPC
         algorithm to run at 50Hz on the Raspberry Pi 5. The primary computation
         task of an NMPC solver is the solution of the embedded nonlinear
@@ -1121,7 +1121,7 @@ export const DRONE_PAGE = {
         performance requirement and produced robust trajectories that converged
         to the goal state.
       </p>
-      <p className="story_p" data-media="0">
+      <p className="story_p" data-media="2">
         This project involves managing significant complexity: tracking multiple
         data streams within a precise timing grid while running iterative,
         recursive control algorithms that can produce unpredictable or emergent
@@ -1131,7 +1131,7 @@ export const DRONE_PAGE = {
         behavior. This structured approach helped us make sense of the drone's
         behavior, find bugs and improve performance.
       </p>
-      <p className="story_p" data-media="0">
+      <p className="story_p" data-media="3">
         Our initial testing produced robust flight behavior in an indoor
         environment, but you can see from the video on the right that we don’t
         yet have precise position control. We’ll do another round of testing
@@ -1167,6 +1167,240 @@ export const DRONE_PAGE = {
       mediaContent: dronePic,
       caption: "TVC drone",
       mediaType: "image",
+      link: "",
+    },
+  ],
+  code: "https://github.com/wildthinkslaboratory/hop",
+  link: "",
+  pubs: [
+    {
+      citation:
+        "Mones and Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
+      link: DronePaper,
+    },
+  ],
+};
+
+import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
+import NMPC from "../assets/NMPC.jpeg";
+import NPLresults from "../assets/NLPformResults.png";
+
+export const DRONE_STORY = {
+  title: "Thrust-Vector Control Drone Project",
+  content: [
+    [
+      0,
+      <div className="story-p">
+        A {""}
+        <a
+          href="https://en.wikipedia.org/wiki/Thrust_vectoring"
+          target="_blank"
+          className="external-link"
+        >
+          thrust-vector-controlled (TVC)
+        </a>{" "}
+        drone is a safe and inexpensive way to study control algorithms for
+        vertical takeoff and landing of rockets.
+      </div>,
+    ],
+    [
+      1,
+      <div className="story-p">
+        This is a project I did with{" "}
+        <a
+          href="https://izzymones.github.io/personal-website/"
+          target="_blank"
+          className="external-link"
+        >
+          my older son
+        </a>{" "}
+        who is an undergrad at UC Davis studying Mechanical and Aerospace
+        Engineering. The drone's thrust comes from two stacked brushless motors
+        on a servo-driven gimbal. The motors rotate in opposite directions to
+        counteract induced torques about the vertical axis. It uses a{" "}
+        <a href="https://px4.io/" target="_blank" className="external-link">
+          Pixhawk
+        </a>{" "}
+        flight controller, an{" "}
+        <a
+          href="https://arkelectron.com/product/ark-flow/"
+          target="_blank"
+          className="external-link"
+        >
+          optical flow sensor
+        </a>{" "}
+        and it runs a{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Model_predictive_control"
+          target="_blank"
+          className="external-link"
+        >
+          nonlinear model predictive control (NMPC)
+        </a>{" "}
+        algorithm on a Raspberry Pi 5. The overall result is a vehicle that
+        recreates many of the challenges of controlling a real rocket.
+      </div>,
+    ],
+    [
+      1,
+      <div className="story-p">
+        If you want to skip the details, you can see the drone fly{" "}
+        <a
+          href="https://www.youtube.com/watch?v=N2oum2yvaio"
+          target="_blank"
+          className="external-link"
+        >
+          here
+        </a>
+        .
+      </div>,
+    ],
+    [
+      2,
+      <div className="story-p">
+        Here's a close up of the gimbal movement. You can see the two orthogonal
+        rotations.
+      </div>,
+    ],
+    [
+      3,
+      <div className="story-p">
+        The drone uses 13-state, six degrees of freedom (6-DOF) dynamics with a
+        control input that includes the two gimbal angles, the average thrust
+        and differential thrust between the two motors. The goal is to choose
+        control parameters that allow the drone to balance vertically and move
+        precisely to specified positions in 3D space.
+      </div>,
+    ],
+    [
+      4,
+      <div className="story-p">
+        We determined our thrust model experimentally as a function of the motor
+        pulse width modulation (PWM). During live testing we quickly realized
+        the thrust model wasn't accurate at high PWM or when the battery was
+        low. We needed to consider the current battery voltage in our model. We
+        repeated our thrust testing at a range of voltages to get a more
+        accurate curve.
+      </div>,
+    ],
+    [
+      5,
+      <div className="story-p">
+        An NMPC algorithm optimizes a control trajectory across a time horizon.
+        It minimizes a cost function relative to the dynamic and physical
+        constraints. It makes subroutine calls to the same type of optimization
+        solvers that I studied during my Ph.D. program. It was fun to apply some
+        of my old knowledge in a fresh new domain.
+      </div>,
+    ],
+    [
+      6,
+      <div className="story-p">
+        We needed our NMPC algorithm to be fast. The goal was to run at 50Hz on
+        the Raspberry Pi 5. The primary computation task of an NMPC solver is
+        the solution of the nonlinear programming problem (NLP). We tried three
+        formulations for the NLP, a standard multiple shooting version, a
+        Chebyshev pseudospectral collocation method and the orthogonal
+        collocation method used by{" "}
+        <a
+          href="https://www.do-mpc.com/en/latest/"
+          target="_blank"
+          className="external-link"
+        >
+          do-mpc
+        </a>
+        With proper tuning, all methods ran at 50Hz on the Pi and produced
+        reliable trajectories.
+      </div>,
+    ],
+    [
+      7,
+      <div className="story-p">
+        The NMPC controlled drone is a complex system that can produce
+        unpredictable emergent behavior. To manage complexity, we built
+        simulation and visualization tools and data logging pipelines.
+        Simulation tools allowed us to verify our algorithm behavior before
+        actual test flights. If I had it to do over again, I'd use simulations
+        to inform the physical design of the drone.
+      </div>,
+    ],
+    [
+      7,
+      <div className="story-p">
+        The ability to analyze flight data was essential. Graphing our state and
+        control residuals helped us tune our cost function. By feeding our
+        flight data into our simulation tools we could compare actual behavior
+        with predicted behavior. This enabled us to find inaccuracies in our
+        model measurements.
+      </div>,
+    ],
+    [
+      8,
+      <div className="story-p">
+        Our initial testing produced robust flight behavior in an indoor
+        environment, but you can see from the video on the right that we don’t
+        yet have precise position control. We have a ton of flight data to
+        analyze and we’ll do another round of testing during spring break.
+      </div>,
+    ],
+  ],
+  media: [
+    {
+      mediaContent:
+        "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gimbaled_thrust_animation.gif",
+      caption: "",
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: dronePic,
+      caption: "TVC drone",
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/m86OpVHrvyQ?si=-A0TYkiSs2daG8QH",
+      caption: "gimbal closeup",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent: DroneWorldFrame,
+      caption: "Drone World Frame",
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: "https://www.desmos.com/calculator/jdtwdkq1wo",
+      caption: "Thrust Testing",
+      mediaType: "desmos",
+      link: "",
+    },
+    {
+      mediaContent: NMPC,
+      caption: "NMPC problem",
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent: NPLresults,
+      caption: "Experimental Results for NLPs",
+      mediaType: "image",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/qP2U-lA7jI4?si=j1i44StU02FDRYJg",
+      caption: "simulations",
+      mediaType: "video",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://www.youtube.com/embed/N2oum2yvaio?si=Bvfw6nqPFIKqhdrq",
+      caption: "drone flight",
+      mediaType: "video",
       link: "",
     },
   ],
