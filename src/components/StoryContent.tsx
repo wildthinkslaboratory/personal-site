@@ -3,6 +3,7 @@ import { useState } from "react";
 import StoryMedia from "./StoryMedia";
 import { BsGithub } from "react-icons/bs";
 import { LuLink } from "react-icons/lu";
+import HomeButton from "./HomeButton";
 
 export type StoryContentProps = {
   title: string;
@@ -37,7 +38,12 @@ export default function StoryPage({
 
   return (
     <div className="story-wrapper">
-      <h2>{title}</h2>
+      <HomeButton />
+      <div className="story-title-div">
+        <div>
+          <h3>{title}</h3>
+        </div>
+      </div>
       <div className="story">
         <div className="text-column">
           <Scrollama offset={0.5} onStepEnter={onStepEnter}>

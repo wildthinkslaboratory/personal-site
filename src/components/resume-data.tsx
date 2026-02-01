@@ -1372,7 +1372,7 @@ export const DRONE_STORY = {
       link: "",
     },
     {
-      mediaContent: "https://www.desmos.com/calculator/jdtwdkq1wo",
+      mediaContent: "https://www.desmos.com/calculator/azlbmntr5o",
       caption: "Thrust Testing",
       mediaType: "desmos",
       link: "",
@@ -1409,7 +1409,7 @@ export const DRONE_STORY = {
   pubs: [
     {
       citation:
-        "Mones and Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
+        "Mones and Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Technical Report. 2025.",
       link: DronePaper,
     },
   ],

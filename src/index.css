@@ -36,8 +36,10 @@
   --highlight-1-fade: #73c2f6;
   --highlight-2: #3f81ac;
   --highlight-3: #fc8302;
-
   --highlight-bg: #fff;
+
+  --lr-margin-large: 10vw;
+  --top-margin-large: 12vh;
 
   color-scheme: light dark;
   color: var(--text-color-2);
