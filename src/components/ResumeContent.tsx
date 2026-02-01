@@ -36,12 +36,12 @@ function ResumeContent({
         <div className="content-paragraphs">{content}</div>
         <div className="accessories">
           {code !== "" && (
-            <a href={code} className="button">
+            <a href={code} className="button" target="_blank">
               <BsGithub /> code
             </a>
           )}
           {link !== "" && (
-            <a href={link} className="button">
+            <a href={link} className="button" target="_blank">
               <LuLink /> website
             </a>
           )}
@@ -52,7 +52,9 @@ function ResumeContent({
             <ul>
               {pubs.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link}>{item.citation}</a>
+                  <a href={item.link} target="_blank" className="external-link">
+                    {item.citation}
+                  </a>
                 </li>
               ))}
             </ul>

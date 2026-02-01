@@ -9,7 +9,7 @@ h6 {
 }
 
 a {
-  color: var(--text-color-1);
+  color: var(--highlight-1);
   font-weight: var(--font-weight-2);
   text-decoration: none;
 }
@@ -567,6 +567,10 @@ a.external-link::after {
   padding-right: 10vw;
 } */
 
+.content-div strong {
+  color: var(--text-color-1);
+  font-weight: var(--font-weight-3);
+}
 .media-vert-div,
 .content-vert-div {
   padding-top: var(--top-margin-large);
@@ -645,7 +649,8 @@ a.external-link::after {
     display: flex;
     height: 70vh;
     overflow-x: scroll;
-    width: 100vw;
+    width: 80vw;
+    margin-left: 10vw;
     overflow-x: auto;
     margin-bottom: 10vh;
   }

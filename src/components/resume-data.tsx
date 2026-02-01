@@ -933,11 +933,22 @@ export const HS_PAGE = {
       <p>
         Our homeschool philosophy combined project based learning at home
         together with instruction from outside institutions like{" "}
-        <a href="https://artofproblemsolving.com/?srsltid=AfmBOoq4NboKZqfMWPN5quFnWRmc8M63wPjS8QLobkaQbDkgpG3u6Ft3">
+        <a
+          href="https://artofproblemsolving.com/?srsltid=AfmBOoq4NboKZqfMWPN5quFnWRmc8M63wPjS8QLobkaQbDkgpG3u6Ft3"
+          target="_blank"
+          className="external-link"
+        >
           The Art of Problem Solving
         </a>{" "}
-        and <a href="https://www.uoregon.edu/">University of Oregon</a>. The
-        details of our instruction are in our{" "}
+        and{" "}
+        <a
+          href="https://www.uoregon.edu/"
+          target="_blank"
+          className="external-link"
+        >
+          University of Oregon
+        </a>
+        . The details of our instruction are in our{" "}
         <a href={hsProfile}>school profile</a> and{" "}
         <a href={hsClases}>class descriptions</a>.
       </p>
@@ -950,8 +961,7 @@ export const HS_PAGE = {
         and took the class exams at the University’s testing center. I made sure
         to know the content of the classes so I could answer any questions he
         had and help him with his homework. He completed the following classes
-        at the University of Oregon earning a 4.09 GPA. He is hoping to attend
-        the University of Oregon full time next year. We are so proud of him.
+        at the University of Oregon during middle school and highschool.
       </p>
       <ul>
         <li>MATH 251 Calculus I</li>
@@ -967,6 +977,11 @@ export const HS_PAGE = {
         <li>CS 122 Introduction to Programming and Problem Solving </li>
         <li>CS 420 Automata Theory</li>
       </ul>
+      <p></p>
+      <p>
+        He now attends the University of Oregon and is majoring in mathematics.
+        We are so proud of him.
+      </p>
     </div>
   ),
   media: [
@@ -1002,8 +1017,8 @@ export const HS_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://www.desmos.com/calculator/tvuxwxvnew?embed",
-      caption: "",
+      mediaContent: "https://www.desmos.com/calculator/vzwtd4turx",
+      caption: "Complex Eigenvectors",
       mediaType: "desmos",
       link: "",
     },
@@ -1185,7 +1200,9 @@ import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
 import NMPC from "../assets/NMPC.jpeg";
 import NPLresults from "../assets/NLPformResults.png";
 
-export const DRONE_STORY = {
+import { StoryContentProps } from "../components/StoryContent";
+
+export const DRONE_STORY: StoryContentProps = {
   title: "Thrust-Vector Control Drone Project",
   content: [
     [
@@ -1308,7 +1325,7 @@ export const DRONE_STORY = {
           className="external-link"
         >
           do-mpc
-        </a>
+        </a>{" "}
         With proper tuning, all methods ran at 50Hz on the Pi and produced
         reliable trajectories.
       </div>,

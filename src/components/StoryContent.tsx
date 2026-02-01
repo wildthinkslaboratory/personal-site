@@ -72,12 +72,12 @@ export default function StoryPage({
         <h3>Code and Publicatons:</h3>
         <div className="accessories">
           {code !== "" && (
-            <a href={code} className="button">
+            <a href={code} className="button" target="_blank">
               <BsGithub /> code
             </a>
           )}
           {link !== "" && (
-            <a href={link} className="button">
+            <a href={link} className="button" target="_blank">
               <LuLink /> website
             </a>
           )}
@@ -88,7 +88,9 @@ export default function StoryPage({
             <ul>
               {pubs.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link}>{item.citation}</a>
+                  <a href={item.link} target="_blank" className="external-link">
+                    {item.citation}
+                  </a>
                 </li>
               ))}
             </ul>
