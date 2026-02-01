@@ -4,8 +4,8 @@ import DroneReport from "../assets/simulation.pdf";
 function Publications() {
   return (
     <div className="publication-page-wrapper">
-      <HomeButton />
       <div className="publications-page">
+        <HomeButton />
         <h3>Publications</h3>
         <div className="publicationList">
           <ul>

@@ -15,10 +15,9 @@ function ResumeHorzContent({
 }: ResumeContentProps) {
   return (
     <div className="content-wrapper-horz-div">
-      <HomeButton />
       <div className="content-horz-div">
+        <HomeButton />
         <h3>{title1}</h3>
-        <h3 className="">{title2}</h3>
         <div className="content-paragraphs">{content}</div>
         <div className="accessories">
           {code !== "" && (

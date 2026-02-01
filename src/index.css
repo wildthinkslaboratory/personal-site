@@ -40,6 +40,8 @@
 
   --lr-margin-large: 10vw;
   --top-margin-large: 12vh;
+  --lr-margin-small: 6vw;
+  --top-margin-small: 6vh;
 
   color-scheme: light dark;
   color: var(--text-color-2);
