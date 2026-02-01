@@ -553,13 +553,14 @@ a.external-link::after {
 }
 
 .pubs a {
-  font-weight: normal;
+  color: var(--highlight-2);
 }
+
 .pubs li {
   list-style-type: none;
   margin-bottom: 1.5rem;
-  font-weight: normal;
-  line-height: 1;
+  /* font-weight: normal; */
+  /* line-height: 1; */
 }
 
 /* .content-div {

@@ -1347,8 +1347,8 @@ export const DRONE_STORY: StoryContentProps = {
         The ability to analyze flight data was essential. Graphing our state and
         control residuals helped us tune our cost function. By feeding our
         flight data into our simulation tools we could compare actual behavior
-        with predicted behavior. This enabled us to find inaccuracies in our
-        model measurements.
+        with predicted behavior. This enabled us to quickly identify the problem
+        with our thrust model.
       </div>,
     ],
     [
