@@ -1,8 +1,7 @@
 import { Scrollama, Step } from "react-scrollama";
 import { useEffect, useState } from "react";
 import StoryMedia from "./StoryMedia";
-import { BsGithub } from "react-icons/bs";
-import { LuLink } from "react-icons/lu";
+import PubsAndAccessories from "./PubsAccessories";
 import HomeButton from "./HomeButton";
 
 export type StoryContentProps = {
@@ -85,32 +84,11 @@ export default function StoryPage({
       </div>
       <div className="story-footer">
         <h3>Code and Publicatons:</h3>
-        <div className="accessories">
-          {code !== "" && (
-            <a href={code} className="button" target="_blank">
-              <BsGithub /> code
-            </a>
-          )}
-          {link !== "" && (
-            <a href={link} className="button" target="_blank">
-              <LuLink /> website
-            </a>
-          )}
-        </div>
-        <div className="pubs">
-          {/* {pubs.length > 0 && <h4>Papers</h4>} */}
-          {pubs.length > 0 && (
-            <ul>
-              {pubs.map((item, index) => (
-                <li key={index}>
-                  <a href={item.link} target="_blank" className="external-link">
-                    {item.citation}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <PubsAndAccessories
+          code={code}
+          link={link}
+          pubs={pubs}
+        ></PubsAndAccessories>
       </div>
     </div>
   );

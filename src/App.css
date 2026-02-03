@@ -612,9 +612,40 @@ a.external-link::after {
   }
 }
 
-@media (min-width: 70rem) {
-  .content-div,
+@media (min-width: 40rem) {
   .content-wrapper-horz-div {
+    padding-left: var(--lr-margin-large);
+    padding-right: var(--lr-margin-large);
+    padding-top: var(--top-margin-large);
+  }
+
+  .content-wrapper-horz-div {
+    flex-direction: column;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-horz-div {
+    flex-direction: row;
+    overflow-y: scroll;
+    margin: 0 var(--lr-margin-large) 0 var(--lr-margin-large);
+  }
+
+  .media-horz-div {
+    flex-direction: row;
+    display: flex;
+    height: 70vh;
+    overflow-x: scroll;
+    width: 80vw;
+    margin-left: 10vw;
+    overflow-x: auto;
+    margin-bottom: 10vh;
+  }
+}
+
+@media (min-width: 70rem) {
+  .content-div {
     padding-left: var(--lr-margin-large);
     padding-right: var(--lr-margin-large);
     padding-top: var(--top-margin-large);
@@ -657,30 +688,6 @@ a.external-link::after {
     padding-right: var(--lr-margin-large);
     padding-bottom: var(--top-margin-large);
   }
-
-  .content-wrapper-horz-div {
-    flex-direction: column;
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content-horz-div {
-    flex-direction: row;
-    overflow-y: scroll;
-    margin: 0 var(--lr-margin-large) 0 var(--lr-margin-large);
-  }
-
-  .media-horz-div {
-    flex-direction: row;
-    display: flex;
-    height: 70vh;
-    overflow-x: scroll;
-    width: 80vw;
-    margin-left: 10vw;
-    overflow-x: auto;
-    margin-bottom: 10vh;
-  }
 }
 
 /* ----------------------------- RESUME STORY PAGE ---------------------------------- */
@@ -720,7 +727,7 @@ a.external-link::after {
 
 .text-column {
   position: relative;
-  margin-top: 35vh;
+  /* margin-top: 35vh; */
   margin-bottom: 20vh;
   width: 100%;
 }
@@ -745,8 +752,8 @@ a.external-link::after {
 .media-column {
   width: 100%;
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: 10vh;
+  height: 60vh;
   overflow-y: hidden;
 }
 
@@ -787,6 +794,12 @@ a.external-link::after {
   object-fit: contain;
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+  .media-column {
+    height: 70vh;
+  }
 }
 
 @media (min-width: 70rem) {
@@ -840,8 +853,6 @@ a.external-link::after {
 
   .media-column {
     width: 60%;
-    position: sticky;
-    top: 10vh;
     height: 80vh;
   }
 
@@ -889,8 +900,8 @@ a.external-link::after {
 }
 /* --------------------------- GALLERY PAGE ------------------------------------ */
 .gallery-page {
-  margin-left: var(--lr-margin-large);
-  margin-right: var(--lr-margin-large);
+  margin-left: var(--lr-margin-small);
+  margin-right: var(--lr-margin-small);
   padding: 0;
   background-color: var(--color-text3);
   padding-top: var(--top-margin-large);
@@ -970,4 +981,11 @@ a.external-link::after {
   border-radius: 5px;
   width: 95%;
   object-fit: cover;
+}
+
+@media (min-width: 70rem) {
+  .gallery-page {
+    margin-left: var(--lr-margin-large);
+    margin-right: var(--lr-margin-large);
+  }
 }

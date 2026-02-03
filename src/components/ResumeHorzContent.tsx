@@ -18,6 +18,7 @@ function ResumeHorzContent({
       <div className="content-horz-div">
         <HomeButton />
         <h3>{title1}</h3>
+        <h4>{title2}</h4>
         <div className="content-paragraphs">{content}</div>
         <div className="accessories">
           {code !== "" && (
