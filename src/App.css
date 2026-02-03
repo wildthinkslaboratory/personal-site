@@ -429,8 +429,39 @@ a.external-link::after {
 }
 
 /* --------------------------- HOME BUTTON ------------------------------------ */
+
+/* .home-button {
+  position: absolute;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  color: #fff;
+  top: 30px;
+  right: 30px;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+} */
+
 .home-button {
   color: var(--text-color-4);
+  width: 100%;
+  position: fixed;
+  padding-top: calc(var(--top-margin-small) / 2);
+  padding-left: var(--lr-margin-small);
+  padding-right: var(--lr-margin-small);
+  padding-bottom: calc(var(--top-margin-small) / 3);
+  top: 0;
+  left: 0;
+  background-color: var(--color-bg);
+  z-index: 2;
 }
 
 .home-button:hover {
@@ -439,14 +470,27 @@ a.external-link::after {
 
 @media (min-width: 70rem) {
   .home-button {
+    padding-top: calc(var(--top-margin-small) / 2);
+    padding-left: var(--lr-margin-small);
+    padding-right: var(--lr-margin-small);
+    padding-bottom: calc(var(--top-margin-small) / 3);
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg);
+  }
+
+  .home-button {
     position: fixed;
     display: inline-flex;
     align-items: center;
+    width: auto;
     gap: 0.25em;
     z-index: 1;
     cursor: pointer;
+    padding: 0;
     left: calc(var(--lr-margin-large) - 5rem);
     top: calc(var(--top-margin-large) + 1.15rem);
+    margin: 0;
   }
   .publication-page-wrapper .home-button {
     left: calc(var(--lr-margin-large) * 3 - 5rem);

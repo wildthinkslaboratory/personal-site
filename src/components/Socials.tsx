@@ -48,7 +48,7 @@ export default function Socials() {
         <BsFillChatSquareQuoteFill />
         <div className="citations">
           <p>
-            Design ideas for this website come from{" "}
+            The layout design for this website comes from{" "}
             <a
               href="https://brittanychiang.com/"
               target="_blank"
