@@ -1408,7 +1408,7 @@ export const DRONE_STORY: StoryContentProps = {
     },
     {
       mediaContent:
-        "https://www.youtube.com/embed/qP2U-lA7jI4?si=j1i44StU02FDRYJg",
+        "https://www.youtube.com/embed/_O6LF27Dvj0?si=HU5PQ9llYVVz1wnh",
       caption: "simulations",
       mediaType: "video",
       link: "",
