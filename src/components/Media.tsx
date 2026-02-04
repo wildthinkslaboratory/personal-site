@@ -25,7 +25,7 @@ function Media({ media, caption, mediaType, link }: MediaProps) {
       case "image link":
         return (
           <div className="media-image-holder">
-            <a href={link}>
+            <a href={link} target="_blank">
               <img src={media}></img>
             </a>
             <span className="media-caption">{caption}</span>

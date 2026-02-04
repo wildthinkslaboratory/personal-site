@@ -1198,7 +1198,7 @@ export const DRONE_PAGE = {
 
 import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
 import NMPC from "../assets/NMPC.jpeg";
-import NPLresults from "../assets/NLPformResults.png";
+import NPLresults from "../assets/NLPformResults.jpeg";
 
 import { StoryContentProps } from "../components/StoryContent";
 
@@ -1355,7 +1355,7 @@ export const DRONE_STORY: StoryContentProps = {
       8,
       <div className="story-p">
         Our initial testing produced robust flight behavior in an indoor
-        environment, but you can see from the video on the right that we don’t
+        environment, but you can see from the video on the left that we don’t
         yet have precise position control. We have a ton of flight data to
         analyze and we’ll do another round of testing during spring break.
       </div>,
