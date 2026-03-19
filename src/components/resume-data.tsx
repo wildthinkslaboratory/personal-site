@@ -1305,7 +1305,9 @@ export const DRONE_STORY: StoryContentProps = {
       <div className="story-p">
         An NMPC algorithm optimizes a control trajectory across a time horizon.
         It minimizes a cost function relative to the dynamic and physical
-        constraints. It makes subroutine calls to the same type of optimization
+        constraints. Dynamic constraints enforce the system's differential
+        equations and physical constraints can enforce limitations of the
+        hardware. It makes subroutine calls to the same type of optimization
         solvers that I studied during my Ph.D. program. It was fun to apply some
         of my old knowledge in a fresh new domain.
       </div>,

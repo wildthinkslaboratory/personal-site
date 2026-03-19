@@ -454,10 +454,10 @@ a.external-link::after {
   color: var(--text-color-4);
   width: 100%;
   position: fixed;
-  padding-top: calc(var(--top-margin-small) / 2);
+  padding-top: calc(var(--top-margin-small) / 4);
   padding-left: var(--lr-margin-small);
   padding-right: var(--lr-margin-small);
-  padding-bottom: calc(var(--top-margin-small) / 3);
+  padding-bottom: calc(var(--top-margin-small) / 5);
   top: 0;
   left: 0;
   background-color: var(--color-bg);
@@ -476,7 +476,7 @@ a.external-link::after {
     padding-bottom: calc(var(--top-margin-small) / 3);
     top: 0;
     left: 0;
-    background-color: var(--color-bg);
+    background-color: transparent;
   }
 
   .home-button {
