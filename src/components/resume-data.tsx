@@ -266,6 +266,12 @@ export const CLIMBING_PAGE = {
       mediaType: "horzShort",
       link: "",
     },
+    {
+      mediaContent: "https://youtube.com/embed/iBATIhn8kl4?si=B0bunZaQA7fcUb5F",
+      caption: "black on slab",
+      mediaType: "horzShort",
+      link: "",
+    },
   ],
   code: "",
   link: "",
