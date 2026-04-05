@@ -1,4 +1,19 @@
-import { StlViewer } from "react-stl-viewer";
+import { useLoader, Canvas } from "@react-three/fiber";
+import { STLLoader } from "three/examples/jsm/Addons.js";
+import { Suspense } from "react";
+import { OrbitControls, Center } from "@react-three/drei";
+
+function STLModel({ url }: { url: string }) {
+  const geometry = useLoader(STLLoader, url);
+
+  return (
+    <Center>
+      <mesh geometry={geometry} scale={2} rotation={[0, Math.PI, 0]}>
+        <meshStandardMaterial color="orange" />
+      </mesh>
+    </Center>
+  );
+}
 
 export type MediaProps = {
   media: string;
@@ -8,10 +23,10 @@ export type MediaProps = {
 };
 
 function Media({ media, caption, mediaType, link }: MediaProps) {
-  const modelProps = {
-    scale: 2,
-    positionX: 0,
-  };
+  // const modelProps = {
+  //   scale: 2,
+  //   positionX: 0,
+  // };
 
   const renderMedia = () => {
     switch (mediaType) {
@@ -77,19 +92,40 @@ function Media({ media, caption, mediaType, link }: MediaProps) {
             <span className="media-caption">{caption}</span>
           </div>
         );
+
       case "stl":
         return (
-          <div className="media-image-holder">
-            <StlViewer
-              className="stl-viewer"
-              orbitControls
-              shadows
-              modelProps={modelProps}
-              url={media}
-            />
+          <div className="stl-holder">
+            <Canvas
+              style={{ width: "100%", height: "400px" }}
+              camera={{ position: [0, 5, 0] }}
+            >
+              <ambientLight intensity={1.5} />
+              <directionalLight position={[0, 0, 5]} intensity={1.2} />
+
+              <Suspense fallback={null}>
+                <STLModel url={media} />
+              </Suspense>
+
+              <OrbitControls />
+            </Canvas>
+
             <span className="media-caption">{caption}</span>
           </div>
         );
+      // case "stl":
+      //   return (
+      //     <div className="media-image-holder">
+      //       <StlViewer
+      //         className="stl-viewer"
+      //         orbitControls
+      //         shadows
+      //         modelProps={modelProps}
+      //         url={media}
+      //       />
+      //       <span className="media-caption">{caption}</span>
+      //     </div>
+      //   );
       default:
         return <h1>unknown media type</h1>;
     }

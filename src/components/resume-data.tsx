@@ -20,16 +20,6 @@ import droneCartoon from "../assets/tvcdroneCartoon.png";
 
 export const PROJECT_ITEMS = [
   {
-    path: "drone",
-    title1: "Thrust-Vector-Control Drone Project",
-    title2: "",
-    summary:
-      "I helped design and build a thrust vector controlled drone. We developed a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
-    start_date: "",
-    end_date: "",
-    image: droneCartoon,
-  },
-  {
     path: "wildthinks",
     title1: "WildThinks Website",
     title2: "",
@@ -38,6 +28,16 @@ export const PROJECT_ITEMS = [
     start_date: "",
     end_date: "",
     image: wildthinksPic,
+  },
+  {
+    path: "drone",
+    title1: "Thrust-Vector-Control Drone Project",
+    title2: "",
+    summary:
+      "I helped design and build a thrust vector controlled drone. We developed a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
+    start_date: "",
+    end_date: "",
+    image: droneCartoon,
   },
   {
     path: "localsearch",
@@ -1089,123 +1089,123 @@ export const CONTROL_PAGE = {
   ],
 };
 
+// export const DRONE_PAGE = {
+//   title1: "Thrust-Vector Control Drone Project",
+//   title2: "Rocket Prototype",
+//   content: (
+//     <div>
+//       <p className="story_p" data-media="0">
+//         I worked on this drone project with{" "}
+//         <a href="https://izzymones.github.io/personal-website/">my older son</a>{" "}
+//         who is studying Mechanical and Aerospace Engineering at UC Davis.
+//       </p>
+//       <p className="story_p" data-media="0">
+//         A{" "}
+//         <a href="https://en.wikipedia.org/wiki/Thrust_vectoring">
+//           thrust-vector-controlled (TVC)
+//         </a>{" "}
+//         drone is a safe and inexpensive way to study control algorithms for
+//         vertical takeoff and landing of thrust-vector-controlled rockets.
+//       </p>
+//       <p className="story_p" data-media="1">
+//         Our drone thrust is two stacked brushless motors on a servo-driven
+//         gimbal. The motors rotate in opposite directions to counteract induced
+//         torques about the vertical axis.
+//       </p>
+//       <p className="story_p" data-media="1">
+//         It uses a <a href="https://px4.io/">Pixhawk</a> flight controller, and
+//         it runs a{" "}
+//         <a href="https://en.wikipedia.org/wiki/Model_predictive_control">
+//           nonlinear model predictive control (NMPC)
+//         </a>{" "}
+//         algorithm on a Raspberry Pi 5. The overall result is a vehicle that
+//         recreates many of the challenges of controlling a real rocket.
+//       </p>
+//       <p className="story_p" data-media="2">
+//         To create a fast and responsive control algorithm, we needed our NMPC
+//         algorithm to run at 50Hz on the Raspberry Pi 5. The primary computation
+//         task of an NMPC solver is the solution of the embedded nonlinear
+//         programming problem (NLP). We experimented with three formulations for
+//         the NLP, a standard multiple shooting version, a Chebyshev
+//         pseudospectral collocation method and an orthogonal collocation method.
+//         These methods are all based on different numerical methods for solving
+//         and integrating systems of differential equations. These types of
+//         control algorithms use many of the well known linear and nonlinear
+//         optimization solvers from Operations Research that I studied during my
+//         Ph.D. program so it was fun to apply some of my old knowledge in a fresh
+//         new domain. We compared the relative efficiency and accuracy of our
+//         formulations. With proper tuning, all of these methods met the stated
+//         performance requirement and produced robust trajectories that converged
+//         to the goal state.
+//       </p>
+//       <p className="story_p" data-media="2">
+//         This project involves managing significant complexity: tracking multiple
+//         data streams within a precise timing grid while running iterative,
+//         recursive control algorithms that can produce unpredictable or emergent
+//         behaviors. We emphasized modular design and rigorous testing. We built
+//         testing suites, data logging pipelines, and visualization tools to
+//         evaluate performance, diagnose instability, and refine controller
+//         behavior. This structured approach helped us make sense of the drone's
+//         behavior, find bugs and improve performance.
+//       </p>
+//       <p className="story_p" data-media="3">
+//         Our initial testing produced robust flight behavior in an indoor
+//         environment, but you can see from the video on the right that we don’t
+//         yet have precise position control. We’ll do another round of testing
+//         when my son comes home for spring break.
+//       </p>
+//     </div>
+//   ),
+
+//   media: [
+//     {
+//       mediaContent:
+//         "https://www.youtube.com/embed/N2oum2yvaio?si=0yl7i9JgERu6SJx4",
+//       caption: "drone flight",
+//       mediaType: "video",
+//       link: "",
+//     },
+//     {
+//       mediaContent:
+//         "https://www.youtube.com/embed/qP2U-lA7jI4?si=F3cORvvv8r0TS7KZ",
+//       caption: "simulations",
+//       mediaType: "video",
+//       link: "",
+//     },
+
+//     {
+//       mediaContent:
+//         "https://www.youtube.com/embed/m86OpVHrvyQ?si=ErMlOUO9U45eMsKa",
+//       caption: "gimbal closeup",
+//       mediaType: "video",
+//       link: "",
+//     },
+//     {
+//       mediaContent: dronePic,
+//       caption: "TVC drone",
+//       mediaType: "image",
+//       link: "",
+//     },
+//   ],
+//   code: "https://github.com/wildthinkslaboratory/hop",
+//   link: "",
+//   pubs: [
+//     {
+//       citation:
+//         "Mones and Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
+//       link: DronePaper,
+//     },
+//   ],
+// };
+
 import dronePic from "../assets/dronePic.jpeg";
-// import droneCad from "../assets/Assembly_1.glb?inline";
 import DronePaper from "../assets/simulation.pdf";
-
-export const DRONE_PAGE = {
-  title1: "Thrust-Vector Control Drone Project",
-  title2: "Rocket Prototype",
-  content: (
-    <div>
-      <p className="story_p" data-media="0">
-        I worked on this drone project with{" "}
-        <a href="https://izzymones.github.io/personal-website/">my older son</a>{" "}
-        who is studying Mechanical and Aerospace Engineering at UC Davis.
-      </p>
-      <p className="story_p" data-media="0">
-        A{" "}
-        <a href="https://en.wikipedia.org/wiki/Thrust_vectoring">
-          thrust-vector-controlled (TVC)
-        </a>{" "}
-        drone is a safe and inexpensive way to study control algorithms for
-        vertical takeoff and landing of thrust-vector-controlled rockets.
-      </p>
-      <p className="story_p" data-media="1">
-        Our drone thrust is two stacked brushless motors on a servo-driven
-        gimbal. The motors rotate in opposite directions to counteract induced
-        torques about the vertical axis.
-      </p>
-      <p className="story_p" data-media="1">
-        It uses a <a href="https://px4.io/">Pixhawk</a> flight controller, and
-        it runs a{" "}
-        <a href="https://en.wikipedia.org/wiki/Model_predictive_control">
-          nonlinear model predictive control (NMPC)
-        </a>{" "}
-        algorithm on a Raspberry Pi 5. The overall result is a vehicle that
-        recreates many of the challenges of controlling a real rocket.
-      </p>
-      <p className="story_p" data-media="2">
-        To create a fast and responsive control algorithm, we needed our NMPC
-        algorithm to run at 50Hz on the Raspberry Pi 5. The primary computation
-        task of an NMPC solver is the solution of the embedded nonlinear
-        programming problem (NLP). We experimented with three formulations for
-        the NLP, a standard multiple shooting version, a Chebyshev
-        pseudospectral collocation method and an orthogonal collocation method.
-        These methods are all based on different numerical methods for solving
-        and integrating systems of differential equations. These types of
-        control algorithms use many of the well known linear and nonlinear
-        optimization solvers from Operations Research that I studied during my
-        Ph.D. program so it was fun to apply some of my old knowledge in a fresh
-        new domain. We compared the relative efficiency and accuracy of our
-        formulations. With proper tuning, all of these methods met the stated
-        performance requirement and produced robust trajectories that converged
-        to the goal state.
-      </p>
-      <p className="story_p" data-media="2">
-        This project involves managing significant complexity: tracking multiple
-        data streams within a precise timing grid while running iterative,
-        recursive control algorithms that can produce unpredictable or emergent
-        behaviors. We emphasized modular design and rigorous testing. We built
-        testing suites, data logging pipelines, and visualization tools to
-        evaluate performance, diagnose instability, and refine controller
-        behavior. This structured approach helped us make sense of the drone's
-        behavior, find bugs and improve performance.
-      </p>
-      <p className="story_p" data-media="3">
-        Our initial testing produced robust flight behavior in an indoor
-        environment, but you can see from the video on the right that we don’t
-        yet have precise position control. We’ll do another round of testing
-        when my son comes home for spring break.
-      </p>
-    </div>
-  ),
-
-  media: [
-    {
-      mediaContent:
-        "https://www.youtube.com/embed/N2oum2yvaio?si=0yl7i9JgERu6SJx4",
-      caption: "drone flight",
-      mediaType: "video",
-      link: "",
-    },
-    {
-      mediaContent:
-        "https://www.youtube.com/embed/qP2U-lA7jI4?si=F3cORvvv8r0TS7KZ",
-      caption: "simulations",
-      mediaType: "video",
-      link: "",
-    },
-
-    {
-      mediaContent:
-        "https://www.youtube.com/embed/m86OpVHrvyQ?si=ErMlOUO9U45eMsKa",
-      caption: "gimbal closeup",
-      mediaType: "video",
-      link: "",
-    },
-    {
-      mediaContent: dronePic,
-      caption: "TVC drone",
-      mediaType: "image",
-      link: "",
-    },
-  ],
-  code: "https://github.com/wildthinkslaboratory/hop",
-  link: "",
-  pubs: [
-    {
-      citation:
-        "Mones and Dixon, Comparison of Direct Methods for NMPC Applied to a Thrust-Vector-Controlled Drone.  Thechnical Report. 2025.",
-      link: DronePaper,
-    },
-  ],
-};
-
 import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
 import NMPC from "../assets/NMPC.jpeg";
 import NPLresults from "../assets/NLPformResults.jpeg";
-
+import DroneCAD from "../assets/Assembly_1.glb?url";
+import { useGLTF } from "@react-three/drei";
+useGLTF.preload(DroneCAD);
 import { StoryContentProps } from "../components/StoryContent";
 
 export const DRONE_STORY: StoryContentProps = {
@@ -1238,13 +1238,11 @@ export const DRONE_STORY: StoryContentProps = {
           my older son
         </a>{" "}
         who is an undergrad at UC Davis studying Mechanical and Aerospace
-        Engineering. The drone's thrust comes from two stacked brushless motors
-        on a servo-driven gimbal. The motors rotate in opposite directions to
-        counteract induced torques about the vertical axis. It uses a{" "}
+        Engineering. It uses a{" "}
         <a href="https://px4.io/" target="_blank" className="external-link">
           Pixhawk
         </a>{" "}
-        flight controller, an{" "}
+        flight controller and an{" "}
         <a
           href="https://arkelectron.com/product/ark-flow/"
           target="_blank"
@@ -1252,7 +1250,7 @@ export const DRONE_STORY: StoryContentProps = {
         >
           optical flow sensor
         </a>{" "}
-        and it runs a{" "}
+        to sense the state of the drone and it runs a{" "}
         <a
           href="https://en.wikipedia.org/wiki/Model_predictive_control"
           target="_blank"
@@ -1260,112 +1258,143 @@ export const DRONE_STORY: StoryContentProps = {
         >
           nonlinear model predictive control (NMPC)
         </a>{" "}
-        algorithm on a Raspberry Pi 5. The overall result is a vehicle that
-        recreates many of the challenges of controlling a real rocket.
-      </div>,
-    ],
-    [
-      1,
-      <div className="story-p">
-        If you want to skip the details, you can see the drone fly{" "}
-        <a
-          href="https://www.youtube.com/watch?v=N2oum2yvaio"
-          target="_blank"
-          className="external-link"
-        >
-          here
-        </a>
-        .
+        algorithm to compute the optimal direction and magnitude of the thrust
+        that will allow it to balance vertically and move to precise locations
+        in 3D space. This all runs on a Raspberry Pi 5. The result is a vehicle
+        that recreates many of the challenges of controlling and landing a real
+        rocket.
       </div>,
     ],
     [
       2,
       <div className="story-p">
-        Here's a close up of the gimbal movement. You can see the two orthogonal
-        rotations.
+        The drone's thrust comes from two stacked brushless motors on a
+        servo-driven gimbal. The motors rotate in opposite directions to
+        counteract induced torques about the vertical axis. Here's a close up of
+        the gimbal movement. You can see the two orthogonal rotations.
       </div>,
     ],
     [
       3,
       <div className="story-p">
-        The drone uses 13-state, six degrees of freedom (6-DOF) dynamics with a
-        control input that includes the two gimbal angles, the average thrust
-        and differential thrust between the two motors. The goal is to choose
-        control parameters that allow the drone to balance vertically and move
-        precisely to specified positions in 3D space.
+        Differential equations for the drone allow us to predict how it will
+        respond to forces. Our equations are 13-state, six degrees of freedom
+        (6-DOF) dynamics. The thrust used to control the drone can be described
+        with four components: the two gimbal angles, and both the average and
+        the differential thrust between the two stacked motors. We use the
+        current state information to compute the best control output.
       </div>,
     ],
     [
       4,
       <div className="story-p">
-        We determined our thrust model experimentally as a function of the motor
-        pulse width modulation (PWM). During live testing we quickly realized
-        the thrust model wasn't accurate at high PWM or when the battery was
-        low. We needed to consider the current battery voltage in our model. We
-        repeated our thrust testing at a range of voltages to get a more
-        accurate curve.
+        Predicting the response of the drone to forces requires careful
+        modeling. All the components of the drone are weighed and modeled in
+        CAD. This gives us the center of gravity and moments of inertia used in
+        the differential equations.
       </div>,
     ],
     [
       5,
       <div className="story-p">
-        An NMPC algorithm optimizes a control trajectory across a time horizon.
-        It minimizes a cost function relative to the dynamic and physical
-        constraints. Dynamic constraints enforce the system's differential
-        equations and physical constraints can enforce limitations of the
-        hardware. It makes subroutine calls to the same type of optimization
-        solvers that I studied during my Ph.D. program. It was fun to apply some
-        of my old knowledge in a fresh new domain.
+        The servos for the gimbals and the brushless motors are controlled with
+        pulse width modulation (PWM). We need a mapping from PWM to angles for
+        the servos and from PWM to force in Newtons for the motors. These
+        mappings are determined experimentally. During live testing we quickly
+        realized the thrust model wasn't accurate at high PWM or when the
+        battery was low. We needed to consider the current battery voltage in
+        our model. We repeated our thrust testing at a range of voltages to get
+        a more accurate curve.
       </div>,
     ],
     [
       6,
       <div className="story-p">
-        We needed our NMPC algorithm to be fast. The goal was to run at 50Hz on
-        the Raspberry Pi 5. The primary computation task of an NMPC solver is
-        the solution of the nonlinear programming problem (NLP). We tried three
-        formulations for the NLP, a standard multiple shooting version, a
-        Chebyshev pseudospectral collocation method and the orthogonal
-        collocation method used by{" "}
+        Common control algorithms like{" "}
         <a
-          href="https://www.do-mpc.com/en/latest/"
+          href="https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller"
+          target="blank"
+          className="external-link"
+        >
+          PID
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Linear%E2%80%93quadratic_regulator"
+          target="blank"
+          className="external-link"
+        >
+          LQR
+        </a>{" "}
+        choose control values based only on the drone's current state. Our{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Model_predictive_control"
           target="_blank"
           className="external-link"
         >
-          do-mpc
+          NMPC
         </a>{" "}
-        With proper tuning, all methods ran at 50Hz on the Pi and produced
-        reliable trajectories.
+        algorithm simulates the drone's behavior two seconds into the future
+        when choosing a control output. It plans a series of control steps that
+        are efficient and revises it's plan at each time step. Anticipating
+        future behavior leads to more efficient and robust control.
       </div>,
     ],
     [
       7,
       <div className="story-p">
-        The NMPC controlled drone is a complex system that can produce
-        unpredictable emergent behavior. To manage complexity, we built
-        simulation and visualization tools and data logging pipelines.
-        Simulation tools allowed us to verify our algorithm behavior before
-        actual test flights. If I had it to do over again, I'd use simulations
-        to inform the physical design of the drone.
-      </div>,
-    ],
-    [
-      7,
-      <div className="story-p">
-        The ability to analyze flight data was essential. Graphing our state and
-        control residuals helped us tune our cost function. By feeding our
-        flight data into our simulation tools we could compare actual behavior
-        with predicted behavior. This enabled us to quickly identify the problem
-        with our thrust model.
+        An NMPC algorithm minimizes a cost function relative to the dynamic and
+        physical constraints. Dynamic constraints enforce the system's
+        differential equations and physical constraints can enforce limitations
+        of the hardware. We pick control values that quickly get us to our goal
+        state. It makes subroutine calls to the same type of optimization
+        solvers that I studied during my Ph.D. program. It was fun to apply some
+        of my old knowledge in a fresh new domain.
       </div>,
     ],
     [
       8,
       <div className="story-p">
+        We needed our NMPC algorithm to be fast. The goal was to run at 50Hz on
+        the Raspberry Pi 5. The primary computation task of an NMPC solver is
+        the solution of the{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/Nonlinear_programming"
+          target="blank"
+          className="external-link"
+        >
+          nonlinear programming problem (NLP)
+        </a>
+        . There are different ways to encode the differential equations as
+        constraints using various numerical methods. We tried three
+        formulations: multiple shooting, Chebyshev pseudospectral collocation,
+        and orthogonal collocation. With proper tuning, all methods ran at 50Hz
+        on the Pi, but we thought the orthogonal collocation method produced the
+        most reliable trajectories free of spikes and unnecessary wiggles.
+      </div>,
+    ],
+    [
+      9,
+      <div className="story-p">
+        A comlex control system can produce emergent behavior that is
+        challenging to debug. We built simulation tools to verify our algorithm
+        behavior before actual test flights. Graphing our state and control
+        residuals helped us tune our cost function. Feeding our flight data into
+        our simulation tools allowed us to compare actual behavior with
+        predicted behavior. This helped us diagnose the voltage problem in our
+        thrust model and find a delay in the application of our control thrust.
+        We believe we've found the source of this delay, but we won't know until
+        we do more testing.
+      </div>,
+    ],
+    [
+      10,
+      <div className="story-p">
         Our initial testing produced robust flight behavior in an indoor
         environment, but you can see from the video on the left that we don’t
-        yet have precise position control. We have a ton of flight data to
-        analyze and we’ll do another round of testing during spring break.
+        yet have precise position control. We hope that fixing the delay in
+        thrust application will get us the precise control we want. More testing
+        is needed.
       </div>,
     ],
   ],
@@ -1397,9 +1426,22 @@ export const DRONE_STORY: StoryContentProps = {
       link: "",
     },
     {
+      mediaContent: DroneCAD,
+      caption: "Drone CAD",
+      mediaType: "glb",
+      link: "",
+    },
+    {
       mediaContent: "https://www.desmos.com/calculator/azlbmntr5o",
       caption: "Thrust Testing",
       mediaType: "desmos",
+      link: "",
+    },
+    {
+      mediaContent:
+        "https://control.com/uploads/articles/predictive_control_image8.jpg",
+      caption: "MPC",
+      mediaType: "image",
       link: "",
     },
     {

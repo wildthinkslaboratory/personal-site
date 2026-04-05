@@ -1,4 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, Center, OrbitControls } from "@react-three/drei";
 
 type StoryMediaProps = {
   media: string;
@@ -10,6 +12,15 @@ type StoryMediaProps = {
 type StoryMediaComponentProps = StoryMediaProps & {
   active: boolean;
 };
+
+function GLBModel({ url }: { url: string }) {
+  const { scene } = useGLTF(url);
+  return (
+    <Center>
+      <primitive object={scene} scale={10} /> {/* adjust scale as needed */}
+    </Center>
+  );
+}
 
 function StoryMedia({
   media,
@@ -66,6 +77,26 @@ function StoryMedia({
         return (
           <div className="iframe-holder">
             <iframe className="story-desmos" src={media}></iframe>
+            <span className="media-caption">{caption}</span>
+          </div>
+        );
+      case "glb":
+        return (
+          <div className="glb-holder">
+            <Canvas
+              style={{ width: "100%", height: "600px" }}
+              camera={{ position: [0, -5, 0] }}
+            >
+              <ambientLight intensity={1} />
+              <directionalLight position={[5, 5, 5]} />
+
+              <Suspense fallback={null}>
+                <GLBModel url={media} />
+              </Suspense>
+
+              <OrbitControls />
+            </Canvas>
+
             <span className="media-caption">{caption}</span>
           </div>
         );
