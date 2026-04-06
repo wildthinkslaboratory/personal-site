@@ -1376,7 +1376,7 @@ export const DRONE_STORY: StoryContentProps = {
     [
       9,
       <div className="story-p">
-        A comlex control system can produce emergent behavior that is
+        A complex control system can produce emergent behavior that is
         challenging to debug. We built simulation tools to verify our algorithm
         behavior before actual test flights. Graphing our state and control
         residuals helped us tune our cost function. Feeding our flight data into
