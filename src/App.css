@@ -774,6 +774,7 @@ a.external-link::after {
   /* margin-top: 35vh; */
   margin-bottom: 20vh;
   width: 100%;
+  pointer-events: none;
 }
 
 .text-column h1 {
@@ -782,6 +783,7 @@ a.external-link::after {
 
 .story-p-holder {
   height: 100vh;
+  pointer-events: none;
 }
 
 .story-p {
@@ -791,6 +793,12 @@ a.external-link::after {
   border-radius: 10px;
   border: 2px solid var(--text-color-4);
   z-index: 99;
+  pointer-events: none;
+}
+
+.story-p a,
+.story-p button {
+  pointer-events: auto;
 }
 
 .media-column {
