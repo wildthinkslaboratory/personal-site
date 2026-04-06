@@ -1203,7 +1203,7 @@ import DronePaper from "../assets/simulation.pdf";
 import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
 import NMPC from "../assets/NMPC.jpeg";
 import NPLresults from "../assets/NLPformResults.jpeg";
-import DroneCAD from "../assets/Assembly_1.glb?url";
+import DroneCAD from "../assets/Assembly_1_comp.glb?url";
 import { useGLTF } from "@react-three/drei";
 useGLTF.preload(DroneCAD);
 import { StoryContentProps } from "../components/StoryContent";
@@ -1334,22 +1334,24 @@ export const DRONE_STORY: StoryContentProps = {
         >
           NMPC
         </a>{" "}
-        algorithm simulates the drone's behavior two seconds into the future
-        when choosing a control output. It plans a series of control steps that
-        are efficient and revises it's plan at each time step. Anticipating
-        future behavior leads to more efficient and robust control.
+        algorithm uses the differential equations to simulate the drone's
+        behavior two seconds into the future when choosing a control output. It
+        finds the optimal series of control steps to move the drone towards it's
+        goal state based. Anticipating future behavior leads to more efficient
+        and robust control.
       </div>,
     ],
     [
       7,
       <div className="story-p">
-        An NMPC algorithm minimizes a cost function relative to the dynamic and
-        physical constraints. Dynamic constraints enforce the system's
-        differential equations and physical constraints can enforce limitations
-        of the hardware. We pick control values that quickly get us to our goal
-        state. It makes subroutine calls to the same type of optimization
-        solvers that I studied during my Ph.D. program. It was fun to apply some
-        of my old knowledge in a fresh new domain.
+        How does an NMPC algorithm find an optimal plan of control outputs? It
+        minimizes a cost function relative to the dynamic and physical
+        constraints. Dynamic constraints enforce the system's differential
+        equations and physical constraints can enforce limitations of the
+        hardware. We pick control values that quickly get us to our goal state.
+        It makes subroutine calls to the same type of optimization solvers that
+        I studied during my Ph.D. program. It was fun to apply some of my old
+        knowledge in a fresh new domain.
       </div>,
     ],
     [
