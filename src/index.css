@@ -54,6 +54,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #222;
+    --text-color-1: #f7f7f7;
+    --text-color-2: #ccc;
+    --text-color-3: #aaa;
+    --text-color-4: #666;
+
+    --font-weight-1: 400;
+    --font-weight-2: 500;
+    --font-weight-3: 600;
+
+    --highlight-1: #fc8302;
+    --highlight-1-fade: #06d6f6;
+    --highlight-2: #fcaf5d;
+    --highlight-3: #fc8302;
+    --highlight-bg: #424242;
+  }
+}
+
 @media (min-width: 40rem) {
   :root {
     font-size: medium;
