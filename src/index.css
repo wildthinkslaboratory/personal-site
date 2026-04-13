@@ -61,7 +61,7 @@ img {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #222;
+    --color-bg: #151d28;
     --text-color-1: #f7f7f7;
     --text-color-2: #ccc;
     --text-color-3: #aaa;
@@ -71,12 +71,12 @@ img {
     --font-weight-2: 500;
     --font-weight-3: 600;
 
-    --highlight-1: #ff6f61;
-    --highlight-1-fade: #ffaf5d;
+    --highlight-1: #ffaf5d;
+    --highlight-1-fade: #ff6f61;
     --highlight-2: #ffafa1;
     --highlight-3: #fc8302;
-    --highlight-bg: #111;
-    --highlight-bg-line: #333;
+    --highlight-bg: #2c3a4e;
+    --highlight-bg-line: #3c4a5e;
   }
 
   img {
