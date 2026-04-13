@@ -280,6 +280,9 @@ a.external-link::after {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
+.resume-item:hover p {
+  color: var(--highlight-text);
+}
 .resume-item-data,
 .education-item .school-info {
   display: inline-block;

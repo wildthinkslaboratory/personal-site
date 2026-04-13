@@ -38,6 +38,7 @@
   --highlight-3: #fc8302;
   --highlight-bg: #fff;
   --highlight-bg-line: #fff;
+  --highlight-text: #666;
 
   --lr-margin-large: 10vw;
   --top-margin-large: 12vh;
@@ -62,7 +63,7 @@ img {
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #151d28;
-    --text-color-1: #f7f7f7;
+    --text-color-1: #fff;
     --text-color-2: #ccc;
     --text-color-3: #aaa;
     --text-color-4: #666;
@@ -77,6 +78,7 @@ img {
     --highlight-3: #fc8302;
     --highlight-bg: #2c3a4e;
     --highlight-bg-line: #3c4a5e;
+    --highlight-text: #fff;
   }
 
   img {
