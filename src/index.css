@@ -37,6 +37,7 @@
   --highlight-2: #2775a9;
   --highlight-3: #fc8302;
   --highlight-bg: #fff;
+  --highlight-bg-line: #fff;
 
   --lr-margin-large: 10vw;
   --top-margin-large: 12vh;
@@ -54,6 +55,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  filter: none;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #222;
@@ -66,11 +71,16 @@
     --font-weight-2: 500;
     --font-weight-3: 600;
 
-    --highlight-1: #fc8302;
-    --highlight-1-fade: #06d6f6;
-    --highlight-2: #fcaf5d;
+    --highlight-1: #ff6f61;
+    --highlight-1-fade: #ffaf5d;
+    --highlight-2: #ffafa1;
     --highlight-3: #fc8302;
-    --highlight-bg: #424242;
+    --highlight-bg: #111;
+    --highlight-bg-line: #333;
+  }
+
+  img {
+    filter: brightness(0.9) contrast(1.1);
   }
 }
 
