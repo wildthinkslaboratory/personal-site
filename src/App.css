@@ -373,7 +373,7 @@ a.external-link::after {
 }
 
 .hobby-image-holder {
-  border: 2px solid var(--text-color-2);
+  border: 1px solid var(--text-color-3);
 }
 
 .hobby-image-holder {
@@ -795,7 +795,7 @@ a.external-link::after {
   padding: 2rem 2rem;
   background-color: var(--highlight-bg);
   border-radius: 10px;
-  border: 2px solid var(--text-color-4);
+  border: 1px solid var(--text-color-4);
   z-index: 99;
   pointer-events: none;
 }
@@ -844,7 +844,7 @@ a.external-link::after {
 
 .story-media-holder img {
   border-radius: 10px;
-  border: 2px solid var(--text-color-4);
+  border: 1px solid var(--highlight-bg-line);
   max-width: 100%;
   max-height: 80vh;
   object-fit: contain;
