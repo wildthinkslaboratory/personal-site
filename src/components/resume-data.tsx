@@ -1340,7 +1340,8 @@ export const DRONE_STORY: StoryContentProps = {
         Predicting the response of the drone to forces requires careful
         modeling. All the components of the drone are weighed and modeled in
         CAD. This gives us the center of gravity and moments of inertia used in
-        the differential equations.
+        the differential equations. The picture seen here is the CAD file and
+        can be rotated.
       </div>,
     ],
     [
@@ -1348,8 +1349,8 @@ export const DRONE_STORY: StoryContentProps = {
       <div className="story-p">
         The servos for the gimbals and the brushless motors are controlled with
         pulse width modulation (PWM). We need a mapping from PWM to angles for
-        the servos and from PWM to force in Newtons for the motors. These
-        mappings are determined experimentally. During live testing we quickly
+        the servos and from PWM to force in Newtons for the motors. We
+        determined these mappings experimentally. During live testing we quickly
         realized the thrust model wasn't accurate at high PWM or when the
         battery was low. We needed to consider the current battery voltage in
         our model. We repeated our thrust testing at a range of voltages to get
