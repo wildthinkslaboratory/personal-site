@@ -373,7 +373,7 @@ a.external-link::after {
 }
 
 .hobby-image-holder {
-  border: 1px solid var(--text-color-3);
+  border: 2px solid var(--text-color-3);
 }
 
 .hobby-image-holder {
@@ -402,6 +402,13 @@ a.external-link::after {
   position: absolute;
   z-index: 1;
   margin-left: -calc((100% - 20px) / 2);
+}
+
+.hobby-icon {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color-2);
 }
 
 /* --------------------------- PUBLICATIONS PAGE ------------------------------------ */

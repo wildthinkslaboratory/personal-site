@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 export type HobbyProps = {
   path: string;
   title: string;
-  image: string;
+  Icon: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-function Hobby({ path, title, image }: HobbyProps) {
+function Hobby({ path, title, Icon }: HobbyProps) {
   return (
     <Link to={path}>
       <div className="hobby-div">
         <div className="hobby-image-holder">
-          <img src={image} />
+          <Icon />
         </div>
         <span className="hobby-name">{title}</span>
       </div>
