@@ -321,6 +321,18 @@ export const CLIMBING_PAGE = {
       mediaType: "horzShort",
       link: "",
     },
+    {
+      mediaContent: "https://youtube.com/embed/BempSldjPCo?si=9H02cfSmoJ3wgt3s",
+      caption: "pink and fun",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
+      mediaContent: "https://youtube.com/embed/7wql4qW776o?si=8mAuWwT-75Qj_6q3",
+      caption: "17 pullups",
+      mediaType: "horzShort",
+      link: "",
+    },
   ],
   code: "",
   link: "",
