@@ -333,6 +333,12 @@ export const CLIMBING_PAGE = {
       mediaType: "horzShort",
       link: "",
     },
+    {
+      mediaContent: "https://youtube.com/embed/8HJtyU9luG8?si=VmvK1U93AxMbcWeW",
+      caption: "red on 20 degree wall",
+      mediaType: "horzShort",
+      link: "",
+    },
   ],
   code: "",
   link: "",
