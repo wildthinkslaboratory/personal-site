@@ -1266,7 +1266,7 @@ export const CONTROL_PAGE = {
 // };
 
 import dronePic from "../assets/dronePic.jpeg";
-import DronePaper from "../assets/simulation.pdf";
+import DronePaper from "../assets/scitech_draft.pdf";
 import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
 import NMPC from "../assets/NMPC.jpeg";
 import NPLresults from "../assets/NLPformResults.jpeg";
