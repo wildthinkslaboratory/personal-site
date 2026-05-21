@@ -1564,6 +1564,11 @@ import treequiltPic from "../assets/treequilt.jpg";
 import lunchPic from "../assets/dino.jpeg";
 import mural from "../assets/murals.jpg";
 import mandalaquilt from "../assets/reneequilt.jpeg";
+import robin from "../assets/robin.jpg";
+import tree from "../assets/papertree.jpg";
+import chickadee from "../assets/chickadee.jpg";
+import jay from "../assets/jay.jpg";
+import mosaic from "../assets/mosaic.jpg";
 
 export const ART = [
   {
@@ -1617,5 +1622,25 @@ export const ART = [
   {
     image: mandalaquilt,
     description: "mandala quilt",
+  },
+  {
+    image: robin,
+    description: "paper mural robin",
+  },
+  {
+    image: tree,
+    description: "paper mural",
+  },
+  {
+    image: chickadee,
+    description: "paper mural chickadee",
+  },
+  {
+    image: jay,
+    description: "paper mural jay",
+  },
+  {
+    image: mosaic,
+    description: "wall stencil",
   },
 ];
