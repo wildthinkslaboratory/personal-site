@@ -1,5 +1,5 @@
 import HomeButton from "../components/HomeButton";
-import DroneReport from "../assets/simulation.pdf";
+import DroneReport from "../assets/scitech_draft.pdf";
 
 function Publications() {
   return (
