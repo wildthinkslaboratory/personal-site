@@ -328,7 +328,7 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://youtube.com/embed/D4oOZ7KhthI?si=hyqTa9gvrAcKlOpF",
+      mediaContent: "https://youtube.com/embed/B35w4_lK360?si=ReGpw-zeF5FLTubL",
       caption: "campus",
       mediaType: "horzShort",
       link: "",
