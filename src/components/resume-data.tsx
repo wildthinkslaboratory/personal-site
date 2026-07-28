@@ -286,8 +286,8 @@ export const CLIMBING_PAGE = {
   ),
   media: [
     {
-      mediaContent: "https://youtube.com/embed/Qs-pHOdNhZw?si=mPtamq3y0kqvdk96",
-      caption: "easy dyno",
+      mediaContent: "https://youtube.com/embed/QDSDPBB8n_I?si=HDRImMGTP5tekYW9",
+      caption: "purple on triple triangle",
       mediaType: "horzShort",
       link: "",
     },
@@ -312,12 +312,6 @@ export const CLIMBING_PAGE = {
     {
       mediaContent: "https://youtube.com/embed/S0NDByGanvQ?si=oPuHrnJvRk_APbBd",
       caption: "scary black move",
-      mediaType: "horzShort",
-      link: "",
-    },
-    {
-      mediaContent: "https://youtube.com/embed/BempSldjPCo?si=9H02cfSmoJ3wgt3s",
-      caption: "pink and fun",
       mediaType: "horzShort",
       link: "",
     },
