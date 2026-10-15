@@ -310,6 +310,12 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
+      mediaContent: "https://youtube.com/embed/V0P7zFRtTgk?si=LmW2WCzwDKwbzr1P",
+      caption: "hard V7 on SplitSeam",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
       mediaContent: "https://youtube.com/embed/S0NDByGanvQ?si=oPuHrnJvRk_APbBd",
       caption: "scary black move",
       mediaType: "horzShort",
