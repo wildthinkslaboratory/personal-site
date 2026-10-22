@@ -19,9 +19,12 @@ export default function Socials() {
       </li>
       <li>
         <div className="social-div">
-          <a href={CV} target="_blank">
+          {/* <a href={CV} target="_blank">
             <SiReaddotcv />
-          </a>
+          </a> */}
+          <Link to="actual-resume">
+            <SiReaddotcv />
+          </Link>
           <span className="social-name">resume</span>
         </div>
       </li>

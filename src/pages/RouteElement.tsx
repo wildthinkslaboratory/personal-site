@@ -18,6 +18,7 @@ import { PC_PAGE } from "../components/resume-data";
 import { HS_PAGE } from "../components/resume-data";
 import { CONTROL_PAGE } from "../components/resume-data";
 import { Route, Routes } from "react-router-dom";
+import ActualResume from "./actual-resume";
 
 export function RouteElement() {
   return (
@@ -47,6 +48,7 @@ export function RouteElement() {
         />
         <Route path="drone" element={<StoryContent {...DRONE_STORY} />} />
         <Route path="pubs" element={<Publications />} />
+        <Route path="actual-resume" element={<ActualResume />} />
         <Route path="gallery" element={<Gallery />} />
       </Route>
     </Routes>

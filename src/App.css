@@ -1055,3 +1055,283 @@ a.external-link::after {
     width: 75%;
   }
 }
+
+/* --------------------------------- RESUME FORMATTING ------------------------------*/
+.cv {
+  --section-gap: 14pt;
+  --item-gap: 5pt;
+
+  max-width: 7.2in;
+  margin: 0 auto;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.3;
+}
+
+.cv,
+.cv * {
+  box-sizing: border-box;
+}
+
+.cv h1 {
+  margin: 0 0 6pt;
+  font-size: 24pt;
+  line-height: 1.1;
+}
+
+.cv h2 {
+  margin: 0 0 6pt;
+  padding-bottom: 3pt;
+  border-bottom: 0.75pt solid #888;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.cv section {
+  margin-top: var(--section-gap);
+}
+
+.cv ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv li + li {
+  margin-top: var(--item-gap);
+}
+
+.cv .education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+}
+
+.cv .education-year {
+  white-space: nowrap;
+}
+
+.cv .education-thesis,
+.cv .education-advisor {
+  margin-top: 3pt;
+}
+
+.cv .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4pt 14pt;
+}
+
+/* Row spacing comes from gap, not list-item margins. */
+.cv .contact-list > li,
+.cv .skills-list > li {
+  margin: 0;
+}
+
+.cv .school {
+  font-weight: bold;
+}
+
+.cv a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cv-publications .paper {
+  font-weight: bold;
+}
+
+.cv-publications .publisher-link {
+  font-weight: bold;
+}
+
+.cv-publications .publisher {
+  font-style: italic;
+}
+
+.cv .skill-categories {
+  margin: 0;
+}
+
+.cv .skill-category {
+  display: grid;
+  grid-template-columns: 145pt minmax(0, 1fr);
+  column-gap: 10pt;
+  margin-bottom: 4pt;
+  break-inside: avoid;
+}
+
+.cv .skill-category dt {
+  font-weight: normal;
+}
+
+.cv .skill-category dd {
+  margin: 0;
+}
+
+.cv .experience-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv .experience-list > .experience-entry {
+  margin: 0;
+}
+
+.cv .experience-list > .experience-entry + .experience-entry {
+  margin-top: 10pt;
+}
+
+.cv .experience-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12pt;
+  break-after: avoid;
+}
+
+.cv .experience-header h3,
+.cv .project-header h3 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.cv .experience-dates {
+  white-space: nowrap;
+}
+
+.cv .experience-employer {
+  margin-top: 2pt;
+  break-after: avoid;
+}
+
+.cv .experience-description {
+  margin: 4pt 0 0;
+  white-space: pre-line;
+}
+
+.cv .project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv .project-list > .project-entry {
+  margin: 0;
+}
+
+.cv .project-list > .project-entry + .project-entry {
+  margin-top: 10pt;
+}
+
+.cv .project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+  break-after: avoid;
+}
+
+.cv .project-header h3 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+/* .cv .project-links {
+  display: flex;
+  gap: 10pt;
+  white-space: nowrap;
+}
+
+.cv .project-description {
+  margin: 4pt 0 0;
+  white-space: pre-line;
+} */
+
+.cv .project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv .project-list > .project-entry {
+  margin: 0;
+}
+
+.cv .project-list > .project-entry + .project-entry {
+  margin-top: 10pt;
+}
+
+.cv .project-title {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+  break-after: avoid;
+}
+
+.cv .project-description {
+  margin: 4pt 0 0;
+  white-space: pre-line;
+}
+
+.cv .project-links {
+  display: flex;
+  gap: 12pt;
+  margin-top: 4pt;
+  break-before: avoid;
+}
+
+.cv .project-links a {
+  text-decoration: underline;
+}
+@media print {
+  /* Allow long entries to continue onto the next page. */
+  .cv .experience-list > .experience-entry {
+    break-inside: auto;
+  }
+
+  .cv .experience-description {
+    orphans: 2;
+    widows: 2;
+  }
+}
+
+.cv .experience-bullets {
+  margin: 4pt 0 0;
+  padding-left: 15pt;
+  list-style: disc;
+}
+
+.cv .experience-bullets > li {
+  margin: 0;
+}
+
+.cv .experience-bullets > li + li {
+  margin-top: 3pt;
+}
+
+@page {
+  size: letter;
+  margin: 0.6in 0.65in;
+}
+
+@media print {
+  .cv {
+    max-width: none;
+    margin: 0;
+  }
+
+  .cv h1,
+  .cv h2 {
+    break-after: avoid;
+  }
+
+  .cv li {
+    break-inside: avoid;
+  }
+}
