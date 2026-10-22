@@ -701,7 +701,12 @@ function Hobbies() {
   );
 }
 
+import { useEffect } from "react";
 function ActualResume() {
+  useEffect(() => {
+    document.title = "Resume | Heidi Dixon";
+  }, []);
+
   return (
     <main className="cv">
       <ContactInfo />

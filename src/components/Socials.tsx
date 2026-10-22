@@ -4,7 +4,6 @@ import { SiReaddotcv } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { BsFillChatSquareQuoteFill } from "react-icons/bs";
 import { RiAwardFill } from "react-icons/ri";
-import CV from "../assets/HeidiDixonResume.pdf";
 
 export default function Socials() {
   return (
@@ -22,7 +21,7 @@ export default function Socials() {
           {/* <a href={CV} target="_blank">
             <SiReaddotcv />
           </a> */}
-          <Link to="actual-resume">
+          <Link to="actual-resume" target="_blank" rel="noopener noreferrer">
             <SiReaddotcv />
           </Link>
           <span className="social-name">resume</span>
