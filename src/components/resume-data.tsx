@@ -304,8 +304,14 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://youtube.com/embed/iBATIhn8kl4?si=B0bunZaQA7fcUb5F",
-      caption: "black on splitseam",
+      mediaContent: "https://youtube.com/embed/G3K1XDykpLA?si=-9OArjYqiPlvawtq",
+      caption: "little dynos",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
+      mediaContent: "https://youtube.com/embed/B35w4_lK360?si=ReGpw-zeF5FLTubL",
+      caption: "campus",
       mediaType: "horzShort",
       link: "",
     },
@@ -316,15 +322,8 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://youtube.com/embed/G3K1XDykpLA?si=-9OArjYqiPlvawtq",
-      caption: "little dynos",
-      mediaType: "horzShort",
-      link: "",
-    },
-
-    {
-      mediaContent: "https://youtube.com/embed/B35w4_lK360?si=ReGpw-zeF5FLTubL",
-      caption: "campus",
+      mediaContent: "https://youtube.com/embed/iBATIhn8kl4?si=B0bunZaQA7fcUb5F",
+      caption: "black on splitseam",
       mediaType: "horzShort",
       link: "",
     },
