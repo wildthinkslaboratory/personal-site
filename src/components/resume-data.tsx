@@ -316,17 +316,12 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://youtube.com/embed/S0NDByGanvQ?si=oPuHrnJvRk_APbBd",
-      caption: "scary black move",
+      mediaContent: "https://youtube.com/embed/G3K1XDykpLA?si=-9OArjYqiPlvawtq",
+      caption: "little dynos",
       mediaType: "horzShort",
       link: "",
     },
-    {
-      mediaContent: "https://youtube.com/embed/tEbeUr101JI?si=7KAtGhUz70K49xoN",
-      caption: "black on slab",
-      mediaType: "horzShort",
-      link: "",
-    },
+
     {
       mediaContent: "https://youtube.com/embed/B35w4_lK360?si=ReGpw-zeF5FLTubL",
       caption: "campus",
@@ -339,6 +334,18 @@ export const CLIMBING_PAGE = {
       mediaType: "horzShort",
       link: "",
     },
+    // {
+    //   mediaContent: "https://youtube.com/embed/S0NDByGanvQ?si=oPuHrnJvRk_APbBd",
+    //   caption: "scary black move",
+    //   mediaType: "horzShort",
+    //   link: "",
+    // },
+    // {
+    //   mediaContent: "https://youtube.com/embed/tEbeUr101JI?si=7KAtGhUz70K49xoN",
+    //   caption: "black on slab",
+    //   mediaType: "horzShort",
+    //   link: "",
+    // },
   ],
   code: "",
   link: "",
