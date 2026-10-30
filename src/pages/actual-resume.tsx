@@ -1,5 +1,6 @@
 import { EDUCATION_ITEMS } from "../components/resume-data";
 import DroneReport from "../assets/scitech_draft.pdf";
+import { useEffect } from "react";
 
 /* ------------------------ CONTACT INFO ----------------------------------------*/
 const CONTACT_INFO = {
@@ -10,118 +11,7 @@ const CONTACT_INFO = {
   website: "https://wildthinkslaboratory.github.io/personal-site/",
 };
 
-function ContactInfo() {
-  return (
-    <header className="cv-contact">
-      <h1>{CONTACT_INFO.name}</h1>
-
-      <ul className="contact-list">
-        <li>{CONTACT_INFO.cell}</li>
-        <li>{CONTACT_INFO.email}</li>
-        <li>{CONTACT_INFO.website}</li>
-        <li>{CONTACT_INFO.github}</li>
-      </ul>
-    </header>
-  );
-}
-
-/* ------------------------ EDUCATION ----------------------------------------*/
-
-function Education() {
-  return (
-    <section className="cv-education">
-      <h2>Education</h2>
-
-      <ul>
-        {EDUCATION_ITEMS.map((item) => (
-          <li key={`${item.school}-${item.degree}`}>
-            <div className="education-header">
-              <span>
-                <strong>
-                  {item.degree} in {item.department}
-                </strong>
-                {", "}
-                <a href={item.school_link}>{item.school}</a>
-              </span>
-              <span className="education-year">{item.year}</span>
-            </div>
-
-            {item.thesis && (
-              <div className="education-thesis">
-                Thesis:{" "}
-                {item.thesis_link ? (
-                  <a href={item.thesis_link}>{item.thesis}</a>
-                ) : (
-                  item.thesis
-                )}
-              </div>
-            )}
-
-            {item.advisor && (
-              <div className="education-advisor">{item.advisor}</div>
-            )}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
-/* ------------------------ SKILLS ----------------------------------------*/
-
-const TECH_SKILLS = {
-  languages: ["C++", "Python"],
-  optimization: [
-    "algorithm development",
-    "combinatorial optimization",
-    "linear and integer programming",
-    "Boolean satisfiability (SAT)",
-    "search algorithms",
-    "planning",
-    "scheduling",
-    "routing",
-    "computational group theory",
-  ],
-  control: [
-    "Model Predictice Control (NMPC / MPC)",
-    "numerical optimization",
-    "dynamical systems modeling",
-    "ROS2",
-    "PX4",
-    "Raspberry Pi",
-  ],
-  webdev: ["Typescript/Javascript", "React", "HTML/CSS"],
-  other: ["Git", "Linux", "LaTeX", "NumPy", "Casadi", "do-mpc"],
-};
-
-const SKILL_LABELS: Record<keyof typeof TECH_SKILLS, string> = {
-  languages: "Languages",
-  optimization: "Optimization & Algorithms",
-  control: "Control & Modeling",
-  webdev: "Web Development",
-  other: "Tools",
-};
-
-function TechnicalSkills() {
-  return (
-    <section className="cv-tech-skills">
-      <h2>Technical Skills</h2>
-
-      <dl className="skill-categories">
-        {(Object.keys(TECH_SKILLS) as (keyof typeof TECH_SKILLS)[]).map(
-          (category) => (
-            <div className="skill-category" key={category}>
-              <dt>{SKILL_LABELS[category]}:</dt>
-              <dd>{TECH_SKILLS[category].join(", ")}</dd>
-            </div>
-          ),
-        )}
-      </dl>
-    </section>
-  );
-}
-
-/* ------------------------ PUBLICATIONS ----------------------------------------*/
+/****************************  PUBLICATIONS DATA   *************************** */
 
 const PUBLICATIONS = [
   {
@@ -211,33 +101,203 @@ const PUBLICATIONS = [
   },
 ];
 
-export function Publications() {
-  return (
-    <section className="cv-publications">
-      <h2>Publications</h2>
+const VER_PUBLICATION_TITLES = [
+  "Generalizing Boolean Satisfiability III: Implementation",
+  "Generalizing Boolean Satisfiability II: Theory",
+  "Implementing a generalized version of resolution",
+  "Inference methods for a pseudo-Boolean satisfiability solver",
+  "Combining Satisfiability techniques from AI and OR",
+];
 
-      <ul>
-        {PUBLICATIONS.map((item) => (
-          <li key={item.link || item.title}>
-            <span className="authors">{item.authors}</span>{" "}
-            <a className="paper" href={item.link}>
-              {item.title}.
-            </a>{" "}
-            {item.publisher_link ? (
-              <a className="publisher-link" href={item.publisher_link}>
-                {item.publisher}
-              </a>
-            ) : (
-              <span className="publisher">{item.publisher}</span>
-            )}
-            {", "}
-            <span className="publication-date">{item.date}</span>.
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
+const VER_PUBLICATIONS = PUBLICATIONS.filter((publication) =>
+  VER_PUBLICATION_TITLES.includes(publication.title),
+);
+
+const VER_PROFESSIONAL_SUMMARY =
+  "Computer scientist with a Ph.D. and extensive research " +
+  "experience in automated reasoning, SAT solving, proof " +
+  "systems, and combinatorial optimization. Invented new " +
+  "inference methods and implemented high-performance " +
+  "constraint solvers in C++. Published peer-reviewed " +
+  "research on propositional proof systems, pseudo-Boolean " +
+  "reasoning, and generalized satisfiability. Combines " +
+  "theoretical expertise in mathematical logic and " +
+  "computational complexity with practical software " +
+  "engineering and algorithm development. Interested in " +
+  "formal verification and improving the reliability " +
+  "of AI-generated software.";
+
+/****************************  TECH SKILLS DATA *************************** */
+
+const TECH_SKILLS = {
+  languages: ["C++", "Python"],
+  optimization: [
+    "algorithm development",
+    "combinatorial optimization",
+    "linear and integer programming",
+    "Boolean satisfiability (SAT)",
+    "search algorithms",
+    "planning",
+    "scheduling",
+    "routing",
+    "computational group theory",
+  ],
+  control: [
+    "Model Predictice Control (NMPC / MPC)",
+    "numerical optimization",
+    "dynamical systems modeling",
+    "ROS2",
+    "PX4",
+    "Raspberry Pi",
+  ],
+  webdev: ["Typescript/Javascript", "React", "HTML/CSS"],
+  other: ["Git", "Linux", "LaTeX", "NumPy", "Casadi", "do-mpc"],
+};
+
+const SKILL_LABELS: Record<keyof typeof TECH_SKILLS, string> = {
+  languages: "Languages",
+  optimization: "Optimization & Algorithms",
+  control: "Control & Modeling",
+  webdev: "Web Development",
+  other: "Tools",
+};
+
+const VER_TECH_SKILLS = {
+  languages: ["C++", "Python", "Java", "TypeScript/JavaScript"],
+  automated_reasoning: [
+    "Boolean satisfiability (SAT)",
+    "DPLL-based SAT solving",
+    "pseudo-Boolean inference",
+    "automated deduction",
+    "propositional proof systems",
+    "proof complexity",
+    "constraint satisfaction",
+    "computational group theory",
+  ],
+  algorithms: [
+    "algorithm design and analysis",
+    "combinatorial optimization",
+    "search algorithms",
+    "linear and integer programming",
+    "planning and scheduling",
+    "performance optimization",
+    "computational complexity",
+  ],
+  software: [
+    "high-performance C++",
+    "data structures",
+    "code review",
+    "debugging",
+    "Git",
+    "Linux",
+  ],
+  other: [
+    "numerical optimization",
+    "CasADi",
+    "NumPy",
+    "ROS2",
+    "React",
+    "LaTeX",
+  ],
+};
+
+const VER_SKILL_LABELS: Record<keyof typeof VER_TECH_SKILLS, string> = {
+  languages: "Programming Languages",
+  automated_reasoning: "Automated Reasoning & Formal Methods",
+  algorithms: "Algorithms & Optimization",
+  software: "Software Engineering",
+  other: "Additional Technologies",
+};
+
+/****************************  WORK EXPERIENCE DATA *************************** */
+
+const VER_WORK_EXPERIENCE = [
+  {
+    id: "ots_greendriver",
+    position: "Senior Research Engineer",
+    employer: "On Time Systems / Connected Signals",
+    location: "Eugene, Oregon",
+    start_date: "2008",
+    end_date: "2012",
+    description_long: [
+      "Researched and developed algorithms for computationally difficult search and optimization problems, including satisfiability, planning, scheduling, and routing.",
+      "Applied artificial intelligence and operations research techniques to large-scale optimization problems, including local search and integer programming.",
+      "Developed software in C++, Python, Java, and Objective-C for server-side and client-side applications.",
+      "Researched methods for inferring vehicle routes from GPS observations and contributed to a real-time traffic routing and traffic signal prediction application.",
+      "Served as lead code reviewer and technical interviewer, evaluating candidates' code quality, mathematical reasoning, and algorithmic problem-solving skills.",
+    ],
+    description_short:
+      "Researched and implemented algorithms for satisfiability, planning, scheduling, and routing. Developed software in C++, Python, Java, and Objective-C. Led technical code reviews and evaluated candidates' algorithmic reasoning.",
+  },
+  {
+    id: "zap",
+    position: "Senior Research Scientist",
+    employer: "On Time Systems",
+    location: "Eugene, Oregon",
+    start_date: "2004",
+    end_date: "2008",
+    description_long: [
+      "Invented a generalized propositional proof system that uses computational group theory to exploit mathematical structure and symmetry in constraint satisfaction problems.",
+      "Designed and implemented ZAP, a generalized SAT solver written in C++ that extends traditional Boolean reasoning with group-theoretic inference.",
+      "Investigated methods for improving automated deduction and reducing the computational complexity of solving difficult combinatorial problems.",
+      "Served as the primary researcher on a DARPA-sponsored research project, responsible for algorithm development, C++ implementation, technical reports, and research deliverables.",
+      "Published and presented peer-reviewed research on generalized satisfiability, proof systems, and solver implementation.",
+    ],
+    description_short:
+      "Invented a group-theoretic propositional proof system and implemented the generalized SAT solver ZAP in C++. Served as primary researcher on a DARPA-sponsored project investigating stronger inference methods for automated reasoning.",
+  },
+  {
+    id: "cirl",
+    position: "Research Assistant",
+    employer: "Computational Intelligence Research Lab",
+    location: "Eugene, Oregon",
+    start_date: "1998",
+    end_date: "2004",
+    description_long: [
+      "Researched systematic algorithms for solving NP-complete problems, focusing on automated deduction, Boolean satisfiability, and constraint reasoning.",
+      "Designed and implemented PBCHAFF, a pseudo-Boolean satisfiability solver written in C++ that integrates techniques from SAT solving and integer programming.",
+      "Extended DPLL-based inference to support pseudo-Boolean constraints and stronger proofs of unsatisfiability.",
+      "Demonstrated substantial performance improvements over conventional SAT solvers on selected problem classes, including planning problems.",
+      "Investigated search and optimization methods for scheduling and routing applications.",
+    ],
+    description_short:
+      "Developed PBCHAFF, a C++ pseudo-Boolean SAT solver extending DPLL with stronger inference and proof capabilities. Demonstrated significant performance improvements on difficult planning problems.",
+  },
+  {
+    id: "terralink",
+    position: "Software Engineer",
+    employer: "Terralink",
+    location: "Portland, Maine",
+    start_date: "1997",
+    end_date: "1998",
+    description_long: [
+      "Developed software in Delphi for hazardous waste tracking and management.",
+    ],
+    description_short:
+      "Developed software in Delphi for hazardous waste tracking and management.",
+  },
+  {
+    id: "gerber",
+    position: "Geologist",
+    employer: "R.G. Gerber Inc.",
+    location: "Freeport, Maine",
+    start_date: "1995",
+    end_date: "1996",
+    description_long: [
+      "Ran and evaluated groundwater models for environmental consulting projects. Wrote and maintained FORTRAN code.",
+    ],
+    description_short:
+      "Developed and maintained FORTRAN code for groundwater modeling.",
+  },
+];
+
+const VER_WORK_DETAIL: ("short" | "long" | "exclude")[] = [
+  "short",
+  "long",
+  "long",
+  "exclude",
+  "exclude",
+];
 
 /* ------------------------ VOLUNTEER WORK ----------------------------------------*/
 
@@ -461,6 +521,326 @@ const TEACHING_EXPERIENCE = [
   // },
 ];
 
+const VER_TEACHING_EXPERIENCE = [
+  {
+    id: "homeschool",
+    position: "Homeschool Teacher",
+    employer: "Independent",
+    location: "Eugene, Oregon",
+    start_date: "2013",
+    end_date: "2025",
+    description_long: [
+      "Provided individualized, project-based education from fourth grade through high school, including advanced mathematics and computer science.",
+      "Supported university-level coursework in calculus, mathematical analysis, linear algebra, number theory, abstract algebra, discrete mathematics, programming, and automata theory.",
+      "Developed instructional strategies adapted to individual learning needs.",
+    ],
+    description_short:
+      "Provided individualized education through high school, including instruction supporting university-level mathematics and computer science coursework.",
+  },
+  {
+    id: "uo_teacher",
+    position: "Adjunct Instructor",
+    employer: "University of Oregon",
+    location: "Eugene, Oregon",
+    start_date: "2013",
+    end_date: "2014",
+    description_long: [
+      "Taught undergraduate/graduate Automata Theory and graduate Algorithms and Complexity in the Computer and Information Science Department.",
+    ],
+    description_short:
+      "Taught Automata Theory and graduate Algorithms and Complexity, covering foundational topics in theoretical computer science.",
+  },
+  {
+    id: "chewonki",
+    position: "Mathematics Teacher",
+    employer: "The Chewonki Foundation",
+    location: "Wiscasset, Maine",
+    start_date: "1996",
+    end_date: "1997",
+    description_long: [
+      "Taught Algebra II, calculus, and statistics in a semester-away high school program.",
+    ],
+    description_short:
+      "Taught high school mathematics, including algebra, calculus, and statistics.",
+  },
+];
+
+const VER_TEACHING_DETAIL: ("short" | "long" | "exclude")[] = [
+  "short",
+  "short",
+  "exclude",
+];
+
+/****************************  PROJECTS DATA   *************************** */
+
+const VER_PROJECTS = [
+  {
+    id: "pbchaff",
+    title: "PBCHAFF — Pseudo-Boolean SAT Solver",
+    code: "",
+    website: "https://wildthinkslaboratory.github.io/personal-site/#/pbchaff",
+    description_long: [
+      "Designed and implemented a pseudo-Boolean satisfiability solver in C++ extending DPLL-based SAT techniques to support linear inequalities over Boolean variables.",
+      "Developed inference methods capable of producing stronger proofs of unsatisfiability than conventional clause-based resolution.",
+      "Demonstrated substantial runtime improvements on selected classes of difficult planning problems.",
+      "Code available upon request.",
+    ],
+    description_short:
+      "Developed a C++ pseudo-Boolean SAT solver extending DPLL with stronger inference and proof capabilities, achieving substantial performance improvements on selected planning problems.",
+  },
+  {
+    id: "zap",
+    title: "ZAP — Generalized SAT Solver",
+    code: "",
+    website: "",
+    description_long: [
+      "Designed and implemented a generalized SAT solver in C++ using computational group theory to represent and reason about problem symmetries.",
+      "Developed algorithms supporting a stronger propositional proof system than conventional resolution.",
+      "Investigated how mathematical structure can be preserved and exploited to improve automated deduction and search efficiency.",
+    ],
+    description_short:
+      "Designed and implemented ZAP, a generalized SAT solver in C++ that exploits problem symmetries using computational group theory and stronger propositional inference.",
+  },
+  {
+    id: "drone",
+    title: "Real-Time Nonlinear Optimization — TVC Drone",
+    code: "https://github.com/wildthinkslaboratory/hop",
+    website: "https://wildthinkslaboratory.github.io/personal-site/#/drone",
+    description_long: [
+      "Co-designed and built a thrust-vector-controlled drone using nonlinear model predictive control for vertical takeoff and landing.",
+      "Developed simulation, numerical optimization, and flight analysis software using Python, CasADi, and ROS2.",
+      "Evaluated numerical optimization methods for computational performance and reliability under real-time constraints.",
+      "Used experimental data to investigate discrepancies between mathematical model predictions and observed physical behavior.",
+    ],
+    description_short:
+      "Developed real-time nonlinear optimization, simulation, and analysis software for a thrust-vector-controlled drone using Python, CasADi, and ROS2.",
+  },
+  {
+    id: "boggle",
+    title: "High-Performance Local Search — Boggle",
+    code: "https://github.com/wildthinkslaboratory/boggle",
+    website:
+      "https://wildthinkslaboratory.github.io/personal-site/#/localsearch",
+    description_long: [
+      "Implemented a C++ combinatorial optimization program to search for high-scoring Boggle boards.",
+      "Combined local search methods with efficient data structures and optimized scoring algorithms.",
+      "Focused on reducing the computational cost of repeated search evaluations.",
+    ],
+    description_short:
+      "Implemented high-performance local search algorithms in C++ for combinatorial optimization, emphasizing efficient data structures and computational performance.",
+  },
+];
+
+const VER_PROJECT_DETAIL: ("short" | "long" | "exclude")[] = [
+  "long",
+  "long",
+  "short",
+  "short",
+];
+
+const PROJECT_DETAIL: ("short" | "long" | "exclude")[] = [
+  "long",
+  "long",
+  "long",
+  "long",
+];
+
+// const PROJECT_DETAIL: ("short" | "long" | "exclude")[] = [
+//   "short",
+//   "short",
+//   "short",
+//   "short",
+// ];
+
+const PROJECTS = [
+  {
+    id: "drone",
+    title: "Thrust Vector Drone Project",
+    code: "https://github.com/wildthinkslaboratory/hop",
+    website: "https://wildthinkslaboratory.github.io/personal-site/#/drone",
+    description_long: [
+      "Designed and built a thrust vector controlled drone with two stacked brushless motors on a servo-driven gimbal that runs a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL). Developed simulation and flight analysis tools.",
+    ],
+    description_short:
+      "Designed and built a thrust vector controlled drone with two stacked brushless motors on a servo-driven gimbal that runs a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
+  },
+  {
+    id: "wildthinks",
+    title: "WildThinks Website",
+    code: "https://github.com/wildthinkslaboratory/wildthinks",
+    website: "http://wildthinks.org/",
+    description_long: [
+      "Developed a website with interactive mathematical learning experiences. It includes a visual introduction to calculus plus interactive apps on fractals, penrose tilings, and alternative base systems.",
+    ],
+    description_short:
+      "Developed a website with interactive mathematical learning experiences. It includes a visual introduction to calculus plus interactive apps on fractals, penrose tilings, and alternative base systems.",
+  },
+  {
+    id: "boggle",
+    title: "Boggle Solver",
+    code: "https://github.com/wildthinkslaboratory/boggle",
+    website:
+      "https://wildthinkslaboratory.github.io/personal-site/#/localsearch",
+    description_long: [
+      "Developed a local search algorithm in C++ to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
+    ],
+    description_short:
+      "Developed a local search algorithm in C++ to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
+  },
+  {
+    id: "pbchaff",
+    title: "PBCHAFF",
+    code: "",
+    website: "https://wildthinkslaboratory.github.io/personal-site/#/pbchaff",
+    description_long: [
+      "Developed a systematic pseudo-Boolean satisfiability solver in C++ that outperformed traditional SAT solvers on problems from the planning domain. (code available upon request)",
+    ],
+    description_short:
+      "Developed a systematic pseudo-Boolean satisfiability solver in C++ that outperformed traditional SAT solvers on problems from the planning domain. (code available upon request)",
+  },
+  // {
+  //   title: "ZAP",
+  //   code: "available on request",
+  //   website: "Systematic ",
+  //   description: "",
+  // },
+  // {
+  //   title: "",
+  //   code: "",
+  //   website: "",
+  //   description: "",
+  // },
+];
+
+/* ------------------------ CONTACT INFO ----------------------------------------*/
+
+function ContactInfo() {
+  return (
+    <header className="cv-contact">
+      <h1>{CONTACT_INFO.name}</h1>
+
+      <ul className="contact-list">
+        <li>{CONTACT_INFO.cell}</li>
+        <li>{CONTACT_INFO.email}</li>
+        <li>{CONTACT_INFO.website}</li>
+        <li>{CONTACT_INFO.github}</li>
+      </ul>
+    </header>
+  );
+}
+
+type ProfessionalSummaryProps = {
+  summary: string;
+};
+
+function ProfessionalSummary({ summary }: ProfessionalSummaryProps) {
+  return (
+    <section className="cv-professional-summary">
+      <h2>Professional Summary</h2>
+      <p>{summary}</p>
+    </section>
+  );
+}
+
+/* ------------------------ EDUCATION ----------------------------------------*/
+
+function Education() {
+  return (
+    <section className="cv-education">
+      <h2>Education</h2>
+
+      <ul>
+        {EDUCATION_ITEMS.map((item) => (
+          <li key={`${item.school}-${item.degree}`}>
+            <div className="education-header">
+              <span>
+                <strong>
+                  {item.degree} in {item.department}
+                </strong>
+                {", "}
+                <a href={item.school_link}>{item.school}</a>
+              </span>
+              <span className="education-year">{item.year}</span>
+            </div>
+
+            {item.thesis && (
+              <div className="education-thesis">
+                Thesis:{" "}
+                {item.thesis_link ? (
+                  <a href={item.thesis_link}>{item.thesis}</a>
+                ) : (
+                  item.thesis
+                )}
+              </div>
+            )}
+
+            {item.advisor && (
+              <div className="education-advisor">{item.advisor}</div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/* ------------------------ SKILLS ----------------------------------------*/
+
+type TechnicalSkillsProps<T extends Record<string, string[]>> = {
+  skills: T;
+  labels: Record<keyof T, string>;
+};
+
+function TechnicalSkills<T extends Record<string, string[]>>({
+  skills,
+  labels,
+}: TechnicalSkillsProps<T>) {
+  return (
+    <section className="cv-tech-skills">
+      <h2>Technical Skills</h2>
+
+      <dl className="skill-categories">
+        {(Object.keys(skills) as (keyof T)[]).map((category) => (
+          <div className="skill-category" key={String(category)}>
+            <dt>{labels[category]}:</dt>
+            <dd>{skills[category].join(", ")}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  );
+}
+
+/* ------------------------ PUBLICATIONS ----------------------------------------*/
+
+export function Publications() {
+  return (
+    <section className="cv-publications">
+      <h2>Publications</h2>
+
+      <ul>
+        {PUBLICATIONS.map((item) => (
+          <li key={item.link || item.title}>
+            <span className="authors">{item.authors}</span>{" "}
+            <a className="paper" href={item.link}>
+              {item.title}.
+            </a>{" "}
+            {item.publisher_link ? (
+              <a className="publisher-link" href={item.publisher_link}>
+                {item.publisher}
+              </a>
+            ) : (
+              <span className="publisher">{item.publisher}</span>
+            )}
+            {", "}
+            <span className="publication-date">{item.date}</span>.
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 type ExperienceItem = {
   id: string;
   position: string;
@@ -529,80 +909,6 @@ function Experience({
     </section>
   );
 }
-
-// const PROJECT_DETAIL: ("short" | "long" | "exclude")[] = [
-//   "long",
-//   "long",
-//   "long",
-//   "long",
-// ];
-
-const PROJECT_DETAIL: ("short" | "long" | "exclude")[] = [
-  "short",
-  "short",
-  "short",
-  "short",
-];
-
-const PROJECTS = [
-  {
-    id: "drone",
-    title: "Thrust Vector Drone Project",
-    code: "https://github.com/wildthinkslaboratory/hop",
-    website: "https://wildthinkslaboratory.github.io/personal-site/#/drone",
-    description_long: [
-      "Designed and built a thrust vector controlled drone with two stacked brushless motors on a servo-driven gimbal that runs a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL). Developed simulation and flight analysis tools.",
-    ],
-    description_short:
-      "Designed and built a thrust vector controlled drone with two stacked brushless motors on a servo-driven gimbal that runs a nonlinear model predictive control (NMPC) algorithm to do vertical takeoff and landing (VTOL).",
-  },
-  {
-    id: "wildthinks",
-    title: "WildThinks Website",
-    code: "https://github.com/wildthinkslaboratory/wildthinks",
-    website: "http://wildthinks.org/",
-    description_long: [
-      "Developed a website with interactive mathematical learning experiences. It includes a visual introduction to calculus plus interactive apps on fractals, penrose tilings, and alternative base systems.",
-    ],
-    description_short:
-      "Developed a website with interactive mathematical learning experiences. It includes a visual introduction to calculus plus interactive apps on fractals, penrose tilings, and alternative base systems.",
-  },
-  {
-    id: "boggle",
-    title: "Boggle Solver",
-    code: "https://github.com/wildthinkslaboratory/boggle",
-    website:
-      "https://wildthinkslaboratory.github.io/personal-site/#/localsearch",
-    description_long: [
-      "Developed a local search algorithm in C++ to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
-    ],
-    description_short:
-      "Developed a local search algorithm in C++ to solve the boggle problem (find a maximally scoring boggle board relative to a given dictionary).",
-  },
-  {
-    id: "pbchaff",
-    title: "PBCHAFF",
-    code: "",
-    website: "https://wildthinkslaboratory.github.io/personal-site/#/pbchaff",
-    description_long: [
-      "Developed a systematic pseudo-Boolean satisfiability solver in C++ that outperformed traditional SAT solvers on problems from the planning domain. (code available upon request)",
-    ],
-    description_short:
-      "Developed a systematic pseudo-Boolean satisfiability solver in C++ that outperformed traditional SAT solvers on problems from the planning domain. (code available upon request)",
-  },
-  // {
-  //   title: "ZAP",
-  //   code: "available on request",
-  //   website: "Systematic ",
-  //   description: "",
-  // },
-  // {
-  //   title: "",
-  //   code: "",
-  //   website: "",
-  //   description: "",
-  // },
-];
 
 type ProjectItem = {
   title: string;
@@ -701,7 +1007,43 @@ function Hobbies() {
   );
 }
 
-import { useEffect } from "react";
+export function VerificationResume() {
+  useEffect(() => {
+    document.title = "Resume | Heidi Dixon";
+  }, []);
+
+  return (
+    <main className="cv">
+      <ContactInfo />
+      <ProfessionalSummary summary={VER_PROFESSIONAL_SUMMARY} />;
+      <TechnicalSkills skills={VER_TECH_SKILLS} labels={VER_SKILL_LABELS} />
+      <Education />
+      <Experience
+        items={VER_WORK_EXPERIENCE}
+        title="Research Experience"
+        details={VER_WORK_DETAIL}
+      />
+      <Experience
+        items={VER_TEACHING_EXPERIENCE}
+        title="Teaching Experience"
+        details={VER_TEACHING_DETAIL}
+      />
+      <Projects
+        items={VER_PROJECTS}
+        title="Projects / Code"
+        details={VER_PROJECT_DETAIL}
+      />
+      <Publications />
+      <Experience
+        items={VOLUNTEER_WORK}
+        title="Volunteer Work"
+        details={["short", "short"]}
+      />
+      <Hobbies />
+    </main>
+  );
+}
+
 function ActualResume() {
   useEffect(() => {
     document.title = "Resume | Heidi Dixon";
@@ -711,7 +1053,7 @@ function ActualResume() {
     <main className="cv">
       <ContactInfo />
 
-      <TechnicalSkills />
+      <TechnicalSkills skills={TECH_SKILLS} labels={SKILL_LABELS} />
 
       <Education />
 

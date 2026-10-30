@@ -19,6 +19,7 @@ import { HS_PAGE } from "../components/resume-data";
 import { CONTROL_PAGE } from "../components/resume-data";
 import { Route, Routes } from "react-router-dom";
 import ActualResume from "./actual-resume";
+// import { VerificationResume } from "./actual-resume";
 
 export function RouteElement() {
   return (

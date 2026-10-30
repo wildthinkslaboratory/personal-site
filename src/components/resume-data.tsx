@@ -89,16 +89,6 @@ export const TEACHING_ITEMS = [
     image: heidiPic,
   },
   {
-    path: "goldfishandrobin",
-    title1: "Goldfish and Robin YouTube Channel",
-    title2: "",
-    summary:
-      "I mentored the young team of creators from the GoldfishAndRobin YouTube channel. I helped them organize their ideas, plan, and produce educational videos.",
-    start_date: "",
-    end_date: "",
-    image: grPic,
-  },
-  {
     path: "robotics",
     title1: "Robotics Coach",
     title2: "",
@@ -107,6 +97,16 @@ export const TEACHING_ITEMS = [
     start_date: "",
     end_date: "",
     image: roboticsPic,
+  },
+  {
+    path: "goldfishandrobin",
+    title1: "Goldfish and Robin YouTube Channel",
+    title2: "",
+    summary:
+      "I mentored the young team of creators from the GoldfishAndRobin YouTube channel. I helped them organize their ideas, plan, and produce educational videos.",
+    start_date: "",
+    end_date: "",
+    image: grPic,
   },
   {
     path: "teachingUO",
@@ -292,11 +292,12 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
-      mediaContent: "https://www.youtube.com/embed/-gQQRK8Lc4Y",
-      caption: "muscle up",
+      mediaContent: "https://youtube.com/embed/v2447P38jec?si=7B_3QK72mh92YKTC",
+      caption: "crimpy V6",
       mediaType: "horzShort",
       link: "",
     },
+
     {
       mediaContent: "https://youtube.com/embed/CkZDJfFMSY0?si=vVpC8MSIpDZXfszL",
       caption: "black with bat hang",
@@ -322,6 +323,12 @@ export const CLIMBING_PAGE = {
       link: "",
     },
     {
+      mediaContent: "https://www.youtube.com/embed/-gQQRK8Lc4Y",
+      caption: "muscle up",
+      mediaType: "horzShort",
+      link: "",
+    },
+    {
       mediaContent: "https://youtube.com/embed/iBATIhn8kl4?si=B0bunZaQA7fcUb5F",
       caption: "black on splitseam",
       mediaType: "horzShort",
@@ -333,12 +340,7 @@ export const CLIMBING_PAGE = {
       mediaType: "horzShort",
       link: "",
     },
-    // {
-    //   mediaContent: "https://youtube.com/embed/S0NDByGanvQ?si=oPuHrnJvRk_APbBd",
-    //   caption: "scary black move",
-    //   mediaType: "horzShort",
-    //   link: "",
-    // },
+
     // {
     //   mediaContent: "https://youtube.com/embed/tEbeUr101JI?si=7KAtGhUz70K49xoN",
     //   caption: "black on slab",
