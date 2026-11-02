@@ -101,17 +101,17 @@ const PUBLICATIONS = [
   },
 ];
 
-const VER_PUBLICATION_TITLES = [
-  "Generalizing Boolean Satisfiability III: Implementation",
-  "Generalizing Boolean Satisfiability II: Theory",
-  "Implementing a generalized version of resolution",
-  "Inference methods for a pseudo-Boolean satisfiability solver",
-  "Combining Satisfiability techniques from AI and OR",
-];
+// const VER_PUBLICATION_TITLES = [
+//   "Generalizing Boolean Satisfiability III: Implementation",
+//   "Generalizing Boolean Satisfiability II: Theory",
+//   "Implementing a generalized version of resolution",
+//   "Inference methods for a pseudo-Boolean satisfiability solver",
+//   "Combining Satisfiability techniques from AI and OR",
+// ];
 
-const VER_PUBLICATIONS = PUBLICATIONS.filter((publication) =>
-  VER_PUBLICATION_TITLES.includes(publication.title),
-);
+// const VER_PUBLICATIONS = PUBLICATIONS.filter((publication) =>
+//   VER_PUBLICATION_TITLES.includes(publication.title),
+// );
 
 const VER_PROFESSIONAL_SUMMARY =
   "Computer scientist with a Ph.D. and extensive research " +

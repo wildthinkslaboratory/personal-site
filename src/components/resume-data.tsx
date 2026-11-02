@@ -1298,7 +1298,7 @@ export const DRONE_STORY: StoryContentProps = {
           thrust-vector-controlled (TVC)
         </a>{" "}
         drone is a safe and inexpensive way to study control algorithms for
-        vertical takeoff and landing of rockets.
+        vertical takeoff and landing of rockets. (scroll to read more)
       </div>,
     ],
     [
@@ -1376,11 +1376,10 @@ export const DRONE_STORY: StoryContentProps = {
         The servos for the gimbals and the brushless motors are controlled with
         pulse width modulation (PWM). We need a mapping from PWM to angles for
         the servos and from PWM to force in Newtons for the motors. We
-        determined these mappings experimentally. During live testing we quickly
-        realized the thrust model wasn't accurate at high PWM or when the
-        battery was low. We needed to consider the current battery voltage in
-        our model. We repeated our thrust testing at a range of voltages to get
-        a more accurate curve.
+        determined these mappings experimentally. We used a force meter to
+        measure upward thrust as a function of the PWM for both motors,
+        normalized the steady state data by the battery voltage and fit it with
+        a polynomial curve.
       </div>,
     ],
     [
@@ -1414,7 +1413,8 @@ export const DRONE_STORY: StoryContentProps = {
         behavior two seconds into the future when choosing a control output. It
         finds the optimal series of control steps to move the drone towards it's
         goal state based. Anticipating future behavior leads to more efficient
-        and robust control.
+        and robust control. The plan is revised every 0.02 seconds allowing the
+        drone to respond to disturbances and errors.
       </div>,
     ],
     [
@@ -1459,10 +1459,8 @@ export const DRONE_STORY: StoryContentProps = {
         behavior before actual test flights. Graphing our state and control
         residuals helped us tune our cost function. Feeding our flight data into
         our simulation tools allowed us to compare actual behavior with
-        predicted behavior. This helped us diagnose the voltage problem in our
-        thrust model and find a delay in the application of our control thrust.
-        We believe we've found the source of this delay, but we won't know until
-        we do more testing.
+        predicted behavior. This helped us find errors in our thrust model and
+        time delays in our control actuation.
       </div>,
     ],
     [
@@ -1470,9 +1468,22 @@ export const DRONE_STORY: StoryContentProps = {
       <div className="story-p">
         Our initial testing produced robust flight behavior in an indoor
         environment, but you can see from the video on the left that we don’t
-        yet have precise position control. We hope that fixing the delay in
-        thrust application will get us the precise control we want. More testing
-        is needed.
+        yet have precise position control. We traced the problem to a constant
+        time lag between when commands leave the Pi and servo and motor
+        actuation and an additional time lag and ramping behavior between
+        actuation of a command and when a steady state thrust or angle is
+        acheived.
+      </div>,
+    ],
+    [
+      10,
+      <div className="story-p">
+        To address these issues we switched to faster and more precise servos
+        and we adjusted the NMPC encoding to model both a constant time delay
+        and the ramping behavior of the thrust. The new servos are fast enough
+        to not require a ramping adjustment. Hopefully when we get everything up
+        and running again we'll get the position precision we want and be able
+        to move the drone through specific waypoints.
       </div>,
     ],
   ],
@@ -1510,7 +1521,8 @@ export const DRONE_STORY: StoryContentProps = {
       link: "",
     },
     {
-      mediaContent: "https://www.desmos.com/calculator/azlbmntr5o",
+      mediaContent: "https://www.desmos.com/3d/zzdfhecyw0",
+      // mediaContent: "https://www.desmos.com/calculator/azlbmntr5o",
       caption: "Thrust Testing",
       mediaType: "desmos",
       link: "",
