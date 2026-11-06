@@ -1277,6 +1277,7 @@ import dronePic from "../assets/dronePic.jpeg";
 import DronePaper from "../assets/scitech_draft.pdf";
 import DroneWorldFrame from "../assets/DroneWorldFram.jpeg";
 import NMPC from "../assets/NMPC.jpeg";
+import hozizon from "../assets/horizon.jpeg";
 import NPLresults from "../assets/NLPformResults.jpeg";
 import DroneCAD from "../assets/Assembly_1_comp.glb?url";
 import { useGLTF } from "@react-three/drei";
@@ -1412,8 +1413,8 @@ export const DRONE_STORY: StoryContentProps = {
         algorithm uses the differential equations to simulate the drone's
         behavior two seconds into the future when choosing a control output. It
         finds the optimal series of control steps to move the drone towards it's
-        goal state based. Anticipating future behavior leads to more efficient
-        and robust control. The plan is revised every 0.02 seconds allowing the
+        goal state. Anticipating future behavior leads to more efficient and
+        robust control. The plan is revised every 0.02 seconds allowing the
         drone to respond to disturbances and errors.
       </div>,
     ],
@@ -1528,8 +1529,7 @@ export const DRONE_STORY: StoryContentProps = {
       link: "",
     },
     {
-      mediaContent:
-        "https://control.com/uploads/articles/predictive_control_image8.jpg",
+      mediaContent: hozizon,
       caption: "MPC",
       mediaType: "image",
       link: "",
